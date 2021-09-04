@@ -1,0 +1,75 @@
+.hero {
+	$vertical-padding: $padding-section;
+
+	background-color: black;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	height: 550px;
+	padding: $vertical-padding 0;
+
+	position: relative;
+
+	// Flex center alignment
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	// Text alignment
+	text-align: center;
+
+	&.hero--align-left {
+		text-align: left;
+
+		.hero__tagline {
+			margin-left: 0;
+			max-width: 40%;
+		}
+	}
+
+	&.hero--small {
+		min-height: 300px;
+		height: auto;
+	}
+
+	@include breakpoint(medium) {
+		$vertical-padding: $vertical-padding / 2;
+
+		min-height: 300px;
+		height: auto;
+
+		padding-top: $vertical-padding/2 + ($header-height / 16px * 1rem);
+		padding-top: calc(#{$header-height} + #{$vertical-padding/2});
+		padding-bottom: $vertical-padding;
+	}
+
+	&.hero--theme-gradient {
+		background: #7B4397;
+		background: linear-gradient(to right, #55266c 0, #7b4397 39%, #b5238a 89%);
+	}
+
+	.hero__inner {
+		max-width: 100%;
+		padding: 0 $padding-edge;
+		width: $width-page;
+
+		>:first-child:last-child {
+			margin: 0;
+		}
+	}
+
+	.hero__tagline {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 67%;
+
+		@include breakpoint(small) {
+			max-width: none !important;
+		}
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		color: inherit;
+	}
+}

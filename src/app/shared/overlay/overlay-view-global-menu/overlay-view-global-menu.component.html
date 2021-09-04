@@ -1,0 +1,40 @@
+<div class="Overlay GlobalMenu overlay-hidden Module View vp-min-height" theme="DARK" [ngClass]="{'hidden': isViewHidden}">
+    <div class="head">
+        <div class="background"></div>
+        <div class="content">
+            <!-- <div name="avatar" class="Module Avatar show-menu small" theme="DARK" style=""><a href="#" action="log-in"
+                    style="display: none;">Log In</a>
+                <div class="initials" style="">JH</div>
+                <div class="hover-wrapper">
+                    <div class="popover" style=""> <span class="icon icon-diamond" aria-hidden="true"></span> <a
+                            href="/home/events">My Events</a> <a href="/home/media">My Media</a> <a
+                            href="/home/orders">My Orders</a> <a href="/home/payment">Payment Method</a> <a
+                            href="/home/profile">My Profile</a>
+                        <hr> <a href="/logout"><span class="icon icon-power" aria-hidden="true"></span>Log Out</a>
+                    </div>
+                </div>
+            </div>  -->
+            <!-- <div class="wrap"> -->
+                <!-- <a [routerLink]="" action="early-access" class="button" theme="PINK">
+                    <p>Get early access</p>
+                </a> -->
+                <a [routerLink]="" (click)="close()" action="close"> <span class="icon icon-close"
+                        aria-hidden="true"></span> </a>
+            <!-- </div> -->
+        </div>
+    </div>
+    <div class="body">
+        <div class="content main-links">
+            <h1><a target="_blank" href="https://stageverse.typeform.com/to/HNX7eSNE">Creators</a></h1>
+            <h1><a [routerLink]="['/company']">Company</a></h1>
+            <h1><a target="_blank" href="https://www.instagram.com/stageverse">Instagram</a></h1>
+            <h1><a [routerLink]="['/press']">Press</a></h1>
+        </div>
+        <div class="content hide-desktop">
+            <app-footer name="overlay-footer-mobile" [isReducedView]="true"></app-footer>
+        </div>
+    </div>
+    <div class="foot hide-mobile">
+        <app-footer [isReducedView]="true"></app-footer>
+    </div>
+</div>

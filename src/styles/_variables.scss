@@ -1,0 +1,87 @@
+/* Colors */
+$color-primary: #79dbd5;
+$color-primary-dark: darken($color-primary, 5);
+$color-secondary: #55266c;
+$color-third: #7b4397;
+$color-background: #f2f2f2;
+$color-background-dark: #0A091A;
+// deep purple
+// $color-background-dark: #0e0e13; 
+// $color-background-dark: linear-gradient(to bottom, #265858 0%, #0d1c27 100%);
+// $color-background-dark: linear-gradient(to bottom, #2B282F 0%, #000000 100%);
+// $color-background-dark: linear-gradient(to bottom, #141414 0%, #000000 100%);
+// $color-background-dark: linear-gradient(to bottom, #331939 0%, #19111F 100%);
+// $color-background-dark: linear-gradient(to bottom, #772F5A 0%, #CC7063 100%);
+// $color-background-dark: linear-gradient(to bottom, #1E1E1E 0%, #181818 100%);
+// $color-background-dark: linear-gradient(to bottom, #F8CA64 0%, #FD7171 100%);
+// $color-background-dark: linear-gradient(to bottom, #1A2347 0%, #100F14 100%);
+
+// deep green teal
+// $color-background-dark: linear-gradient(to bottom, #001f3c 0%, #000a0e 100%);
+
+// idol green
+// $color-background-dark: linear-gradient(to bottom, #122025 0%, #080f11 100%);
+
+// in between
+// $color-background-dark: linear-gradient(to bottom, #001C3B 0%, #000e1e 100%);
+
+// purple scheme
+// $color-background-dark: linear-gradient(to bottom, #1A1C3B 0%, #0d0e1e 100%);
+
+// purple scheme
+// $color-background-dark: linear-gradient(to bottom, #171a33 0%, #020205 100%);
+
+$color-container-background: #fff;
+$color-container-background-dark: #181818;
+$color-purple-very-light: #f6f1f9;
+$color-light-gray: #f2f2f2;
+$color-border: #edeeee;
+$color-border-purple: #3b1b4b;
+$color-border: #edeeee;
+$color-border-dark: #222;
+$color-text-normal: #333;
+$color-text-medium: #666;
+$color-text-light: #999;
+$color-text-verylight: #ccc;
+$color-text-purple-light: #bba8c4;
+$color-text-normal-dark: #ccc;
+$color-text-medium-dark: #999;
+$color-text-light-dark: #666;
+$color-text-verylight-dark: #333;
+
+$header-border-color: rgba(0, 0, 0, 0.15);
+$header-background-color: #242424;
+$header-button-text-color: #fff;
+$header-button-hover-color: rgba(0, 0, 0, 0.15);
+$header-button-hover-text-color: #fff;
+
+/* Fonts */
+$font-family-body: "Circular", Helvetica, Arial, sans-serif;
+$font-weight-body: normal;
+$font-family-tagline: gilroyheavy, sans-serif;
+$font-weight-tagline: normal;
+$font-color-header: #333;
+$font-color-header-dark: white;
+$font-family-header: "Circular Bold", Helvetica, Arial, sans-serif;
+$font-weight-header: normal;
+$font-family-button: gilroylight, sans-serif;
+$font-size-button: 1.2em;
+$font-weight-button: normal;
+
+/* Transitions */
+$transition-short: 0.2s;
+$transition-long: 0.6s;
+
+/* Misc */
+$header-height: 64px;
+$padding-edge: 2.2rem;
+$padding-edge-mobile: 1rem;
+$padding-section: 5.5rem;
+$width-page: 98rem;
+$border-radius: 3px;
+
+/* Breakpoints */
+$breakpoint-huge: 1536px;
+$breakpoint-large: 1236px;
+$breakpoint-medium: 936px;
+$breakpoint-small: 636px;

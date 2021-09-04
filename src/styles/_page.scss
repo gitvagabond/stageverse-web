@@ -1,0 +1,258 @@
+@import "variables";
+
+.Page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+// @media (min-width: 800px) {
+//     .Page {
+//         min-width: 100rem;
+//     }
+// }
+.Page > .head,
+.Page > .head-fixed,
+.Page > .foot {
+    position: fixed;
+    position: sticky;
+    position: -webkit-sticky;
+    right: 0;
+    left: 0;
+}
+// .Page > .head {
+// margin-top: 1.5rem;
+// }
+.Page > .body {
+    align-self: top;
+}
+@media (min-width: 800px) {
+    .Page > .body > .content > .transition-content, 
+    .Page > .body .layout-column > .content > .transition-content {
+        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    }
+    .Page > .body > .content.invisible > .transition-content,
+    .Page > .body .layout-column > .content.invisible > .transition-content {
+        opacity: 0;
+        transform: translateY(6rem);
+    }
+}
+/* not sure why we need this */
+// .Page > .head + .body {
+//     margin-top: -1.5rem;
+// }
+.Page > .foot {
+    bottom: 0;
+    align-self: flex-end;
+    z-index: 100;
+}
+@media (min-width: 800px) {
+    .Page > .foot {
+        height: 0;
+    }
+    .Overlay {
+        justify-content: space-between;
+    }
+}
+
+/* static pages */
+.Page.Static > .body {
+    display: flex;
+    flex-direction: column;
+}
+.Page.Static > .body > .content,
+.Page.Static > .body .layout-column > .content  {
+    width: 100%;
+}
+@media (min-width: 800px) {
+    .Page.Static > .body > .content,
+    .Page.Static > .body .layout-column > .content {
+        padding-bottom: 8.5rem;
+    }
+}
+@media (max-width: 799px) {
+    .Page.Static > .body > .content,
+    .Page.Static > .body .layout-column > .content {
+        padding-bottom: 5rem;
+    }
+}
+.Page.Static > .body > .content hr,
+.Page.Static > .body .layout-column > .content hr {
+    margin-bottom: 0;
+}
+.Page.Static > .body > .content.footer,
+.Page.Static > .body .layout-column > .content.footer {
+    padding-bottom: 0;
+}
+.Page.Static > .body > .content.centered,
+.Page.Static > .body .layout-column > .content.centered {
+    justify-content: center;
+}
+@media (min-width: 800px) {
+    .Page.Static > .body > .content.centered,
+    .Page.Static > .body .layout-column > .content.centered {
+        padding-left: 10.7rem;
+        padding-right: 10.7rem;
+    }
+}
+@media (min-width: 1500px) {
+    .Page.Static > .body > .content.centered,
+    .Page.Static > .body .layout-column > .content.centered {
+        padding-left: 10.7vw;
+        padding-right: 10.7vw;
+    }
+}
+@media (max-width: 799px) {
+    .Page.Static > .body > .content.centered,
+    .Page.Static > .body .layout-column > .content.centered {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+@media (min-width: 800px) {
+    .Page.Static > .body > .content.column > h2.heading-offset-top,
+    .Page.Static > .body .layout-column > .content.column > h2.heading-offset-top {
+        padding-top: 1rem;
+    }
+}
+.Page.Static > .body > .content.column > h2 + * p + h3,
+.Page.Static > .body > .content.column > h2 + * ul + h3,
+.Page.Static > .body .layout-column > .content.column > h2 + * p + h3,
+.Page.Static > .body .layout-column > .content.column > h2 + * ul + h3 {
+    margin-top: 3.5rem;
+}
+.Page.Static > .body > .content.hero {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    padding-bottom: 0;
+}
+@media (min-width: 800px) {
+    .Page.Static > .body > .content.hero {
+        height: 39vw;
+        padding-left: 10.7rem;
+        padding-right: 10.7rem;
+    }
+}
+@media (min-width: 1500px) {
+    .Page.Static > .body > .content.hero {
+        padding-left: 10.7vw;
+        padding-right: 10.7vw;
+    }
+}
+@media (max-width: 799px) {
+    .Page.Static > .body > .content.hero {
+        height: 98vw;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+@media (min-width: 800px) {
+    .Page.Static > .body > .content.hero .tagline {
+        font-size: 6.7rem;
+        line-height: 6.85rem;
+        letter-spacing: -0.07rem;
+    }
+}
+@media (max-width: 799px) {
+    .Page.Static > .body > .content.hero .tagline {
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+    }
+}
+@media (min-width: 800px) {
+    .Page.Static > .body > .content.hero + .content {
+        padding-top: 7.5rem;
+    }
+}
+@media (max-width: 799px) {
+    .Page.Static > .body > .content.hero + .content {
+        padding-top: 4rem;
+    }
+}
+.Page.Static > .body > .content.error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+.Page.Static > .body > .content.error h1,
+.Page.Static > .body > .content.error p {
+    position: relative;
+    text-align: center;
+}
+.Page.Static > .body > .content.error > .background {
+    background-image: url(/assets/images/void.jpg);
+}
+.Page.Static > .body > .content .content-list,
+.Page.Static > .body .layout-column > .content .content-list {
+    margin: 0 1.65rem 1.65rem;
+}
+.Page.Static > .body > .content .content-list.compact,
+.Page.Static > .body .layout-column > .content .content-list.compact {
+    margin-left: 0;
+    margin-right: 0;
+}
+.Page.Static > .body > .content .content-list.compact > li,
+.Page.Static > .body .layout-column > .content .content-list.compact > li {
+    display: block;
+    list-style: none;
+}
+.Page.Static > .body > .content .content-list.bulleted > li,
+.Page.Static > .body .layout-column > .content .content-list.bulleted > li {
+    display: list-item;
+    list-style: circle outside;
+}
+@media (min-width: 800px) {
+    .Page.Static > .body > .content .content-list > li,
+    .Page.Static > .body .layout-column > .content .content-list > li {
+        font-size: 1.3rem;
+        line-height: 1.45rem;
+    }
+}
+@media (max-width: 799px) {
+    .Page.Static > .body > .content .content-list > li,
+    .Page.Static > .body .layout-column > .content .content-list > li {
+        font-size: 1.15rem;
+        line-height: 1.5rem;
+    }
+}
+.Page.Static > .body > .content .content-list > li.section,
+.Page.Static > .body .layout-column > .content .content-list > li.section {
+    margin-top: 1.65rem;
+}
+.Page.Static > .body > .content .content-list > li + li,
+.Page.Static > .body .layout-column > .content .content-list > li + li {
+    margin-top: 0.8rem;
+}
+.Page.Static > .body > .content .footnote,
+.Page.Static > .body .layout-column > .content .footnote {
+    display: block;
+    font-size: 0.8em;
+    margin: 0.5em 1em 0;
+}
+.Page.Static > .body > .content h3,
+.Page.Static > .body .layout-column > .content h3 {
+    font-weight: 800;
+}
+.Page.Static .Module.Collapsible {
+    margin-bottom: 1.65rem;
+}
+.Page.Static[theme="DARK"] {
+    color: #fff;
+}
+.Page.Static[theme="DARK"] > .body > .content {
+    background-color: $color-background-dark;
+}
+.Page.Static[theme="DARK"] > .body > .content.transparent-bg,
+.Page.Static[theme="DARK"] > .body > .content.hero {
+    background-color: transparent;
+}
+.Page.Static[theme="LIGHT"] {
+    color: #000;
+}
+.Page.Static[theme="LIGHT"] > .body > .content {
+    background-color: #eee;
+}
+.Page.Static[theme="LIGHT"] > .body > .content.hero {
+    background-color: transparent;
+}

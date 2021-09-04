@@ -1,0 +1,86 @@
+@import "../overlay.component.scss";
+
+.Overlay.MediaOverlay > .body > .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Overlay.MediaOverlay > .body > .content .image {
+    max-height: 70vh;
+    border-radius: 3px;
+}
+@media (min-width: 800px) {
+    .Overlay.MediaOverlay > .body > .content .image {
+        max-width: 60vw;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.MediaOverlay > .body > .content .image {
+        max-width: 90vw;
+    }
+}
+.Overlay.MediaOverlay > .body > .content [name="video-player"] {
+    height: 70vh;
+}
+@media (min-width: 800px) {
+    .Overlay.MediaOverlay > .body > .content [name="video-player"] {
+        width: 70vw;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.MediaOverlay > .body > .content [name="video-player"] {
+        width: 90vw;
+    }
+}
+.Overlay.MediaOverlay > .body > .content [name="video-player"] iframe {
+    width: 100%;
+    height: 100%;
+}
+.Overlay.MediaOverlay > .body > .content .caption {
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+}
+.Overlay.MediaOverlay > .body > .content .caption,
+.Overlay.MediaOverlay > .body > .content .caption p {
+    color: #888;
+}
+@media (min-width: 800px) {
+    .Overlay.MediaOverlay > .body > .content .caption,
+    .Overlay.MediaOverlay > .body > .content .caption p {
+        font-weight: 500;
+        font-size: 1rem;
+        letter-spacing: 0;
+        line-height: 1.286rem;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.MediaOverlay > .body > .content .caption,
+    .Overlay.MediaOverlay > .body > .content .caption p {
+        font-weight: 500;
+        font-size: 0.929rem;
+        letter-spacing: 0;
+        line-height: 1.429rem;
+    }
+}
+.Overlay.MediaOverlay > .foot .link {
+    height: 4.3rem;
+    text-align: left;
+}
+@media (min-width: 800px) {
+    .Overlay.MediaOverlay > .foot .link {
+        width: 22rem;
+        position: absolute;
+        right: 2rem;
+        bottom: 2rem;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.MediaOverlay > .foot .link {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+.Overlay.MediaOverlay > .foot .link .icon {
+    margin-right: 1.25rem;
+}

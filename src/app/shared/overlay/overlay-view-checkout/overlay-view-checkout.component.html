@@ -1,0 +1,40 @@
+<div class="Overlay Checkout Module View vp-min-height" theme="LIGHT">
+    <div class="head">
+        <div class="background"></div>
+        <div class="content">
+            <!-- <div name="countdown" class="Module SimpleCountdown" theme="LIGHT" style=""> <span class="value">9:44</span>
+                <span class="suffix hide-mobile"> minutes left</span></div> -->
+            <a [routerLink]="" (click)="close()" action="close">
+                <div class="background"></div> <span class="icon icon-close" aria-hidden="true"></span>
+            </a>
+        </div>
+    </div>
+    <div class="body">
+        <div class="background hide-desktop" action="mobile-pause"></div>
+        <div class="content vp-min-height-desktop">
+            <div class="left">
+                <app-checkout-summary name="summary" theme="DARK" [eventName]="event.name" [eventDate]="event.date" [eventLocation]="event.location">
+                </app-checkout-summary>
+            </div>
+            <div class="right hide-mobile">
+                <app-checkout-steps name="steps-desktop" theme="LIGHT" style="height: auto;">
+                </app-checkout-steps>
+            </div>
+        </div>
+    </div>
+    <div class="foot hide-desktop">
+        <div class="mobile-actions"> <a href="#" action="mobile-facebook-log-in" class="button" theme="FACEBOOK">
+                <p>Log in with Facebook <span class="icon icon-arrow-right" aria-hidden="true"></span></p>
+            </a> <a href="#" action="mobile-sign-up" class="button small" theme="BLUE">
+                <p>Sign Up</p>
+            </a> <a href="#" action="mobile-log-in" class="button small" theme="BLUE">
+                <p>Log in via Email</p>
+            </a> <a href="#" action="mobile-proceed" class="button" theme="BLUE">
+                <p>Checkout <span class="icon icon-arrow-right" aria-hidden="true"></span></p>
+            </a> </div>
+        <div name="steps-mobile" class="loading">
+            <!-- <app-checkout-steps name="steps-mobile" theme="LIGHT" style="height: auto;">
+            </app-checkout-steps> -->
+        </div>
+    </div>
+</div>

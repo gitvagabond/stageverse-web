@@ -1,0 +1,79 @@
+<div>
+    <div class="example-collection-grid footer-sm">
+        <div class="example-collection-cell">
+            <div class="example-collection-item">
+                <div class="logo-container">
+                    <img class="footer-logo" src="assets/images/ui-assets/Logo-comb.png" />
+                    <h1 class="footer-big-text">
+                        <li><a routerLink="/careers" class="links-a">CAREERS</a></li>
+                        <li><a routerLink="/creators" class="links-a">CREATORS</a></li>
+                        <li><a routerLink="/press" class="links-a">PRESS</a></li>
+                        <li><a routerLink="/company" class="links-a">COMPANY</a></li>
+                        <li><a routerLink="/blog" class="links-a">BLOG</a></li>
+                        <li><a href="https://support.stageverse.com/hc/en-us" target="_blank" class="links-a">SUPPORT</a></li>
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="example-collection-cell">
+            <div class="example-collection-item">
+                <div class="footer-sub-contianer">
+                    <h2 class="footer-sub-heading">FUTURE CULTURE HAPPENS HERE.</h2>
+                    <p class="footer-p-text">Stageverse is an NFT-based metaverse of beautifully designed 3D
+                        spaces, called Stages, that aims to connect a vibrant, diverse and pioneering collective
+                        of people, creators, communities and brands. The collective use Stageverse to socialize,
+                        connect, create, discover, grow, elevate creativity and move culture forward.</p>
+                      
+                     <div *ngIf="message==null" style="display: flex;display: inline;">  
+                        <p class="label-p" *ngIf="emailAddress!=''">Get News & Updates</p>
+                    <div class="footer-input-position">
+                        
+                        <div class="leftinput">
+
+                        </div>
+
+                        <div style="width: 100%;">
+                            <input type="text" [(ngModel)]="emailAddress" class="search" placeholder="{{emailAddress!=''?'':'Get News & Updates'}}" />
+                        </div>
+                        <div class="input-icon" >
+                            <a *ngIf="!loader && emailAddress==''" href="javascript:void(0);" (click)="sendMail()"><img src="assets/images/ui-assets/arrow-white.png" /></a>
+                            <a *ngIf="!loader && emailAddress!=''" href="javascript:void(0);"  (click)="sendMail()"><img class="mobile-button" src="assets/images/ui-assets/focus-arrow.png" /></a>
+                            <div *ngIf="loader" id="loading-spinner">
+                                <span class="icon icon-loading-spinner"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p  class="footer-p-text" *ngIf="message!=null">{{message}}</p>
+                    <div class="footer-social-media">
+                        <div class="footer-small-text">
+                            <p style="font-size: 1.9vh;">By signing up you are agreeing to the Stageverse <a
+                                    routerLink="/terms-of-service" class="links-a"
+                                    style="text-decoration: underline;">Terms of Service</a> and Stageverse <a
+                                    routerLink="/privacy" class="links-a"
+                                    style="text-decoration: underline;">Privacy Policy</a>. You may unsubscribe
+                                at any time.</p>
+
+                        </div>
+                        <div class="social-media-footer-container footer-social-align">
+                            <a href="https://www.instagram.com/stageverse" target="blank"
+                                class="social-media-footer links-a"><img
+                                    src="assets/images/ui-assets/instagram.png" alt="instagram icon"></a>
+                            <a href=" https://discord.com/invite/uhMjf7sF6Z" target="blank"
+                                class="social-media-footer links-a"><img src="assets/images/ui-assets/discord.png"
+                                    alt="social icon"></a>
+                            <a href="https://www.linkedin.com/company/stageverse" target="blank"
+                                class="social-media-footer links-a"><img
+                                    src="assets/images/ui-assets/linkedIn.png" alt="linkedIn icon"></a>
+                            <a href="https://twitter.com/thestageverse" target="blank"
+                                class="social-media-footer links-a"><img
+                                    src="assets/images/ui-assets/twitter.png" alt="twitter icon"></a>
+                            <a href="#" class="social-media-footer links-a"><img
+                                    src="assets/images/ui-assets/Frame1846.svg" alt="twitter icon"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

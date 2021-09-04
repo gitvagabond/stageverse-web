@@ -1,0 +1,97 @@
+<div>
+    <div class="nav-container">
+        <ul class="nav">
+            <li class="nav-item">
+                <a routerLink="/" class="nav-link">
+    
+                    <img src="assets/images/ui-assets/Lockup.png" class="logo-stageverse" alt="Logo" />
+                </a>
+            </li>
+            <li class="nav-item sm-hide" style="display: flex;gap: 1px; float:right">
+                <a [routerLink]=""   class="nav-link">
+                    <img src="/assets/images/ui-assets/apple-button.png" style="height: 60px;">
+                </a>
+                <a [routerLink]=""   class="nav-link">
+                    <img src="/assets/images/ui-assets/android-button.png" style="height: 60px;">
+                </a>
+                <a [routerLink]=""   class="nav-link">
+                    <img src="/assets/images/ui-assets/ring.png" style="height: 60px;">
+                </a>
+            </li>
+            <li class="nav-item disktop-hide" style="float: right !important; margin-top: -15px;" (click)="menu=!menu">
+                <a *ngIf="menu==false" href="javascript:void(0);" class="nav-link">
+                    <img src="/assets/images/ui-assets/menu-icon.png" style="height: 50px;" />
+                </a>
+                <a *ngIf="menu==true" href="javascript:void(0);" class="nav-link">
+                    <img src="/assets/images/ui-assets/menu-icon-expand.png" style="height: 50px;" />
+                </a>
+            </li>
+        </ul>
+    
+        <ul *ngIf="menu==true" class="nav-mobile">
+    
+            <div class="logo-container">
+                <h1 class="footer-big-text">
+                    <li><a routerLink="/careers" class="links-a">CAREERS</a></li>
+                    <li><a routerLink="/creators" class="links-a">CREATORS</a></li>
+                    <li><a routerLink="/press" class="links-a">PRESS</a></li>
+                    <li><a routerLink="/company" class="links-a">COMPANY</a></li>
+                    <li><a routerLink="/blog" class="links-a">BLOG</a></li>
+                    <li><a routerLink="https://support.stageverse.com/hc/en-us" target="_blank" class="links-a">SUPPORT</a></li>
+                </h1>
+            </div>
+    
+            <div class="content footer">
+                <app-footer></app-footer>
+            </div>
+    
+            <li class="nav-item-mobile">
+    
+    
+    
+                <a [routerLink]="" class="nav-link">
+                    <img src="/assets/images/ui-assets/apple-button.png" style="height: 40px;">
+                </a>
+                <a [routerLink]="" class="nav-link">
+                    <img src="/assets/images/ui-assets/android-button.png" style="height: 40px;">
+                </a>
+                <a [routerLink]="" class="nav-link">
+                    <img src="/assets/images/ui-assets/ring.png" style="height: 40px;">
+                </a>
+            </li>
+    
+            <div class="social-media-footer-container notfound-social-top-container">
+                <a href="https://www.instagram.com/stageverse" target="blank" class="social-media-footer links-a"><img
+                        src="assets/images/ui-assets/instagram.png" alt="instagram icon"></a>
+                <a href=" https://discord.com/invite/uhMjf7sF6Z" target="blank" class="social-media-footer links-a"><img
+                        src="assets/images/ui-assets/discord.png" alt="social icon"></a>
+                <a href="https://www.linkedin.com/company/stageverse" target="blank"
+                    class="social-media-footer links-a"><img src="assets/images/ui-assets/linkedIn.png"
+                        alt="linkedIn icon"></a>
+                <a href="https://twitter.com/thestageverse" target="blank" class="social-media-footer links-a"><img
+                        src="assets/images/ui-assets/twitter.png" alt="twitter icon"></a>
+                <a href="#" class="social-media-footer links-a"><img src="assets/images/ui-assets/Frame1846.svg"
+                        alt="twitter icon"></a>
+            </div>
+    
+            <div class="footer-copyright copy-right-pos">© 2021 Stage, Inc.</div>
+    
+        </ul>
+    
+    
+    
+    </div>
+    <div class="body">
+        <div class="content hero centered">
+            <div class="wrap wrap--flex wrap--centered align-center" data-aos="fade-up">
+                <h1 class="tagline">Page Not Found</h1>
+                <h2>Oops. We cannot find what you are looking for. Sorry for the inconvenience.</h2>
+            </div>
+        </div>
+        <app-footer-two></app-footer-two>
+    </div>
+    <div class="content footer footer-mt">
+        <app-footer></app-footer>
+        <div class="footer-copyright copy-right-bottom mobile">© 2021 Stage, Inc.</div>
+    </div>
+</div>

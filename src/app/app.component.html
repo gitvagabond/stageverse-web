@@ -1,0 +1,10 @@
+<app-loading></app-loading>
+<div #site id="site" class="vp-height" (scroll)="onSiteScroll($event)">
+  <!-- <app-tooltips></app-tooltips> -->
+  <!-- <app-notifications></app-notifications> -->
+  <app-overlay></app-overlay>
+  <div #page id="page">
+    <router-outlet></router-outlet>
+  </div>
+
+</div>

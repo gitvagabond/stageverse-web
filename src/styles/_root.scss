@@ -1,0 +1,34 @@
+html {
+    // background: $color-background;
+    // box-sizing: border-box;
+    font-size: 10px;
+    font-size: 62.5%;
+    text-size-adjust: 100%;
+    @media (max-width: 399px) {
+        font-size: 12px;
+    }
+    @media (min-width: 400px) and (max-width: 799px) {
+        font-size: 14px;
+    }
+    @media (min-width: 800px) and (max-width: 899px) {
+        font-size: 8px;
+    }
+    @media (min-width: 900px) and (max-width: 999px) {
+        font-size: 9px;
+    }
+    @media (min-width: 1000px) and (max-width: 1099px) {
+        font-size: 10px;
+    }
+    @media (min-width: 1100px) and (max-width: 1199px) {
+        font-size: 11px;
+    }
+    @media (min-width: 1200px) and (max-width: 1299px) {
+        font-size: 12px;
+    }
+    @media (min-width: 1300px) and (max-width: 1399px) {
+        font-size: 13px;
+    }
+    @media (min-width: 1400px) {
+        font-size: 14px;
+    }
+}

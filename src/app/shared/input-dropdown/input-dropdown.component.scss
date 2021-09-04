@@ -1,0 +1,100 @@
+.Input.Dropdown {
+    height: 4rem;
+    overflow: hidden;
+    cursor: text;
+}
+.Input.Dropdown ::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 0.6rem;
+    padding: 0;
+    border-radius: 0;
+    background-color: #b4b4b4;
+}
+.Input.Dropdown ::-webkit-scrollbar-thumb {
+    border-radius: 0;
+    background-color: #595959;
+}
+.Input.Dropdown.disabled {
+    cursor: not-allowed;
+}
+.Input.Dropdown > ul {
+    display: flex;
+    flex-direction: column;
+    max-height: 15rem;
+    margin: 0 1px 0 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    overflow: auto;
+    list-style-type: none;
+    color: #595959;
+    cursor: pointer;
+    z-index: 100;
+}
+.Input.Dropdown > ul > li {
+    flex-shrink: 0;
+    height: 3rem;
+    display: block;
+    position: relative;
+}
+.Input.Dropdown > ul > li p {
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 0 1rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.Input.Dropdown > ul > li .info {
+    position: absolute;
+    top: 50%;
+    right: 1.2rem;
+    transform: translateY(-50%);
+}
+.Input.Dropdown.inverted > ul {
+    top: auto;
+    bottom: 100%;
+    flex-direction: column-reverse;
+}
+.Input.Dropdown:hover,
+.Input.Dropdown.focus {
+    overflow: visible;
+    z-index: 200;
+}
+.Input.Dropdown[theme="DARK"] > ul {
+    background-color: #222;
+}
+.Input.Dropdown[theme="DARK"] > ul > li:hover,
+.Input.Dropdown[theme="DARK"] > ul > li.suggested {
+    background-color: #222f39;
+}
+.Input.Dropdown[theme="DARK"] > ul > li.selected {
+    color: #fff;
+}
+.Input.Dropdown[theme="DARK"] > ul > li.divider {
+    border-top: 1px solid #595959;
+}
+.Input.Dropdown.focus {
+    z-index: 10000;
+}
+.Input.Dropdown[theme="LIGHT"] > ul {
+    background-color: #e3e3e3;
+}
+.Input.Dropdown[theme="LIGHT"] > ul > li:hover,
+.Input.Dropdown[theme="LIGHT"] > ul > li.suggested {
+    background-color: #ddd;
+}
+.Input.Dropdown[theme="LIGHT"] > ul > li.selected {
+    color: #000;
+}
+.Input.Dropdown[theme="LIGHT"] > ul > li.divider {
+    border-top: 1px solid #000;
+}
+.Input.Dropdown[theme="LIGHT"].error .icon {
+    color: red;
+}

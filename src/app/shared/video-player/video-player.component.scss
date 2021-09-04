@@ -1,0 +1,13 @@
+/* vjs-player.component.css */
+@import '~video.js/dist/video-js.css';
+
+/* override for our use case, may need to make this a configurable class that can be applied */
+.video-js {
+    width: 100%;
+    height: 100%;
+
+    video {
+        object-fit: cover;
+        object-position: center;
+    }
+}

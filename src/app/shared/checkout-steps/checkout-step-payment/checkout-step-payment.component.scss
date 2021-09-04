@@ -1,0 +1,49 @@
+@import "../checkout-steps.component.scss";
+
+.Module.NewPaymentForm {
+    display: flex;
+    width: 100%;
+}
+.Module.NewPaymentForm > [name="form"],
+.Module.NewPaymentForm > [name="form"] > .credit-selected,
+.Module.NewPaymentForm > [name="form"] > .paypal-selected {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.Module.NewPaymentForm .credit-selected > .message {
+    width: 100%;
+    margin-bottom: 0.7rem;
+    text-align: center;
+}
+.Module.NewPaymentForm .credit-selected > [name="postalCode"],
+.Module.NewPaymentForm .credit-selected > [name="state"] {
+    width: 1rem;
+    min-width: 45%;
+    flex-grow: 1;
+}
+.Module.NewPaymentForm .credit-selected > [name="savePaymentMethod"],
+.Module.NewPaymentForm .credit-selected > [name="state"] {
+    margin-right: 0.7rem;
+}
+.Module.NewPaymentForm > [name="form"] > [name="paypal"] {
+    margin-top: 0.7rem;
+}
+.Module.NewPaymentForm.hide-state [name="city"],
+.Module.NewPaymentForm.hide-state [name="state"] {
+    display: none !important;
+}
+.Module.NewPaymentForm.hide-state [name="postalCode"] {
+    width: 100%;
+}
+.Module.NewPaymentForm[tenderType="CREDIT_CARD"] .credit-selected {
+    display: flex;
+}
+.Module.NewPaymentForm[tenderType="CREDIT_CARD"] .paypal-selected,
+.Module.NewPaymentForm[tenderType="PAYPAL"] .credit-selected {
+    display: none;
+}
+.Module.NewPaymentForm[tenderType="PAYPAL"] .paypal-selected {
+    display: flex;
+}

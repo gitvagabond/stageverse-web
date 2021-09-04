@@ -1,0 +1,6 @@
+<div name="checkout-button" class="Module CheckoutButton" theme="DARK" [ngStyle]="{'display': getTotalItems() == 0 ? 'none' : ''}">
+    <a [routerLink]="" (click)="checkout()" action="checkout" class="button" theme="BLUE">
+        <p class="label">Buy tickets ({{getTotalItems()}})</p>
+        <p class="total">{{totalPrice.toLocaleString('en-US', {style: 'currency', currency: 'USD'})}}</p>
+    </a>
+</div>

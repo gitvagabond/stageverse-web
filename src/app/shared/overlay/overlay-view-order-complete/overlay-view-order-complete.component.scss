@@ -1,0 +1,660 @@
+.Overlay.OrderComplete > .head > .content > .button {
+    margin-right: 3.5rem;
+}
+@media (min-width: 800px) {
+    .Overlay.OrderComplete > .head > .content > .home {
+        font-weight: 500;
+        font-size: 1.286rem;
+        letter-spacing: 0;
+        line-height: 1.429rem;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.OrderComplete > .head > .content > .home {
+        font-weight: 500;
+        font-size: 1.143rem;
+        letter-spacing: 0;
+        line-height: 1.429rem;
+    }
+}
+.Overlay.OrderComplete > .body {
+    padding-bottom: 0;
+}
+.Overlay.OrderComplete > .body > [action="mobile-collapse"] {
+    position: absolute;
+    top: -10rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s linear;
+    background-color: #000;
+    z-index: 200;
+}
+.Overlay.OrderComplete > .body > .content {
+    width: 100%;
+    text-align: center;
+}
+@media (max-width: 799px) {
+    .Overlay.OrderComplete > .body > .content {
+        font-size: 1.5rem;
+        padding: 4rem 0 8rem;
+        position: relative;
+        transform: none;
+    }
+}
+@media (min-width: 800px) {
+    .Overlay.OrderComplete > .body > .content > .order-summary {
+        width: 45rem;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.OrderComplete > .body > .content > .order-summary {
+        margin: 0 1.5rem;
+    }
+}
+@media (min-width: 800px) {
+    .Overlay.OrderComplete > .body > .content > .order-summary > h3 {
+        margin-top: 1.8rem;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.OrderComplete > .body > .content > .order-summary > h3 {
+        margin-top: 0.6rem;
+    }
+}
+@media (min-width: 800px) {
+    .Overlay.OrderComplete > .body > .content > .share-buttons,
+    .Overlay.OrderComplete > .body > .content > .share-label {
+        width: 14.3rem;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.OrderComplete > .body > .content > .share-buttons,
+    .Overlay.OrderComplete > .body > .content > .share-label {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+@media (min-width: 800px) {
+    .Overlay.OrderComplete > .body > .content > .share-label {
+        font-weight: 500;
+        font-size: 1.286rem;
+        letter-spacing: 0.021rem;
+        line-height: 1.429rem;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.OrderComplete > .body > .content > .share-label {
+        font-weight: 500;
+        font-size: 1.071rem;
+        letter-spacing: 0.018rem;
+        line-height: 1.429rem;
+    }
+}
+@media (min-width: 800px) {
+    .Overlay.OrderComplete > .body > .content > .share-label {
+        margin: 3rem auto 1.1rem;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.OrderComplete > .body > .content > .share-label {
+        margin: 3.6rem auto 1.1rem;
+    }
+}
+.Overlay.OrderComplete > .body > .content > .share-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto 3rem;
+}
+@media (max-width: 799px) {
+    .Overlay.OrderComplete > .body > .content > .share-buttons {
+        width: 100%;
+    }
+}
+.Overlay.OrderComplete > .body > .content > .share-buttons > a {
+    display: block;
+    font-size: 1.5rem;
+}
+.Overlay.OrderComplete > .body > .content {
+    display: flex;
+    flex-direction: column;
+}
+.Overlay.OrderComplete > .body > .content > .order-summary {
+    order: 1;
+}
+.Overlay.OrderComplete > .body > .content > .button {
+    order: 2;
+    width: 20rem;
+    margin: 3rem auto 0;
+}
+.Overlay.OrderComplete > .body > .content > .button .icon-home {
+    margin-left: 0.8rem;
+}
+.Overlay.OrderComplete > .body > .content > [name="share-amplify"] {
+    order: 3;
+}
+.Overlay.OrderComplete > .body > .content > .share-label {
+    order: 4;
+}
+.Overlay.OrderComplete > .body > .content > .share-buttons {
+    order: 5;
+}
+.Overlay.OrderComplete.starts-soon > .body > .content > [name="share-amplify"] {
+    order: 3;
+}
+.Overlay.OrderComplete > .body > .footer,
+.Overlay.OrderComplete > .foot > .footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+@media (min-width: 800px) {
+    .Overlay.OrderComplete > .body > .footer,
+    .Overlay.OrderComplete > .foot > .footer {
+        font-weight: 500;
+        font-size: 1rem;
+        letter-spacing: 0;
+        line-height: 1.286rem;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.OrderComplete > .body > .footer,
+    .Overlay.OrderComplete > .foot > .footer {
+        font-weight: 500;
+        font-size: 0.929rem;
+        letter-spacing: 0;
+        line-height: 1.429rem;
+    }
+}
+@media (min-width: 800px) {
+    .Overlay.OrderComplete > .body > .footer,
+    .Overlay.OrderComplete > .foot > .footer {
+        height: 4rem;
+        justify-content: center;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.OrderComplete > .body > .footer,
+    .Overlay.OrderComplete > .foot > .footer {
+        height: 3.7rem;
+        margin-top: 3rem;
+        justify-content: space-evenly;
+    }
+}
+@media (min-width: 800px) {
+    .Overlay.OrderComplete > .body > .footer > a,
+    .Overlay.OrderComplete > .foot > .footer > a {
+        margin: 0 1.8rem;
+    }
+}
+.Overlay.OrderComplete .copy {
+    max-width: 57rem;
+    margin: 0 auto 3rem;
+    text-align: center;
+}
+.Overlay.OrderComplete .copy p {
+    font-size: 1.2rem;
+}
+.Overlay.OrderComplete .copy p + p {
+    margin-top: 0.5rem;
+}
+@media (min-width: 800px) {
+    .Overlay.OrderComplete [name="share-amplify"] {
+        margin-top: 1.8rem;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.OrderComplete [name="share-amplify"] {
+        margin-top: 2.9rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+.Overlay.OrderComplete [name="media"],
+.Overlay.OrderComplete [name="tickets"] {
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    max-height: 0;
+    -webkit-overflow-scrolling: touch;
+    z-index: 10;
+}
+.Overlay.OrderComplete .action-links {
+    clear: both;
+}
+.Overlay.OrderComplete .action-links li {
+    width: 50%;
+    clear: left;
+    float: left;
+    text-align: center;
+}
+.Overlay.OrderComplete .action-links li + li {
+    float: right;
+    clear: right;
+}
+.Overlay.OrderComplete .action-links a {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.Overlay.OrderComplete > .foot > .mobile-actions,
+.Overlay.OrderComplete > .foot > [name="media"],
+.Overlay.OrderComplete > .foot > [name="tickets"] {
+    background-color: #f5f5f5;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: 0 -6px 10px 0 rgba(0, 0, 0, 0.2);
+    transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+.Overlay.OrderComplete > .foot > .mobile-actions {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0.7rem;
+    max-height: 10rem;
+    overflow: hidden;
+    z-index: 20;
+}
+.Overlay.OrderComplete > .foot > .mobile-actions > .button {
+    width: 100%;
+}
+.Overlay.OrderComplete > .foot > [name="media"],
+.Overlay.OrderComplete > .foot > [name="tickets"] {
+    width: 100%;
+    max-height: 0;
+    position: absolute;
+    bottom: 0;
+    color: #111;
+    opacity: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    z-index: 10;
+}
+.Overlay.OrderComplete > .foot,
+.Overlay.OrderComplete > .head {
+    transition: all 0.35s ease-in-out;
+}
+.Overlay.OrderComplete.active {
+    justify-content: space-between;
+}
+.Overlay.OrderComplete.active > .body {
+    z-index: 100;
+}
+@media (max-width: 799px) {
+    .Overlay.OrderComplete.active > .body {
+        height: 0;
+        overflow: hidden;
+    }
+}
+.Overlay.OrderComplete.active > .body > [action="mobile-collapse"] {
+    opacity: 0.8;
+    pointer-events: all;
+}
+.Overlay.OrderComplete.active > .body > .content {
+    pointer-events: none;
+}
+.Overlay.OrderComplete.active > .foot > .mobile-actions {
+    position: absolute;
+    bottom: 0;
+    max-height: 0;
+    opacity: 0;
+    z-index: 10;
+}
+.Overlay.OrderComplete.active > .foot > [name="media"],
+.Overlay.OrderComplete.active > .foot > [name="tickets"] {
+    max-height: 90vh;
+    opacity: 1;
+    z-index: 20;
+}
+.Overlay.OrderComplete[theme="DARK"] > .body > .content > .share-buttons > a {
+    color: #fff;
+}
+.Overlay.OrderComplete[theme="DARK"] > .body > .content > .share-buttons > a:hover {
+    color: #e6e6e6;
+}
+.Overlay.OrderComplete[theme="DARK"] > .body > .footer,
+.Overlay.OrderComplete[theme="DARK"] > .foot > .footer {
+    background-color: #222;
+}
+.Overlay.OrderComplete[theme="DARK"] > .body > .footer a,
+.Overlay.OrderComplete[theme="DARK"] > .foot > .footer a {
+    color: #fff;
+}
+.Overlay.OrderComplete[theme="LIGHT"] > .body > .content > .share-buttons > a,
+.Overlay.OrderComplete[theme="LIGHT"] > .body > .content > .share-buttons > a:hover {
+    color: #000;
+}
+.Overlay.OrderComplete[theme="LIGHT"] > .body > .footer,
+.Overlay.OrderComplete[theme="LIGHT"] > .foot > .footer {
+    background-color: #f5f5f5;
+}
+.Overlay.OrderComplete[theme="LIGHT"] > .body > .footer a,
+.Overlay.OrderComplete[theme="LIGHT"] > .foot > .footer a {
+    color: #000;
+}
+/* shareamplify */
+.Module.ShareAmplify .share-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 28.5rem;
+}
+@media (min-width: 800px) {
+    .Module.ShareAmplify .share-container {
+        margin-bottom: 6rem;
+    }
+}
+@media (max-width: 799px) {
+    .Module.ShareAmplify .share-container {
+        margin-bottom: 3.1rem;
+    }
+}
+.Module.ShareAmplify .share-container > p {
+    text-align: center;
+}
+@media (min-width: 800px) {
+    .Module.ShareAmplify .share-container > p.input-copy {
+        margin-bottom: 1.85rem;
+    }
+}
+@media (max-width: 799px) {
+    .Module.ShareAmplify .share-container > p.input-copy {
+        margin-bottom: 0.7rem;
+    }
+}
+@media (min-width: 800px) {
+    .Module.ShareAmplify .share-container > p.share-copy {
+        margin-bottom: 1rem;
+    }
+}
+@media (max-width: 799px) {
+    .Module.ShareAmplify .share-container > p.share-copy {
+        margin-bottom: 1.28rem;
+    }
+}
+.Module.ShareAmplify .input-container {
+    position: relative;
+    border-radius: 3px;
+    overflow: hidden;
+}
+@media (min-width: 800px) {
+    .Module.ShareAmplify .input-container {
+        margin-bottom: 1.28rem;
+    }
+}
+@media (max-width: 799px) {
+    .Module.ShareAmplify .input-container {
+        margin-bottom: 0.7rem;
+    }
+}
+.Module.ShareAmplify .input-container > .background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+.Module.ShareAmplify .input-container > [name="textbox"] {
+    margin-bottom: 0;
+    position: relative;
+    z-index: 5;
+    cursor: default;
+}
+.Module.ShareAmplify .input-container > [name="textbox"] > input {
+    cursor: text;
+}
+.Module.ShareAmplify .input-container > [action="copy"] {
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    z-index: 10;
+}
+@media (min-width: 800px) {
+    .Module.ShareAmplify .input-container > [action="copy"] {
+        width: 5.7rem;
+    }
+}
+@media (max-width: 799px) {
+    .Module.ShareAmplify .input-container > [action="copy"] {
+        width: 5rem;
+    }
+}
+.Module.ShareAmplify .links-container {
+    display: flex;
+    justify-content: center;
+}
+.Module.ShareAmplify .links-container > a {
+    display: block;
+    opacity: 0.8;
+}
+.Module.ShareAmplify .links-container > a > .icon {
+    font-size: 1.5rem;
+}
+.Module.ShareAmplify .links-container > a + a {
+    margin-left: 2.1rem;
+}
+.Module.ShareAmplify .links-container > a:hover {
+    opacity: 1;
+}
+.Module.ShareAmplify .rewards-list {
+    display: flex;
+    margin-top: 4rem;
+}
+@media (min-width: 800px) {
+    .Module.ShareAmplify .rewards-list {
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-evenly;
+        margin-left: 17.8rem;
+        margin-right: 17.8rem;
+    }
+}
+@media (max-width: 799px) {
+    .Module.ShareAmplify .rewards-list {
+        flex-direction: column;
+    }
+}
+.Module.ShareAmplify .reward-container {
+    text-align: center;
+}
+@media (min-width: 800px) {
+    .Module.ShareAmplify .reward-container {
+        flex: 0 0 17.8rem;
+        margin: 2.9rem 0;
+    }
+}
+@media (max-width: 799px) {
+    .Module.ShareAmplify .reward-container {
+        margin-bottom: 3.35rem;
+    }
+    .Module.ShareAmplify .reward-container:first-child {
+        margin-top: 0;
+    }
+    .Module.ShareAmplify .reward-container:last-child {
+        margin-bottom: 0;
+    }
+}
+.Module.ShareAmplify .reward-container > .star {
+    display: inline-block;
+    position: relative;
+}
+.Module.ShareAmplify .reward-container > .star > .icon-star {
+    background-image: linear-gradient(135deg, #fc1470, #cc18a6 50%, #8f06d1);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    z-index: 10;
+}
+@media (min-width: 800px) {
+    .Module.ShareAmplify .reward-container > .star > .icon-star {
+        font-size: 4.5rem;
+    }
+}
+@media (max-width: 799px) {
+    .Module.ShareAmplify .reward-container > .star > .icon-star {
+        font-size: 3.65rem;
+    }
+}
+.Module.ShareAmplify .reward-container > .star > .tier {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.4rem;
+    z-index: 20;
+}
+@media (min-width: 800px) {
+    .Module.ShareAmplify .reward-container > .star > .tier {
+        font-weight: 800;
+        font-size: 2rem;
+        letter-spacing: 0;
+        line-height: 2.286rem;
+    }
+}
+@media (max-width: 799px) {
+    .Module.ShareAmplify .reward-container > .star > .tier {
+        font-weight: 800;
+        font-size: 1.429rem;
+        letter-spacing: 0;
+        line-height: 1.714rem;
+    }
+}
+.Module.ShareAmplify .reward-container > .star > .lock {
+    display: none;
+    z-index: 20;
+}
+@media (min-width: 800px) {
+    .Module.ShareAmplify .reward-container > .star > .lock {
+        position: absolute;
+        top: -1.3rem;
+        right: -0.5rem;
+        font-size: 2.3rem;
+    }
+}
+@media (max-width: 799px) {
+    .Module.ShareAmplify .reward-container > .star > .lock {
+        position: absolute;
+        top: -0.9rem;
+        right: -0.3rem;
+        font-size: 1.75rem;
+    }
+}
+.Module.ShareAmplify .reward-container > .points {
+    margin-top: 1rem;
+}
+@media (min-width: 800px) {
+    .Module.ShareAmplify .reward-container > .points {
+        font-weight: 500;
+        font-size: 1.286rem;
+        letter-spacing: 0.021rem;
+        line-height: 1.429rem;
+    }
+}
+@media (max-width: 799px) {
+    .Module.ShareAmplify .reward-container > .points {
+        font-weight: 500;
+        font-size: 1.071rem;
+        letter-spacing: 0.018rem;
+        line-height: 1.429rem;
+    }
+}
+@media (min-width: 800px) {
+    .Module.ShareAmplify .reward-container > .points {
+        margin-bottom: 0.3rem;
+    }
+}
+@media (max-width: 799px) {
+    .Module.ShareAmplify .reward-container > .points {
+        margin-bottom: 0.5rem;
+    }
+}
+.Module.ShareAmplify .reward-container > .points > .you-earned {
+    display: none;
+}
+@media (min-width: 800px) {
+    .Module.ShareAmplify .reward-container > .message {
+        font-weight: 800;
+        font-size: 2rem;
+        letter-spacing: 0;
+        line-height: 2.286rem;
+    }
+}
+@media (max-width: 799px) {
+    .Module.ShareAmplify .reward-container > .message {
+        font-weight: 800;
+        font-size: 1.714rem;
+        letter-spacing: -0.018rem;
+        line-height: 1.857rem;
+    }
+}
+.Module.ShareAmplify .reward-container > .max {
+    margin-top: 0.5rem;
+}
+@media (min-width: 800px) {
+    .Module.ShareAmplify .reward-container > .max {
+        font-weight: 500;
+        font-size: 1rem;
+        letter-spacing: 0;
+        line-height: 1.286rem;
+    }
+}
+@media (max-width: 799px) {
+    .Module.ShareAmplify .reward-container > .max {
+        font-weight: 500;
+        font-size: 0.929rem;
+        letter-spacing: 0;
+        line-height: 1.429rem;
+    }
+}
+.Module.ShareAmplify .reward-container.exceeded > .star > .tier {
+    display: flex;
+}
+.Module.ShareAmplify .reward-container.exceeded > .message > .you-earned {
+    display: block;
+}
+.Module.ShareAmplify .reward-container.exceeded > .message > .earned {
+    display: none;
+}
+.Module.ShareAmplify .reward-container.locked > .max,
+.Module.ShareAmplify .reward-container.locked > .message,
+.Module.ShareAmplify .reward-container.locked > .points,
+.Module.ShareAmplify .reward-container.locked > .star > .icon-star,
+.Module.ShareAmplify .reward-container.locked > .star > .tier {
+    opacity: 0.9;
+}
+.Module.ShareAmplify .reward-container.locked > .star > .icon-star {
+    background-image: none;
+}
+.Module.ShareAmplify .reward-container.locked > .star > .tier {
+    display: flex;
+}
+.Module.ShareAmplify .reward-container.locked > .star > .lock {
+    display: block;
+}
+.Module.ShareAmplify [name="textbox"] > .background {
+    background-color: #fff !important;
+}
+.Module.ShareAmplify[theme="DARK"] .links-container > a,
+.Module.ShareAmplify[theme="DARK"] .reward-container.locked > .star > .icon-star {
+    color: #fff;
+}
+.Module.ShareAmplify[theme="LIGHT"] .links-container > a,
+.Module.ShareAmplify[theme="LIGHT"] .reward-container.locked > .star > .icon-star {
+    color: #000;
+}

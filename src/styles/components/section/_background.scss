@@ -1,0 +1,95 @@
+&.section--no-mobile-background {
+	@include breakpoint(medium) {
+		background-image: none !important;
+	}
+}
+
+&.section--primary {
+	background-color: $color-primary;
+	color: white;
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		color: inherit;
+	}
+}
+
+&.section--dark {
+	background-color: black;
+	color: white;
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		color: inherit;
+	}
+}
+
+&.section--gray {
+	background-color: $color-light-gray;
+}
+
+&.section--white {
+	background-color: white;
+}
+
+&.section--gradient {
+	// background: #7B4397;
+	background: linear-gradient(to left, #55266c 0, #7b4397 39%, #b5238a 89%);
+	&.luminous {
+		background: linear-gradient(to left, #00f4a5 0, #00cced 89%);
+	}
+	// background: $color-background-dark;
+	backface-visibility: hidden;
+	color: white;
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		color: inherit;
+	}
+}
+
+&.section--with-shadow {
+	background: linear-gradient(transparent 50%, rgba(black, 0.1));
+
+	&::after {
+		$size: 0.5em;
+		box-shadow: inset 0 (-$size * 2) $size (-$size * 2) rgba(black, 0.3);
+		content: "";
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		height: $size;
+		z-index: 20;
+	}
+}
+
+&.section--with-linear-gradient-60deg {
+	> * {
+		position: relative;
+		z-index: 1;
+	}
+
+	&::after {
+		background: linear-gradient(290deg, #000, rgba(0, 0, 0, 0.1));
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+}

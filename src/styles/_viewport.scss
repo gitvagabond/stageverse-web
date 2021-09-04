@@ -1,0 +1,68 @@
+.vp-width {
+    width: 100vw;
+}
+.vp-min-width {
+    min-width: 100vw;
+}
+.vp-height {
+    height: 100vh;
+    // height: 100%; /* to fix issue with mobile browser bars (safari and chrome) */
+    // min-height: -webkit-fill-available;
+}
+.vp-min-height {
+    min-height: 100vh;
+    // min-height: 100%; /* to fix issue with mobile browser bars (safari and chrome) */
+    // min-height: -webkit-fill-available;
+}
+.vp-max-height {
+    max-height: 100vh;
+}
+@media (min-width: 800px) {
+    .vp-width-desktop {
+        width: 100vw;
+    }
+    .vp-min-width-desktop {
+        min-width: 100vw;
+    }
+    .vp-height-desktop {
+        height: 100vh;
+    }
+    .vp-min-height-desktop {
+        min-height: 100vh;
+    }
+    .vp-max-height-desktop {
+        max-height: 100vh;
+    }
+}
+@media (max-width: 799px) {
+    .vp-width-mobile {
+        width: 100vw;
+    }
+    .vp-min-width-mobile {
+        min-width: 100vw;
+    }
+    .vp-height-mobile {
+        height: 100vh;
+    }
+    .vp-max-height-mobile {
+        max-height: 100vh;
+    }
+    .vp-max-height-mobile {
+        max-height: 100vh;
+    }
+}
+.vp-gutters {
+    width: 100%;
+}
+@media (min-width: 800px) {
+    .vp-gutters {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+@media (max-width: 799px) {
+    .vp-gutters {
+        padding-left: 1.4rem;
+        padding-right: 1.4rem;
+    }
+}

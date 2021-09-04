@@ -1,0 +1,13 @@
+.Input.CreditCardBox > [name="creditCardForm"] {
+    display: flex;
+}
+.Input.CreditCardBox > [name="creditCardForm"] > [name="expDate"],
+.Input.CreditCardBox > [name="creditCardForm"] > [name="number"] {
+    margin-right: 0.7rem;
+}
+.Input.CreditCardBox > [name="creditCardForm"] > [name="expDate"] {
+    width: 12rem;
+}
+.Input.CreditCardBox > [name="creditCardForm"] > [name="cvv"] {
+    width: 10rem;
+}

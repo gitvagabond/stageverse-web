@@ -1,0 +1,54 @@
+.section__absolute {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	&.section__absolute--centered {
+		top: 50%;
+		bottom: auto;
+		transform: translateY(-50%);
+	}
+
+	@include breakpoint(medium) {
+		position: static;
+
+		&.section__absolute--centered {
+			transform: none;
+		}
+	}
+}
+
+.section__cta {
+	margin: 4em 0 0;
+	text-align: center;
+}
+
+.section__centered {
+	margin: 0 auto;
+	text-align: center;
+	width: 75%;
+
+	@include breakpoint(medium) {
+		width: auto;
+	}
+
+	&.section__centered--padded {
+		margin: 3em auto;
+	}
+
+	&.section__centered--small {
+		width: 50%;
+
+		@include breakpoint(medium) {
+			margin: 0;
+			text-align: inherit;
+			width: auto;
+		}
+	}
+
+	@include breakpoint(small) {
+		width: auto;
+	}
+}

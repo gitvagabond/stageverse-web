@@ -1,0 +1,369 @@
+.Module.TicketPicker {
+    width: 100%;
+    padding: 0;
+    color: #333;
+    clear: both;
+    border-bottom: none;
+}
+.Module.TicketPicker > .tickets {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    margin-top: 2.14rem;
+}
+.Module.TicketPicker > .tickets > .heading {
+    margin: 0 0 1rem 0.5rem;
+}
+.Module.TicketPicker > .tickets > .ticket {
+    display: flex;
+    align-items: stretch;
+    position: relative;
+    border-radius: 3px;
+    overflow: hidden;
+}
+@media (min-width: 800px) {
+    .Module.TicketPicker > .tickets > .ticket {
+        min-height: 5.7rem;
+        margin: 0 0 1px;
+    }
+}
+@media (max-width: 799px) {
+    .Module.TicketPicker > .tickets > .ticket {
+        min-height: 5rem;
+        margin: 0 0 5px;
+    }
+}
+.Module.TicketPicker > .tickets > .ticket > .wrapper {
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    background-color: #fff;
+    transition: background-color 0.2s ease-in-out;
+}
+.Module.TicketPicker > .tickets > .ticket > .wrapper > .link,
+.Module.TicketPicker > .tickets > .ticket > .wrapper > [action="more-info"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.Module.TicketPicker > .tickets > .ticket > .wrapper > [action="more-info"] {
+    font-weight: 700;
+    font-size: 1.486rem;
+    letter-spacing: 0;
+    line-height: 1.571rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff0032;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    z-index: 10;
+}
+@media (min-width: 800px) {
+    .Module.TicketPicker > .tickets > .ticket > .wrapper > [action="more-info"]:hover {
+        opacity: 0.8;
+    }
+}
+.Module.TicketPicker > .tickets > .ticket > .wrapper > .link {
+    z-index: 20;
+}
+.Module.TicketPicker > .tickets > .ticket > .wrapper > .thumbnail {
+    position: relative;
+    flex: none;
+}
+.Module.TicketPicker > .tickets > .ticket > .wrapper > .thumbnail > img {
+    width: 100%;
+    visibility: hidden;
+}
+@media (min-width: 800px) {
+    .Module.TicketPicker > .tickets > .ticket > .wrapper > .thumbnail {
+        width: 10.5rem;
+    }
+}
+@media (max-width: 799px) {
+    .Module.TicketPicker > .tickets > .ticket > .wrapper > .thumbnail {
+        width: 7.2rem;
+    }
+}
+.Module.TicketPicker > .tickets > .ticket > .wrapper > .info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: opacity 0.2s ease-in-out;
+    padding: 0.7rem 1.07rem;
+}
+.Module.TicketPicker > .tickets > .ticket > .wrapper > .info.align-top {
+    justify-content: flex-start;
+}
+.Module.TicketPicker > .tickets > .ticket > .wrapper > .info > .name {
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 0;
+    line-height: 1.286rem;
+    margin-bottom: 0.15rem;
+}
+.Module.TicketPicker > .tickets > .ticket > .wrapper > .info > .price {
+    font-weight: 500;
+    font-size: 1.486rem;
+    letter-spacing: 0.021rem;
+    line-height: 1.629rem;
+    flex-grow: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.Module.TicketPicker > .tickets > .ticket > .wrapper > .caption,
+.Module.TicketPicker > .tickets > .ticket > .wrapper > .quantity {
+    flex-grow: 0;
+    flex-shrink: 0;
+    align-self: center;
+    padding: 0 0.8rem;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.Module.TicketPicker > .tickets > .ticket > .wrapper > .caption {
+    font-weight: 500;
+    font-size: 1.486rem;
+    letter-spacing: 0.021rem;
+    line-height: 1.629rem;
+    text-align: center;
+}
+.Module.TicketPicker > .tickets > .ticket > .wrapper > .caption.link-title {
+    color: #ff0032;
+}
+.Module.TicketPicker > .tickets > .ticket > .wrapper > .caption.error,
+.Module.TicketPicker > .tickets > .ticket > .wrapper > .caption.warning {
+    color: red;
+}
+.Module.TicketPicker > .tickets > .ticket > .wrapper > .caption.tag {
+    margin-right: 1rem;
+    padding: 0.3rem;
+    background-color: #b7b7b7;
+    border-radius: 3px;
+    font-weight: 700 !important;
+    color: #fff;
+}
+@media (min-width: 800px) {
+    .Module.TicketPicker > .tickets > .ticket > .wrapper > .caption.tag {
+        font-weight: 500;
+        font-size: 1rem;
+        letter-spacing: 0;
+        line-height: 1.286rem;
+    }
+}
+@media (max-width: 799px) {
+    .Module.TicketPicker > .tickets > .ticket > .wrapper > .caption.tag {
+        font-weight: 500;
+        font-size: 0.929rem;
+        letter-spacing: 0;
+        line-height: 1.629rem;
+    }
+}
+.Module.TicketPicker > .tickets > .ticket > .wrapper > .quantity {
+    font-weight: 300;
+    font-size: 2rem;
+    letter-spacing: 0;
+    line-height: 2.429rem;
+}
+.Module.TicketPicker > .tickets > .ticket > .media-link {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.5rem;
+    background-color: #fff;
+    color: #000;
+}
+.Module.TicketPicker > .tickets > .ticket > .media-link > .icon {
+    font-size: 2.4rem;
+}
+.Module.TicketPicker > .tickets > .ticket[state="CLOSED"].has-link:hover > .wrapper,
+.Module.TicketPicker > .tickets > .ticket[state="SOLD_OUT"].has-link:hover > .wrapper {
+    background-color: #e6e6e6;
+}
+.Module.TicketPicker > .tickets > .ticket[state="CLOSED"].has-link:hover > .wrapper > .link-title,
+.Module.TicketPicker > .tickets > .ticket[state="SOLD_OUT"].has-link:hover > .wrapper > .link-title {
+    color: #0297ff;
+}
+.Module.TicketPicker > .tickets > .ticket > [action="add"],
+.Module.TicketPicker > .tickets > .ticket > [action="remove"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+.Module.TicketPicker > .tickets > .ticket > [action="add"] > .icon,
+.Module.TicketPicker > .tickets > .ticket > [action="remove"] > .icon {
+    font-weight: 900;
+}
+.Module.TicketPicker > .tickets > .ticket > [action="add"] {
+    width: 2.85rem;
+    background-color: #ff0032;
+    color: #fff;
+}
+.Module.TicketPicker > .tickets > .ticket > [action="add"] .icon-plus {
+    font-size: 1.2rem;
+}
+.Module.TicketPicker > .tickets > .ticket > [action="add"] .icon-lock,
+.Module.TicketPicker > .tickets > .ticket > [action="add"] .icon-time {
+    font-size: 0.9rem;
+    position: absolute;
+    top: 50%;
+    right: 0.2rem;
+}
+.Module.TicketPicker > .tickets > .ticket > [action="add"] .icon-time {
+    transform: translateY(-1.5rem) rotate(-30deg);
+}
+.Module.TicketPicker > .tickets > .ticket > [action="add"] .icon-lock {
+    transform: translateY(-1.5rem);
+}
+.Module.TicketPicker > .tickets > .ticket > [action="add"]:hover {
+    background-color: #0297ff;
+}
+.Module.TicketPicker > .tickets > .ticket > [action="remove"] {
+    width: 1.8rem;
+    background-color: #ccc;
+}
+.Module.TicketPicker > .tickets > .ticket > [action="remove"] .icon-minus {
+    font-size: 0.85rem;
+}
+.Module.TicketPicker > .tickets > .ticket > [action="remove"]:hover {
+    background-color: #b8b8b8;
+}
+.Module.TicketPicker > .tickets > .ticket.empty > .wrapper > .quantity,
+.Module.TicketPicker > .tickets > .ticket.empty > [action="remove"] {
+    width: 0;
+    padding: 0;
+}
+.Module.TicketPicker > .tickets > .ticket.non-empty > .wrapper > .countdown,
+.Module.TicketPicker > .tickets > .ticket.non-empty > .wrapper > .tag {
+    width: 0;
+    margin: 0;
+    padding: 0;
+}
+.Module.TicketPicker > .tickets > .ticket.disabled > .wrapper {
+    background-color: hsla(0, 0%, 100%, 0.8);
+}
+.Module.TicketPicker > .tickets > .ticket.disabled > .wrapper > .info {
+    opacity: 0.5;
+}
+.Module.TicketPicker > .tickets > .ticket.disabled > [action="add"],
+.Module.TicketPicker > .tickets > .ticket.disabled > [action="remove"] {
+    width: 0;
+    padding: 0;
+}
+.Module.TicketPicker > .tickets > .ticket.full > [action="add"] {
+    width: 0;
+}
+.Module.TicketPicker > .tickets > .ticket .AT_LIMIT,
+.Module.TicketPicker > .tickets > .ticket .AT_Q_LIMIT,
+.Module.TicketPicker > .tickets > .ticket .AVAIL_SOON,
+.Module.TicketPicker > .tickets > .ticket .CLOSED,
+.Module.TicketPicker > .tickets > .ticket .FREE,
+.Module.TicketPicker > .tickets > .ticket .LOCKED,
+.Module.TicketPicker > .tickets > .ticket .OPEN,
+.Module.TicketPicker > .tickets > .ticket .QUEUED,
+.Module.TicketPicker > .tickets > .ticket .REDIRECT,
+.Module.TicketPicker > .tickets > .ticket .SOLD_OUT {
+    display: none;
+}
+.Module.TicketPicker > .tickets > .ticket[state="AT_LIMIT"] .AT_LIMIT,
+.Module.TicketPicker > .tickets > .ticket[state="AT_Q_LIMIT"] .AT_Q_LIMIT,
+.Module.TicketPicker > .tickets > .ticket[state="AVAIL_SOON"] .AVAIL_SOON,
+.Module.TicketPicker > .tickets > .ticket[state="CLOSED"] .CLOSED,
+.Module.TicketPicker > .tickets > .ticket[state="FREE"] .FREE,
+.Module.TicketPicker > .tickets > .ticket[state="LOCKED"] .LOCKED,
+.Module.TicketPicker > .tickets > .ticket[state="OPEN"] .OPEN,
+.Module.TicketPicker > .tickets > .ticket[state="QUEUED"] .QUEUED,
+.Module.TicketPicker > .tickets > .ticket[state="REDIRECT"] .QUEUED,
+.Module.TicketPicker > .tickets > .ticket[state="SOLD_OUT"] .SOLD_OUT {
+    display: flex;
+}
+.Module.TicketPicker > .tickets > .ticket[state="AT_Q_LIMIT"] > [action="add"] {
+    background-color: #cdcdcd;
+    cursor: not-allowed;
+}
+.Module.TicketPicker > .tickets > .ticket.has-media > .quantity,
+.Module.TicketPicker > .tickets > .ticket.has-media > [action="add"],
+.Module.TicketPicker > .tickets > .ticket.has-media > [action="remove"] {
+    display: none;
+}
+.Module.TicketPicker > .tickets > .ticket.has-media > .media-link {
+    display: flex;
+}
+@media (max-width: 799px) {
+    .Module.TicketPicker > .tickets > .ticket {
+        transition: transform 0.35s ease-in-out;
+    }
+    .Module.TicketPicker.hidden > .tickets > .ticket:first-child {
+        transform: translateY(0.5rem);
+    }
+    .Module.TicketPicker.hidden > .tickets > .ticket:nth-child(2) {
+        transform: translateY(1rem);
+    }
+    .Module.TicketPicker.hidden > .tickets > .ticket:nth-child(3) {
+        transform: translateY(1.5rem);
+    }
+    .Module.TicketPicker.hidden > .tickets > .ticket:nth-child(4) {
+        transform: translateY(2rem);
+    }
+    .Module.TicketPicker.hidden > .tickets > .ticket:nth-child(5) {
+        transform: translateY(2.5rem);
+    }
+    .Module.TicketPicker.hidden > .tickets > .ticket:nth-child(6) {
+        transform: translateY(3rem);
+    }
+    .Module.TicketPicker.hidden > .tickets > .ticket:nth-child(7) {
+        transform: translateY(3.5rem);
+    }
+    .Module.TicketPicker.hidden > .tickets > .ticket:nth-child(8) {
+        transform: translateY(4rem);
+    }
+    .Module.TicketPicker.hidden > .tickets > .ticket:nth-child(9) {
+        transform: translateY(4.5rem);
+    }
+    .Module.TicketPicker.hidden > .tickets > .ticket:nth-child(10) {
+        transform: translateY(5rem);
+    }
+    .Module.TicketPicker.hidden > .tickets > .ticket:nth-child(11) {
+        transform: translateY(5.5rem);
+    }
+    .Module.TicketPicker.hidden > .tickets > .ticket:nth-child(12) {
+        transform: translateY(6rem);
+    }
+    .Module.TicketPicker.hidden > .tickets > .ticket:nth-child(13) {
+        transform: translateY(6.5rem);
+    }
+    .Module.TicketPicker.hidden > .tickets > .ticket:nth-child(14) {
+        transform: translateY(7rem);
+    }
+    .Module.TicketPicker.hidden > .tickets > .ticket:nth-child(15) {
+        transform: translateY(7.5rem);
+    }
+}
+.Module.TicketPicker.scroll-overflow > .tickets {
+    max-height: 25rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+@media (min-width: 800px) {
+    .Module.TicketPicker.scroll-overflow.is-chrome > .tickets {
+        transform: translateZ(0);
+    }
+}
+.Module.TicketPicker[theme="DARK"] > .tickets > .heading {
+    color: #fff;
+}
+.Module.TicketPicker[theme="LIGHT"] > .tickets > .heading {
+    color: #000;
+}

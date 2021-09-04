@@ -1,0 +1,247 @@
+<app-navbar></app-navbar>
+<section class="homeHero section">
+    <div class="homeHero__bg">
+    </div>
+    <video #homeHeroVideo id="homeHeroVideo" class="homeHero__video" preload="auto" muted autoplay playsinline loop crossorigin="anonymous">
+      <source src="https://stage-vod.akamaized.net/web/stage-web-no-audio.mp4" type="video/mp4" />
+      <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that
+        <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+      </p>
+    </video>
+    <div class="homeHero__cover">
+      <div class="homeHero__cover__inner">
+        <div class="wrap">
+          <!-- <img class="homeHero__cover__logo" src="assets/images/Full-logo-horizontal-white-trimmed.png"/> -->
+          <h1>A new venue to play in.</h1>
+          <h2>Host and attend next-level virtual concerts and live events in 3D virtual venues on mobile and virtual reality.</h2>
+          <!-- <h1>Bringing concerts to life in virtual reality</h1> -->
+          <!-- <h2>Feel the energy. Feel the connection. Feel alive.</h2> -->
+          <!-- <div class="cta-btn">
+            <div class="cta-btn__inner">Get early access</div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <div class="homeBanner__bottomSection">
+      <div class="wrap wrap--full-width">
+        <!-- <span class="comingSoonText">Launching in 2018 on</span>
+        <ul class="homeBanner__appList">
+          <li class="homeBanner__appListItem">
+            <img class="homeBanner__appLogo" src="http://melodyvr.com/wp-content/uploads/2016/10/oculus-new.png" alt="Oculus">
+          </li>
+          <li class="homeBanner__appListItem">
+            <img class="homeBanner__appLogo" src="http://melodyvr.com/wp-content/uploads/2016/10/samsung-gear-vr-new.png" alt="GearVR">
+          </li>
+          <li class="homeBanner__appListItem">
+            <img class="homeBanner__appLogo" src="http://melodyvr.com/wp-content/uploads/2016/10/vive-new.png" alt="Vive">
+          </li>
+          <li class="homeBanner__appListItem">
+            <img class="homeBanner__appLogo" src="http://melodyvr.com/wp-content/uploads/2016/10/daydream-logo.png" alt="Google Daydream">
+          </li>
+          <li class="homeBanner__appListItem">
+            <img class="homeBanner__appLogo" src="http://melodyvr.com/wp-content/uploads/2016/10/playstation-logo-1.png" alt="PlayStation">
+          </li>
+          <li class="homeBanner__appListItem">
+            <img class="homeBanner__appLogo" src="http://melodyvr.com/wp-content/uploads/2016/10/android-new.png" alt="Android">
+          </li>
+          <li class="homeBanner__appListItem">
+            <img class="homeBanner__appLogo" src="http://melodyvr.com/wp-content/uploads/2016/10/apple-logo.png" alt="Apple">
+          </li>
+          <li class="homeBanner__appListItem">
+            <img class="homeBanner__appLogo" src="http://melodyvr.com/wp-content/uploads/2016/10/windows-mixed-reality.png" alt="">
+          </li>
+        </ul> -->
+        <div class="homeBanner__scrollDownIcon icon-noun-1178686" (click)="goToAnchor()"></div>      
+      </div>
+    </div>
+    <div class="homeHero__vignette"></div>
+  </section>
+  <section #anchor class="homeWhatIsStage section section--centered section--bottom-unpadded section--double-padded section--gradient section--background" style="padding-bottom: 150px;">
+    <div class="top__vignette"></div>
+    <div class="wrap">
+      <div class="section__centered">
+        <!-- <h2 class="text-center">Stage is a platform and app to experience concerts in virtual reality.</h2> -->
+        <h1 class="text-center">The ultimate virtual entertainment experience.</h1>
+        <!-- <p>Stage is the world's leading virtual reality concert company. With a world-class production team, state-of-art post production facilities, Stage has developed a platform and app that delivers the highest quality concert experience available.</p> -->
+        <p>Stage is an entertainment technology company and creator of the world’s first mobile and VR cross-play enabled virtual entertainment platform for live concerts, events and more. Stage is partnering with creators to bring fans the most social, immersive, and interactive online live entertainment experiences possible.</p>
+        <p>Featuring a 3D game-inspired user experience, virtual venues that millions of fans can simultaneously explore as avatars, and new live streaming formats for traditional and immersive media, Stage is reinventing the way fans consume and experience live entertainment online.</p>
+        <!-- <img src="https://images.contentful.com/vplcy33lhahe/4pggwOgcVGcGEWymiQiUK6/53f068cea8cf1e326a65955dcae992d4/Man-in-headset-trial-small.png" style="width: 75%; padding-top: 10rem;"> -->
+        <!-- <h2>The new way to experience concerts.</h2>
+      <div class="row row--of-3 margin-top no-margin-top-medium margin-bottom no-margin-bottom-medium">
+        <div class="row__item">
+          <div class="featureIcon icon-noun-405102-ffffff"></div>
+          <h3>On-demand</h3>
+          <p>Experience your favourite concerts whenever you like.</p>
+          <div class="show-medium-down" style="height:1em;"></div>
+        </div>
+        <div class="row__item">
+          <div class="featureIcon icon-noun-322322-ffffff"></div>
+          <h3>Camera selection</h3>
+          <p>Select from every major vantage point.</p>
+          <div class="show-medium-down" style="height:1em;"></div>
+        </div>
+        <div class="row__item">
+          <div class="featureIcon icon-noun-695173-ffffff"></div>
+          <h3>Directors cut</h3>
+          <p>Kick back and enjoy the show.</p>
+          <div class="show-medium-down" style="height:1em;"></div>
+        </div>
+      </div>
+      <div class="row row--of-3 margin-top no-margin-top-medium margin-bottom no-margin-bottom-medium">
+        <div class="row__item">
+          <div class="featureIcon icon-noun-405099-ffffff"></div>
+          <h3>3D</h3>
+          <p>Watch from every angle</p>
+          <div class="show-medium-down" style="height:1em;"></div>
+        </div>
+        <div class="row__item">
+          <div class="featureIcon icon-noun-866011-ffffff"></div>
+          <h3>360 degrees</h3>
+          <p>Watch from every angle</p>
+          <div class="show-medium-down" style="height:1em;"></div>
+        </div>
+        <div class="row__item">
+          <div class="featureIcon icon-noun-1315513-ffffff"></div>
+          <h3>Immersive audio</h3>
+          <p>Watch from every angle</p>
+          <div class="show-medium-down" style="height:1em;"></div>
+        </div>
+      </div> -->
+      </div>
+    </div>
+  </section>
+  <!-- <section class="homeFeatures section section--double-padded section--centered">
+    <div class="top__vignette"></div>
+    <div class="wrap">
+      <h2>The convenience of watching from home, with the experience of going to a show and the access of a VIP pass.</h2>
+      <div class="row row--of-3 margin-top no-margin-top-medium margin-bottom no-margin-bottom-medium">
+        <div class="row__item">
+          <div class="featureIcon icon-feature-ondemand"></div>
+          <h3>Watch anytime</h3>
+          <p>Get you favourite concerts on-demand.</p>
+          <div class="show-medium-down" style="height:1em;"></div>
+        </div>
+        <div class="row__item">
+          <div class="featureIcon icon-feature-cameraangle"></div>
+          <h3>Jump around</h3>
+          <p>Choose from every angle.</p>
+          <div class="show-medium-down" style="height:1em;"></div>
+        </div>
+        <div class="row__item">
+          <div class="featureIcon icon-feature-directorscut"></div>
+          <h3>Enjoy the ride</h3>
+          <p>Get the best shot with the Director's Cut.</p>
+          <div class="show-medium-down" style="height:1em;"></div>
+        </div>
+      </div>
+      <div class="row row--of-3 margin-top no-margin-top-medium margin-bottom no-margin-bottom-medium">
+        <div class="row__item">
+          <div class="featureIcon icon-feature-3d-2"></div>
+          <h3>Feel like you’re there</h3>
+          <p>Experience enhanced presence with 3D.</p>
+          <div class="show-medium-down" style="height:1em;"></div>
+        </div>
+        <div class="row__item">
+          <div class="featureIcon icon-feature-360video"></div>
+          <h3>Look anywhere</h3>
+          <p>Immerse yourself in 360 degree video.</p>
+          <div class="show-medium-down" style="height:1em;"></div>
+        </div>
+        <div class="row__item">
+          <div class="featureIcon icon-noun-1315513-ffffff"></div>
+          <h3>Get lost in sound</h3>
+          <p>360 audio that moves with you.</p>
+          <div class="show-medium-down" style="height:1em;"></div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <section class="homeApps section section--double-padded section--centered">
+    <div class="top__vignette"></div>
+    <div class="wrap wrap--full-width">
+      <h2 class="comingSoonText">Coming soon to mobile and virtual reality.</h2>
+      <ul class="appList">
+        <li class="appListItem">
+            <img class="appLogo" src="https://images.contentful.com/vplcy33lhahe/1wNhiQaMTya6SOees6akkO/287c10b0eef01b7d03b070406b6f81cd/Apple.png?h=50" alt="Android">
+        </li>
+        <li class="appListItem">
+          <img class="appLogo" src="https://images.contentful.com/vplcy33lhahe/5hy3a8ERLigksk6K8sGCCI/2166d3050e812ff97694e4280c8564fa/Android.png?h=50" alt="Oculus">
+        </li>
+        <!-- <li class="appListItem">
+          <img class="appLogo" src="https://images.contentful.com/vplcy33lhahe/7oGX1dMK2s460CA2Q2EK6g/b7b9973a4f789d4ab73d668354bc600c/Playstation.png?h=50" alt="GearVR">
+        </li> -->
+        <li class="appListItem">
+          <img class="appLogo" src="https://images.contentful.com/vplcy33lhahe/2v7m6uUkIkmUckiqm0iGOI/54ea0b57b9ec472b47b1ff9fc98ab503/Oculus.png?h=50" alt="Vive">
+        </li>
+        <!-- <li class="appListItem">
+          <img class="appLogo" src="https://images.contentful.com/vplcy33lhahe/4NojabyhWwoYg8UyUCMKyM/057713af072eb7a45695d04d53211a6f/Windows_Mixed_Reality.png?h=50" alt="Google Daydream">
+        </li> -->
+        <!-- <li class="appListItem">
+          <img class="appLogo" src="https://images.contentful.com/vplcy33lhahe/43KOg2Nsac0Eg8YGKmMYyO/63519ce3fd161678f91326a0c2dd3329/Daydream.png?h=50" alt="PlayStation">
+        </li> -->
+        <!-- <li class="appListItem">
+          <img class="appLogo" src="https://images.contentful.com/vplcy33lhahe/1UDvmX3GteA8O4SUWI2Qo6/409c7b69172d55122f2ab94bb5c1ffaf/GearVR.png?h=50" alt="Apple">
+        </li> -->
+        <!-- <li class="appListItem">
+          <img class="appLogo" src="https://images.contentful.com/vplcy33lhahe/5utu40U240cCMaQWqMm0wU/73078d81be98e1a21a0f5bdfd8c91e81/Vive.png?h=50" alt="">
+        </li> -->
+      </ul>
+    </div>
+  </section>
+  <!-- <section class="section section--primary section--centered section--double-padded">
+    <div class="sign-up-form wrap with-header-offset">
+      <form action="" novalidate>
+        <h2>Be the first on Stage</h2>
+        <p class="text-purple-light">Register now and we'll let you know as soon as we go live.</p>
+        <fieldset>
+          <label for="email">What’s your email</label>
+          <input type="email" name="email" id="email" placeholder="What’s your email" required>
+          <button type="submit" class="sign-up-form__submit">Submit</button>
+        </fieldset>
+      </form>
+      <div class="sign-up-form__complete">
+        <h1>Nicely done! <br>We’ll be in touch soon.</h1>
+        <p>Spread the news to help your friends get on stage too. <br>We appreciate it!</p>
+        <div class="addthis_native_toolbox sign-up-form__share"></div>
+      </div>
+    </div>
+  </section> -->
+  <!-- <section class="homeGetVR section section--centered section--top-unpadded">
+    <div class="wrap wrap--full-width">
+      <h2>Get VR-Ready</h2>
+      <p>Choose how to access concerts in virtual reality.</p>
+      <div class="row row--of-3 margin-top no-margin-top-medium margin-bottom no-margin-bottom-medium">
+        <div class="row__item">
+          <img src="http://res.cloudinary.com/dr17awk8d/image/upload/v1512451523/daydream_hjiq3f.png">
+        </div>
+        <div class="row__item">
+          <img src="http://res.cloudinary.com/dr17awk8d/image/upload/v1512451523/Oculus-Rift_dacbnl.png">
+        </div>
+        <div class="row__item">
+          <img src="http://melodyvr.com/wp-content/uploads/2016/10/htc-vive.png">
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- <section class="homeQuotes section section--centered section--triple-padded section--gradientx">
+    <div class="wrap text-center">
+      <h2>“This is the best concert experience I've had in VR.”</h2>
+      <p>
+        <small>Joel Madden, Good Charlotte</small>
+      </p>
+    </div>
+  </section> -->
+  <!-- <section class="homeEarlyAccess section section--centered">
+    <div class="wrap">
+      <h2>Register for early access</h2>
+      <div class="cta-btn">
+        <div class="cta-btn__inner">Count me in</div>
+      </div>
+    </div>
+  </section> -->
+  <section class="homeSmoke">
+    <div #test></div>
+    <canvas #canvas></canvas>
+  </section>
+  <app-footer></app-footer>
+  <app-footer-lg></app-footer-lg>

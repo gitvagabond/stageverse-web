@@ -1,0 +1,13 @@
+<div class="panel panelStages">
+    <hr>
+    <div class="panel__title">
+        <h1>{{title}}</h1>
+    </div>
+    <div class="panel__content">
+        <ul>
+            <li *ngFor="let i of [0,1,2];" class="panelStages__item">
+                <app-card-stage></app-card-stage>
+            </li>
+        </ul>
+    </div>
+</div>

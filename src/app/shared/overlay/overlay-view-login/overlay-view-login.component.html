@@ -1,0 +1,110 @@
+<!-- <h1>{{ modalTitle }}</h1> -->
+<div class="Overlay LogIn overlay-hidden Module View vp-min-height" theme="DARK" mode="default" style="">
+    <div class="head">
+        <div class="background"></div>
+        <div class="content">
+            <div name="avatar"></div> <a [routerLink]="" (click)="close()" action="close"> <span class="icon icon-close"
+                    aria-hidden="true"></span> </a>
+        </div>
+    </div>
+    <div class="body">
+        <div class="content form" index="login" style="">
+            <h2>Log in</h2> <a action="facebook" class="button space-between" theme="FACEBOOK">
+                <p>Log in with Facebook</p><span class="icon icon-arrow-right" aria-hidden="true"></span>
+            </a> <a href="#" action="signup" class="button normal-small space-between" theme="BLUE">
+                <p>Sign up via email</p><span class="icon icon-arrow-right" aria-hidden="true"></span>
+            </a>
+            <h3>Or log in with your email</h3>
+            <form name="login-form" action="#" method="POST" class="Widget Form" theme="LIGHT">
+                <div name="email" class="Input Textbox Module has-label email has-left-icon has-textX validX"
+                    theme="LIGHT" style="">
+                    <div class="icon-container left"> <span class="icon icon-envelope" aria-hidden="true"></span>
+                    </div>
+                    <div class="background"></div>
+                    <div class="label-container">
+                        <div class="label">Email</div>
+                    </div> <input type="text" autocapitalize="off" autocomplete="off" maxlength="51">
+                    <div class="border-container"></div>
+                </div>
+                <div name="password" class="Input Textbox Module has-label password has-left-icon has-textX validX"
+                    theme="LIGHT" style="">
+                    <div class="icon-container left"> <span class="icon icon-key" aria-hidden="true"></span> </div>
+                    <div class="background"></div>
+                    <div class="label-container">
+                        <div class="label">Password</div>
+                    </div> <input type="password" autocapitalize="off" autocomplete="off" maxlength="501">
+                    <div class="border-container"></div>
+                </div> <a href="#" action="submit" class="button space-between" theme="BLUE">
+                    <p>Log in</p><span class="icon icon-arrow-right" aria-hidden="true"></span>
+                </a> <a href="#" action="forgot-password">
+                    <p class="small text">Forgot password?</p>
+                </a>
+            </form>
+        </div>
+        <div class="content form" index="signup" style="display: none;">
+            <h2>Sign up</h2>
+            <form name="signup-form" action="#" method="POST" class="Widget Form" theme="LIGHT">
+                <div name="firstName" class="Input Textbox hidden Module has-label firstName has-left-icon"
+                    theme="LIGHT" style="">
+                    <div class="icon-container left"> <span class="icon icon-profile" aria-hidden="true"></span>
+                    </div>
+                    <div class="background"></div>
+                    <div class="label-container">
+                        <div class="label">First name</div>
+                    </div> <input type="text" autocapitalize="off" autocomplete="off" maxlength="51">
+                    <div class="border-container"></div>
+                </div>
+                <div name="lastName" class="Input Textbox hidden Module has-label lastName has-left-icon"
+                    theme="LIGHT" style="">
+                    <div class="icon-container left"> <span class="icon icon-profile" aria-hidden="true"></span>
+                    </div>
+                    <div class="background"></div>
+                    <div class="label-container">
+                        <div class="label">Last name</div>
+                    </div> <input type="text" autocapitalize="off" autocomplete="off" maxlength="51">
+                    <div class="border-container"></div>
+                </div>
+                <div name="email" class="Input Textbox hidden Module has-label email has-left-icon" theme="LIGHT"
+                    style="">
+                    <div class="icon-container left"> <span class="icon icon-envelope" aria-hidden="true"></span>
+                    </div>
+                    <div class="background"></div>
+                    <div class="label-container">
+                        <div class="label">Email</div>
+                    </div> <input type="text" autocapitalize="off" autocomplete="off" maxlength="51">
+                    <div class="border-container"></div>
+                </div>
+                <div name="emailConfirm" class="Input Textbox hidden Module has-label emailConfirm has-left-icon"
+                    theme="LIGHT" style="">
+                    <div class="icon-container left"> <span class="icon icon-envelope" aria-hidden="true"></span>
+                    </div>
+                    <div class="background"></div>
+                    <div class="label-container">
+                        <div class="label">Confirm your e-mail</div>
+                    </div> <input type="text" autocapitalize="off" autocomplete="off" maxlength="501">
+                    <div class="border-container"></div>
+                </div>
+                <div name="password" class="Input Textbox hidden Module has-label password has-left-icon"
+                    theme="LIGHT" style="">
+                    <div class="icon-container left"> <span class="icon icon-key" aria-hidden="true"></span> </div>
+                    <div class="background"></div>
+                    <div class="label-container">
+                        <div class="label">Password</div>
+                    </div> <input type="password" autocapitalize="off" autocomplete="off" maxlength="51">
+                    <div class="border-container"></div>
+                </div> <a href="#" action="submit" class="button space-between" theme="BLUE">
+                    <p>Sign up</p><span class="icon icon-arrow-right" aria-hidden="true"></span>
+                </a> <a href="#" action="login">
+                    <p class="small text">Already signed up?</p>
+                </a>
+                <div class="disclaimer">
+                    <p class="small text">By clicking 'Sign up', you agree to Stageverse’s <a href="/termsofservice">Terms
+                            of Service</a> and <a href="/privacy">Privacy Policy</a>, and will be a registered Stageverse
+                        user.</p>
+                </div>
+            </form>
+        </div>
+        <div name="tab-set-nav"> <a index="login"></a> <a index="signup"></a> </div>
+    </div>
+    <div class="foot"></div>
+</div>

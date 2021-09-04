@@ -1,0 +1,52 @@
+@media (max-width: 799px) {
+  .hide-mobile {
+    display: none !important;
+  }
+}
+@media (min-width: 800px) {
+  .hide-desktop {
+    display: none !important;
+  }
+}
+
+.list--inline {
+  li {
+    display: inline-block;
+  }
+
+  li:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
+
+.flex-container {
+  display: flex;
+  &.flex-container--wrap {
+    flex-wrap: wrap;
+  }
+  &.flex-contaner--nowrap {
+    flex-wrap: nowrap;
+  }
+  .flex-item {
+    &.flex-item--grow {
+      flex-grow: 1;
+    }
+  }
+}
+
+.align-center {
+  display: block;
+  text-align: center;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+}

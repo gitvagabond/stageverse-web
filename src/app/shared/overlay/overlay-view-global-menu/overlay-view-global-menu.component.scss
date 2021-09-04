@@ -1,0 +1,109 @@
+@import "../overlay.component.scss";
+
+.Overlay.GlobalMenu {
+    text-align: center;
+}
+.Overlay.GlobalMenu > .body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+@media (max-width: 799px) {
+    .Overlay.GlobalMenu > .body {
+        padding-bottom: 0;
+    }
+}
+.Overlay.GlobalMenu > .body > .content {
+    width: 100%;
+}
+@media (max-width: 799px) {
+    .Overlay.GlobalMenu > .body > .content > h1:first-child {
+        margin-top: 5.2rem;
+    }
+}
+@media (min-width: 800px) {
+    .Overlay.GlobalMenu > .body > .content > h1:nth-child(n + 2) {
+        margin-top: 2.9rem;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.GlobalMenu > .body > .content > h1:nth-child(n + 2) {
+        margin-top: 1.8rem;
+    }
+}
+.Overlay.GlobalMenu > .body > .content.main-links a {
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.Overlay.GlobalMenu > .body > .content > p {
+    margin-bottom: 0;
+    opacity: 0.5;
+}
+.Overlay.GlobalMenu h1 {
+    margin-bottom: 0;
+}
+@media (min-width: 800px) {
+    .Overlay.GlobalMenu h1 + h1 {
+        margin-top: 4rem;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.GlobalMenu h1 + h1 {
+        margin-top: 3.2rem;
+    }
+}
+.Overlay.GlobalMenu h1 > a:hover {
+    opacity: 0.6;
+}
+.Overlay.GlobalMenu h1 > a.home {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+}
+.Overlay.GlobalMenu h1 > a.home > .name {
+    margin-left: 1rem;
+}
+.Overlay.GlobalMenu [name="overlay-footer-mobile"] {
+    margin-top: 3rem;
+}
+.Overlay.GlobalMenu[theme="DARK"] a {
+    color: #fff;
+}
+.Overlay.GlobalMenu[theme="DARK"] [name="overlay-footer-desktop"] {
+    background-color: #222;
+}
+.Overlay.GlobalMenu[theme="DARK"] [name="overlay-footer-mobile"] {
+    border-top: 1px solid hsla(0, 0%, 100%, 0.15);
+}
+.Overlay.GlobalMenu[theme="LIGHT"] a,
+.Overlay.GlobalMenu[theme="LIGHT"] a:hover {
+    color: #000;
+}
+.Overlay.GlobalMenu[theme="LIGHT"] [name="overlay-footer-desktop"] {
+    background-color: #f5f5f5;
+}
+.Overlay.GlobalMenu[theme="LIGHT"] [name="overlay-footer-mobile"] {
+    border-top: 1px solid #000;
+}
+
+h1 {
+    margin-bottom: 2rem;
+}
+@media (min-width: 800px) {
+    h1 {
+        font-weight: 800;
+        font-size: 4.143rem;
+        letter-spacing: -0.09rem;
+        line-height: 4.286rem;
+    }
+}
+@media (max-width: 799px) {
+    h1 {
+        font-weight: 800;
+        font-size: 2.714rem;
+        letter-spacing: -0.018rem;
+        line-height: 3.257rem;
+    }
+}

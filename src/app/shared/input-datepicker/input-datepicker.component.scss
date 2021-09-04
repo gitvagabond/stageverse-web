@@ -1,0 +1,53 @@
+.Input.DatePicker {
+    margin-bottom: 0.8rem;
+    overflow: visible;
+}
+.Input.DatePicker > ul {
+    display: flex;
+    height: 4rem;
+}
+.Input.DatePicker > ul > li {
+    flex: 3;
+    height: 4rem;
+}
+.Input.DatePicker > ul > li.label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px 0 0 3px;
+    flex: 2;
+    cursor: default;
+}
+@media (min-width: 800px) {
+    .Input.DatePicker > ul > li.label {
+        font-weight: 400;
+        font-size: 1.071rem;
+        letter-spacing: 0.018rem;
+        line-height: 1.714rem;
+    }
+}
+@media (max-width: 799px) {
+    .Input.DatePicker > ul > li.label {
+        font-weight: 400;
+        font-size: 1.071rem;
+        letter-spacing: 0.018rem;
+        line-height: 1.714rem;
+    }
+}
+.Input.DatePicker > ul > li .Input,
+.Input.DatePicker > ul > li .Input .background,
+.Input.DatePicker > ul > li .Input .border-container {
+    border-radius: 0;
+}
+.Input.DatePicker > ul > li + li {
+    margin-left: 1px;
+}
+.Input.DatePicker > ul > li:last-child .Input,
+.Input.DatePicker > ul > li:last-child .Input .background,
+.Input.DatePicker > ul > li:last-child .Input .border-container {
+    border-radius: 0 3px 3px 0;
+}
+.Input.DatePicker[theme="DARK"] > ul > .label {
+    background-color: #404040;
+    color: #888;
+}

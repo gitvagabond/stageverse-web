@@ -1,0 +1,314 @@
+.Overlay.VideoDetails > .body {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+}
+.Overlay.VideoDetails > .body > .content {
+    width: 100%;
+}
+.Overlay.VideoDetails > .body > .content.hero {
+    z-index: 10;
+}
+.Overlay.VideoDetails > .body > .content.hero > .hero-background {
+    position: relative;
+    z-index: 0;
+}
+@media (min-width: 800px) {
+    .Overlay.VideoDetails > .body > .content.hero > .hero-background {
+        padding-bottom: 56.25%;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.VideoDetails > .body > .content.hero > .hero-background {
+        padding-bottom: 80%;
+    }
+}
+.Overlay.VideoDetails > .body > .content.hero > .hero-background > .background {
+    pointer-events: none;
+}
+.Overlay.VideoDetails > .body > .content.hero > .hero-background > .background:before {
+    display: block;
+    content: "";
+}
+@media (min-width: 800px) {
+    .Overlay.VideoDetails > .body > .content.hero > .hero-background > .background:before {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 78.5rem;
+        background: linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.78426) 9.99%,
+            rgba(0, 0, 0, 0.74074) 19.07%,
+            rgba(0, 0, 0, 0.675) 27.44%,
+            rgba(0, 0, 0, 0.59259) 35.26%,
+            rgba(0, 0, 0, 0.49907) 42.72%,
+            rgba(0, 0, 0, 0.4) 50%,
+            rgba(0, 0, 0, 0.30093) 57.28%,
+            rgba(0, 0, 0, 0.20741) 64.74%,
+            rgba(0, 0, 0, 0.125) 72.56%,
+            rgba(0, 0, 0, 0.05926) 80.93%,
+            rgba(0, 0, 0, 0.01574) 90.01%,
+            transparent
+        );
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.VideoDetails > .body > .content.hero > .hero-background > .background:before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 5.85rem;
+        background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.58819) 9.99%,
+            rgba(0, 0, 0, 0.55556) 19.07%,
+            rgba(0, 0, 0, 0.50625) 27.44%,
+            rgba(0, 0, 0, 0.44444) 35.26%,
+            rgba(0, 0, 0, 0.37431) 42.72%,
+            rgba(0, 0, 0, 0.3) 50%,
+            rgba(0, 0, 0, 0.22569) 57.28%,
+            rgba(0, 0, 0, 0.15556) 64.74%,
+            rgba(0, 0, 0, 0.09375) 72.56%,
+            rgba(0, 0, 0, 0.04444) 80.93%,
+            rgba(0, 0, 0, 0.01181) 90.01%,
+            transparent
+        );
+    }
+}
+.Overlay.VideoDetails > .body > .content.hero > .hero-background > .background:after {
+    display: block;
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(
+        0deg,
+        #000,
+        rgba(0, 0, 0, 0.98032) 9.99%,
+        rgba(0, 0, 0, 0.92593) 19.07%,
+        rgba(0, 0, 0, 0.84375) 27.44%,
+        rgba(0, 0, 0, 0.74074) 35.26%,
+        rgba(0, 0, 0, 0.62384) 42.72%,
+        rgba(0, 0, 0, 0.5) 50%,
+        rgba(0, 0, 0, 0.37616) 57.28%,
+        rgba(0, 0, 0, 0.25926) 64.74%,
+        rgba(0, 0, 0, 0.15625) 72.56%,
+        rgba(0, 0, 0, 0.07407) 80.93%,
+        rgba(0, 0, 0, 0.01968) 90.01%,
+        transparent
+    );
+}
+@media (min-width: 800px) {
+    .Overlay.VideoDetails > .body > .content.hero > .hero-background > .background:after {
+        height: 21rem;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.VideoDetails > .body > .content.hero > .hero-background > .background:after {
+        height: 12rem;
+    }
+}
+.Overlay.VideoDetails > .body > .content.hero > .hero-background > .indicator {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Overlay.VideoDetails > .body > .content.hero > .hero-background > .indicator .icon {
+    color: #fff;
+}
+@media (min-width: 800px) {
+    .Overlay.VideoDetails > .body > .content.hero > .hero-background > .indicator .icon {
+        font-size: 6rem;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.VideoDetails > .body > .content.hero > .hero-background > .indicator .icon {
+        font-size: 4rem;
+    }
+}
+.Overlay.VideoDetails > .body > .content.hero > .details {
+    position: relative;
+    z-index: 20;
+}
+@media (min-width: 800px) {
+    .Overlay.VideoDetails > .body > .content.hero > .details {
+        position: absolute;
+        top: 0;
+        margin-top: 15%;
+        margin-left: 18rem;
+        width: 24%;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.VideoDetails > .body > .content.hero > .details {
+        margin-top: -5rem;
+        margin-right: 1.4rem;
+        margin-left: 1.4rem;
+    }
+}
+.Overlay.VideoDetails > .body > .content.hero > .details > .delivery-badge {
+    display: inline-block;
+    padding: 0.4rem 1.4rem;
+    border-radius: 3px;
+    background-color: #1fa3ff;
+    font-weight: 700;
+}
+@media (min-width: 800px) {
+    .Overlay.VideoDetails > .body > .content.hero > .details > .delivery-badge {
+        margin-bottom: 2.14rem;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.VideoDetails > .body > .content.hero > .details > .delivery-badge {
+        margin-bottom: 1rem;
+    }
+}
+.Overlay.VideoDetails > .body > .content.hero > .details > .delivery-badge.LIVE_STREAM {
+    background-color: #e2398c;
+}
+.Overlay.VideoDetails > .body > .content.hero > .details > .delivery-badge.VOD {
+    background-color: #f9735b;
+}
+.Overlay.VideoDetails > .body > .content.hero > .details > .delivery-badge.VIDEO_CHAT {
+    background-color: #fa4c81;
+}
+.Overlay.VideoDetails > .body > .content.hero > .details > .name {
+    margin-bottom: 0;
+}
+.Overlay.VideoDetails > .body > .content.hero > .details > .date {
+    margin-bottom: 0;
+    color: #999;
+}
+@media (min-width: 800px) {
+    .Overlay.VideoDetails > .body > .content.hero > .details > .date {
+        margin-top: 0.57rem;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.VideoDetails > .body > .content.hero > .details > .date {
+        margin-top: 0.2rem;
+    }
+}
+.Overlay.VideoDetails > .body > .content.hero > .details > .description {
+    overflow: hidden;
+    margin-bottom: 0;
+}
+@media (min-width: 800px) {
+    .Overlay.VideoDetails > .body > .content.hero > .details > .description {
+        margin-top: 0.7rem;
+        max-height: 5.5rem;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.VideoDetails > .body > .content.hero > .details > .description {
+        margin-top: 0.57rem;
+        max-height: 5rem;
+    }
+}
+@media (min-width: 800px) {
+    .Overlay.VideoDetails > .body > .content.hero > .details > [action="read-more"] {
+        font-weight: 400;
+        font-size: 1.286rem;
+        letter-spacing: 0;
+        line-height: 1.857rem;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.VideoDetails > .body > .content.hero > .details > [action="read-more"] {
+        font-weight: 400;
+        font-size: 1.143rem;
+        letter-spacing: 0;
+        line-height: 1.714rem;
+    }
+}
+.Overlay.VideoDetails > .body > .content.hero > .details > .button-container {
+    display: flex;
+}
+@media (min-width: 800px) {
+    .Overlay.VideoDetails > .body > .content.hero > .details > .button-container {
+        margin-top: 2.4rem;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.VideoDetails > .body > .content.hero > .details > .button-container {
+        margin-top: 1rem;
+        max-width: 28rem;
+    }
+}
+.Overlay.VideoDetails > .body > .content.hero > .details > .button-container > .button {
+    min-width: 10rem;
+}
+.Overlay.VideoDetails > .body > .content.gallery {
+    z-index: 20;
+}
+@media (min-width: 800px) {
+    .Overlay.VideoDetails > .body > .content.gallery {
+        margin-top: -7.14rem;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.VideoDetails > .body > .content.gallery {
+        margin-top: 3.14rem;
+    }
+}
+@media (min-width: 800px) {
+    .Overlay.VideoDetails > .body > .content.gallery > h2 {
+        margin-right: 18rem;
+        margin-left: 18rem;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.VideoDetails > .body > .content.gallery > h2 {
+        margin-right: 1.4rem;
+        margin-left: 1.4rem;
+    }
+}
+@media (min-width: 800px) {
+    .Overlay.VideoDetails > .body > .content.gallery > .ImageGallery .gallery {
+        padding: 0 18rem;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.VideoDetails > .body > .content.gallery > .ImageGallery .gallery {
+        padding: 0 1.4rem;
+    }
+}
+@media (min-width: 800px) {
+    .Overlay.VideoDetails > .body > .content.gallery > .ImageGallery .gallery.hover {
+        padding-left: 16.05rem;
+    }
+}
+.Overlay.VideoDetails > .body > .content.play-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    padding-top: 5.5rem;
+}
+@media (min-width: 800px) {
+    .Overlay.VideoDetails > .body > .content.play-logo > img {
+        width: 9.3rem;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.VideoDetails > .body > .content.play-logo > img {
+        width: 7.2rem;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.VideoDetails > .foot {
+        height: auto;
+    }
+}

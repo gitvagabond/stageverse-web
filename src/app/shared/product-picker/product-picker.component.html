@@ -1,0 +1,38 @@
+<div name="ticket-picker" class="Module TicketPicker" theme="DARK" style="">
+    <div name="filter" style="display: none;">
+        <div name="category"></div>
+    </div>
+    <div class="tickets">
+        <div *ngFor="let product of products" class="ticket" [ngClass]="{'empty': !isProductInCart(product), 'not-empty': isProductInCart(product)}" saleid="138338" tierid="251404" category="MEDIA"
+            state="OPEN">
+            <div class="wrapper">
+                <div class="thumbnail"> <img src="{{product.image}}">
+                    <div class="background"
+                        style="background-image:url('{{product.image}}'); background-color: #EDACEA;">
+                    </div>
+                </div> <a [routerLink]="" (click)="showProductDetails(product)" action="more-info">More info</a>
+                <div class="info align-top">
+                    <div class="name">{{product.name}}</div>
+                    <div class="price OPEN QUEUED AT_LIMIT AT_Q_LIMIT">
+                        {{product.price.toLocaleString('en-US', {style: 'currency', currency: 'USD'})}}</div>
+                    <div class="price AVAIL_SOON">Available Soon</div>
+                    <div class="price FREE">Free</div>
+                    <div class="price CLOSED">Sale Over</div>
+                    <div class="price LOCKED">Access Code Needed</div>
+                    <div class="price SOLD_OUT"> Sold Out </div>
+                </div>
+                <div class="caption error SOLD_OUT">Sold<br>Out</div>
+                <div class="caption CLOSED">Sale<br>Over</div>
+                <div class="caption warning AT_LIMIT">At<br>Limit</div>
+                <div class="caption tag" style="display: none;"></div>
+                <div class="quantity OPEN QUEUED AT_LIMIT">{{getProductQty(product)}}</div>
+            </div> <a [routerLink]="" (click)="decreaseProductQty(product)" action="remove" theme="WHITE"><span class="icon icon-minus"
+                    aria-hidden="true"></span></a> <a [routerLink]="" (click)="increaseProductQty(product)" action="add"
+                class="OPEN LOCKED QUEUED AT_LIMIT AT_Q_LIMIT"> <span
+                    class="icon OPEN LOCKED QUEUED AT_LIMIT AT_Q_LIMIT icon-plus" aria-hidden="true"></span>
+                <span class="icon LOCKED icon-lock" aria-hidden="true"></span> <span class="icon QUEUED icon-time"
+                    aria-hidden="true"></span> </a> <a class="media-link" href="#"> <span
+                    class="icon circle-border icon-playsymbol" aria-hidden="true"></span> </a>
+        </div>
+    </div>
+</div>

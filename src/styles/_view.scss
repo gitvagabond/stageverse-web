@@ -1,0 +1,138 @@
+.View {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: stretch;
+    width: 100%;
+}
+// @media (min-width: 800px) {
+//     .View {
+//         min-width: 100rem;
+//     }
+// }
+.View > .head,
+.View > .head-fixed,
+.View > .foot {
+    width: 100%;
+    position: fixed;
+    position: sticky;
+    position: -webkit-sticky;
+    right: 0;
+    left: 0;
+    // @media (max-width: 799px) {
+    //     position: fixed;
+    // }
+}
+// .View > .head.head--fixed-mobile,
+// .View > .foot.foot--fixed-mobile {
+//     @media (max-width: 799px) {
+//         position: fixed;
+//     }
+// }
+.View > .head,
+.View > .head-fixed {
+    align-self: flex-start;
+    height: 0;
+    top: 0;
+}
+.View > .head {
+    display: flex;
+    justify-content: flex-end;
+    z-index: 100;
+}
+.View > .head-fixed {
+    z-index: 110;
+}
+.View > .body {
+    flex-grow: 1;
+    width: 100%;
+    z-index: 40;
+}
+@media (max-width: 799px) {
+    .View > .body {
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+}
+.View > .body > .content {
+    position: relative;
+    margin: 0 auto;
+    clear: both;
+}
+@media (min-width: 800px) {
+    .View > .body > .content > .content-wrapper {
+        padding: 12rem 25.5rem 5rem 25.5rem;
+    }
+}
+@media (max-width: 799px) {
+    .View > .body > .content > .content-wrapper {
+        padding: 8rem 0 4rem 0;
+    }
+}
+.View > .body > .column {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+}
+@media (min-width: 800px) {
+    .View > .body > .column {
+        flex-direction: row;
+    }
+}
+@media (max-width: 799px) {
+    .View > .body > .column {
+        flex-direction: column;
+    }
+}
+.View > .body > .column > * {
+    flex: 1 1;
+}
+@media (min-width: 800px) {
+    .View > .body > .column > * {
+        padding: 0 26.5rem;
+    }
+}
+@media (min-width: 1500px) {
+    .View > .body > .column > * {
+        padding: 0 26.5vw;
+    }
+}
+@media (max-width: 799px) {
+    .View > .body > .column > * {
+        padding: 0 1rem;
+    }
+}
+.View > .body > .column > h2 {
+    flex: 0 0 26.5rem;
+}
+@media (min-width: 800px) {
+    .View > .body > .column > h2 {
+        padding: 0 1.65rem 0 10.7rem;
+    }
+}
+@media (min-width: 1500px) {
+    .View > .body > .column > h2 {
+        flex-basis: 26.5vw;
+        padding-left: 10.7vw;
+    }
+}
+@media (max-width: 799px) {
+    .View > .body > .column > h2 {
+        flex-basis: 0;
+        padding-left: 1rem;
+    }
+}
+@media (min-width: 800px) {
+    .View > .body > .column h2 + * {
+        padding-left: 0;
+    }
+}
+.View > .foot {
+    align-self: flex-end;
+    bottom: 0;
+    z-index: 100;
+}
+.View[theme="DARK"] {
+    color: #fff;
+}
+.View[theme="LIGHT"] {
+    color: #000;
+}

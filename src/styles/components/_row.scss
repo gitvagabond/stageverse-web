@@ -1,0 +1,91 @@
+.row {
+	@include clearfix;
+	width: 100%;
+	// margin: $padding-edge #{-$padding-edge} 0;
+
+	// Row sizes
+	$sizes: 1, 2, 3, 4;
+
+	@each $size in $sizes {
+		&.row--of-#{$size} .row__item {
+			width: 100% / $size;
+		}
+	}
+
+	// Break at medium size
+	@include breakpoint(medium) {
+		margin: 0 !important;
+	}
+
+	// Border variant
+	&.row--with-border {
+		.row__item:not(:last-child) {
+			border-right: 1px solid white;
+
+			@include breakpoint(medium) {
+				border-right: none;
+			}
+		}
+	}
+
+	// Unpadded variant
+	&.row--unpadded {
+		.row__item {
+			padding: 0;
+		}
+	}
+
+	// Row item default styles
+	.row__item {
+		float: left;
+		padding: 0 $padding-edge;
+
+		&.row__item--hover-link {
+			a {
+				transition: opacity $transition-short;
+				opacity: 1;
+
+				&:hover {
+					opacity: 0.7;
+				}
+			}
+		}
+
+		.row__item__inner {
+			padding: 3rem;
+		}
+	}
+
+	@include breakpoint(medium) {
+		&.row--mobile .row__item {
+			width: 50%;
+		}
+
+		&:not(.row--mobile) .row__item {
+			float: none;
+			margin: 0;
+			padding: $padding-edge 0 0;
+			width: auto !important;
+		}
+	}
+
+	&.row--encased {
+		.row__item {
+			@include breakpoint(medium) {
+				padding-top: 0.5rem;
+			}
+			.row__item__case {
+				background: rgba(255, 255, 255, 0.043);
+				border-radius: 2rem;
+				overflow: hidden;
+			}
+			&:not(:last-child) {
+				.row__item__case {
+					@media (min-width: 800px) {
+						margin-right: 0.3rem;
+					}
+				}
+			}
+		}
+	}
+}

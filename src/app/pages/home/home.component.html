@@ -1,0 +1,512 @@
+<div>
+    <div class="nav-container">
+        <ul class="nav">
+            <li class="nav-item">
+                <a routerLink="/" class="nav-link">
+
+                    <img src="assets/images/ui-assets/Lockup.png" class="logo-stageverse" alt="Logo" />
+                </a>
+            </li>
+            <li class="nav-item sm-hide" style="display: flex;gap: 1px; float:right">
+                <a [routerLink]="" (click)="showEarlyAccess()" action="early-access" class="nav-link">
+                    <img src="/assets/images/ui-assets/apple-button.png" style="height: 60px;">
+                </a>
+                <a [routerLink]="" (click)="showEarlyAccess()" action="early-access" class="nav-link">
+                    <img src="/assets/images/ui-assets/android-button.png" style="height: 60px;">
+                </a>
+                <a [routerLink]="" (click)="showEarlyAccess()" action="early-access" class="nav-link">
+                    <img src="/assets/images/ui-assets/ring.png" style="height: 60px;">
+                </a>
+            </li>
+            <li class="nav-item disktop-hide" style="float: right !important; margin-top: -15px;" (click)="menu=!menu">
+                <a *ngIf="menu==false" href="javascript:void(0);" class="nav-link">
+                    <img src="/assets/images/ui-assets/menu-icon.png" style="height: 50px;" />
+                </a>
+                <a *ngIf="menu==true" href="javascript:void(0);" class="nav-link">
+                    <img src="/assets/images/ui-assets/menu-icon-expand.png" style="height: 50px;" />
+                </a>
+            </li>
+        </ul>
+
+        <ul *ngIf="menu==true" class="nav-mobile">
+
+            <div class="logo-container">
+                <h1 class="footer-big-text">
+                    <li><a routerLink="/careers" class="links-a">CAREERS</a></li>
+                    <li><a routerLink="/creators" class="links-a">CREATORS</a></li>
+                    <li><a routerLink="/press" class="links-a">PRESS</a></li>
+                    <li><a routerLink="/company" class="links-a">COMPANY</a></li>
+                    <li><a routerLink="/blog" class="links-a">BLOG</a></li>
+                    <li><a routerLink="/support" class="links-a">SUPPORT</a></li>
+                </h1>
+            </div>
+
+            <div class="content footer ">
+                <app-footer></app-footer>
+            </div>
+
+            <li class="nav-item-mobile">
+
+
+
+                <a [routerLink]="" (click)="showEarlyAccess()" action="early-access" class="nav-link">
+                    <img src="/assets/images/ui-assets/apple-button.png" style="height: 40px;">
+                </a>
+                <a [routerLink]="" (click)="showEarlyAccess()" action="early-access" class="nav-link">
+                    <img src="/assets/images/ui-assets/android-button.png" style="height: 40px;">
+                </a>
+                <a [routerLink]="" (click)="showEarlyAccess()" action="early-access" class="nav-link">
+                    <img src="/assets/images/ui-assets/ring.png" style="height: 40px;">
+                </a>
+            </li>
+
+            <div class="social-media-footer-container home-social-media-top-container">
+                <a href="https://www.instagram.com/stageverse" target="blank"
+                    class="social-media-footer links-a"><img
+                        src="assets/images/ui-assets/instagram.png" alt="instagram icon"></a>
+                <a href=" https://discord.com/invite/uhMjf7sF6Z" target="blank"
+                    class="social-media-footer links-a"><img src="assets/images/ui-assets/discord.png"
+                        alt="social icon"></a>
+                <a href="https://www.linkedin.com/company/stageverse" target="blank"
+                    class="social-media-footer links-a"><img
+                        src="assets/images/ui-assets/linkedIn.png" alt="linkedIn icon"></a>
+                <a href="https://twitter.com/thestageverse" target="blank"
+                    class="social-media-footer links-a"><img
+                        src="assets/images/ui-assets/twitter.png" alt="twitter icon"></a>
+                <a href="#" class="social-media-footer links-a"><img
+                        src="assets/images/ui-assets/Frame1846.svg" alt="twitter icon"></a>
+            </div>
+
+            <div class="footer-copyright copy-right-pos">© 2021 Stage, Inc.</div>
+
+        </ul>
+
+
+
+    </div>
+    <div class="body">
+        <div>
+            <div class="example-collection-grid">
+                <div class="example-collection-cell">
+                    <div class="example-collection-item left-image">
+                        <div class="left-image-text">
+                            <h1 class="left-image-text-title">FUTURE CULTURE HAPPENS HERE.</h1>
+                        </div>
+                        <div class="left-image-text-box">
+                            <p class="left-image-text-subtitle">Stageverse is an NFT-based world of beautifully designed
+                                3D venues where friends and communities connect, grow, have fun, and share culture.</p>
+                            <a class="left-image-text-btn btn-position" (click)="scroll('downloads')" href="javascript:void(0);" >Get the App <img
+                                    src="/assets/images/ui-assets/black-arrow.png" /></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class=" example-collection-cell hide-collection-cell">
+                    <div class="example-collection-grid nested">
+                        <div class="example-collection-cell _1of2">
+                            <div class="example-collection-item right-two">
+                                <div class="right-header-content">
+                                    <a class="right-image-text-btn" (click)="scroll('events')" href="javascript:void(0);">Explore Events <img
+                                            src="/assets/images/ui-assets/arrow-white.png" /></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="example-collection-cell _1of2">
+                            <div class="example-collection-item right-four">
+                                <div class="right-header-content">
+                                    <a class="right-image-text-btn" (click)="scroll('venues')" href="javascript:void(0);" >Explore Venues <img
+                                            src="/assets/images/ui-assets/arrow-white.png" /></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="example-collection-cell _1of2">
+                            <div class="example-collection-item right-three">
+                                <div class="right-header-content">
+                                    <a class="right-image-text-btn" (click)="scroll('drops')" href="javascript:void(0);" > Explore Drops <img
+                                            src="/assets/images/ui-assets/arrow-white.png" /></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="example-collection-cell _1of2">
+                            <div class="example-collection-item right-one">
+                                <div class="right-header-content">
+                                    <a class="right-image-text-btn"  (click)="scroll('memberships')" href="javascript:void(0);">Explore Memberships <img
+                                            src="/assets/images/ui-assets/arrow-white.png" /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="container title-container">
+                <h1 class="title-sm" id="events">Events</h1>
+                <h1 class="title-lg">Explore what’s happening</h1>
+            </div>
+        </div>
+        <div class="desktop">
+            <div class="example-collection-grid">
+                <div class="example-collection-cell">
+                    <div class="example-collection-item what-happen">
+                        <div class="simulation-content ">
+                            <p class="paragraph">Started AUG 12</p>
+                            <h3 class="h3">Muse: Enter The Simulation</h3>
+                            <p class="paragraph">CONCERT · STAGEVERSE STADIUM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="example-collection-cell">
+                    <div class="example-collection-grid nested">
+                        <div class="example-collection-cell ">
+                            <div class="example-collection-item simulation-2">
+                                <div class="gradient">
+                                    <div class="simulation-content-2">
+                                        <p class="paragraph">COMING SOON · may 31</p>
+                                        <h3 class="h3">Shantell Martin</h3>
+                                        <p class="paragraph">ART GALLERY · CENTER STAGE</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="example-collection-cell ">
+                            <div class="example-collection-item simulation-3">
+                                <div class="gradient">
+
+                                    <div class="simulation-content-2">
+                                        <p class="paragraph">COMING SOON · may 31</p>
+                                        <h3 class="h3">Neon Dreams</h3>
+                                        <p class="paragraph">NFT DROP · CENTER STAGE</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <owl-carousel-o class="mobile" [options]="customOptions">
+            <ng-template class="example-collection-grid" carouselSlide>
+                <div class="example-collection-cell">
+                    <div class="example-collection-item what-happen">
+                        <div class="gradient">
+
+                            <div class="simulation-content">
+                                <p class="paragraph">Started AUG 12</p>
+                                <h3 class="h3">Muse: Enter The Simulation</h3>
+                                <p class="paragraph">CONCERT · STAGEVERSE STADIUM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template class="example-collection-grid nested" carouselSlide>
+                <div class="example-collection-cell">
+                    <div class="example-collection-item simulation-2">
+                        <div class="simulation-content-2">
+                            <p class="paragraph">COMING SOON · may 31</p>
+                            <h3 class="h3">Shantell Martin</h3>
+                            <p class="paragraph">ART GALLERY · CENTER STAGE</p>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template class="example-collection-grid nested" carouselSlide>
+                <div class="example-collection-cell">
+                    <div class="example-collection-item simulation-3">
+                        <div class="simulation-content-2">
+                            <p class="paragraph">COMING SOON · may 31</p>
+                            <h3 class="h3">Neon Dreams</h3>
+                            <p class="paragraph">NFT DROP · CENTER STAGE</p>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+
+
+
+        </owl-carousel-o>
+        <div>
+            <div class="container title-container">
+                <h1 class="title-sm" id="venues">Venues</h1>
+                <h1 class="title-lg">Explore Beautiful social spaces</h1>
+            </div>
+        </div>
+        <owl-carousel-o [options]="customOptions">
+            <ng-template class="example-collection-grid" carouselSlide>
+                <div class="example-collection-cell">
+                    <div class="slide example-collection-item muse">
+                        <div class="gradient-2">
+                            <div class="simulation-content-venues">
+                                <p class="h3">Center Stage</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template class="example-collection-grid" carouselSlide>
+                <div class="example-collection-cell">
+
+                    <div class="slide example-collection-item muse-2">
+                        <div class="gradient-2">
+                            <div class="simulation-content-venues">
+                                <p class="h3">Stageverse Stadium</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </ng-template>
+
+
+
+        </owl-carousel-o>
+
+        <div>
+            <div class="container title-container">
+                <h1 class="title-sm" id="drops">Drops</h1>
+                <h1 class="title-lg">Collect nft-based avatars and digital goods</h1>
+            </div>
+        </div>
+
+        <owl-carousel-o [options]="customOptions">
+            <ng-template class="example-collection-grid" carouselSlide>
+                <div class="example-collection-cell">
+                    <div class="example-collection-item collection-left">
+                        <div class="muse-content">
+                            <h3 class="h3">Muse NPC Collection</h3>
+                            <p class="paragraph">Outfits · Limites</p>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template class="example-collection-grid" carouselSlide>
+                <div class="example-collection-cell">
+
+                    <div class="example-collection-item collection-right">
+                        <div class="muse-content">
+                            <h3 class="h3">Balmain Simulation Collection</h3>
+                            <p class="paragraph">Outfits · Limites</p>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+
+
+
+        </owl-carousel-o>
+        <div>
+            <div class="container title-container">
+                <h1 class="title-sm" id="memberships">Memberships</h1>
+                <h1 class="title-lg">The first metaverse social club </h1>
+            </div>
+        </div>
+        <div>
+            <div class="example-collection-grid membership">
+                <div class="example-collection-cell membership-left">
+                    <div class="example-collection-item ">
+                        <div class="membership-text">
+                            <h1 class="membership-title">FUTURE CULTURE CLUB</h1>
+
+                            <p class="membership-subtitle">Apply to be part of the most exclusive members club of the
+                                metaverse and gain access to events, perks and more. + ownership (first members club
+                                owned by its members) + buy, sell, trade, collect/own</p>
+                            <a class="right-image-text-btn btn-position" (click)="openDialog()" href="javascript:void(0);">Get an Invite<img
+                                    src="/assets/images/ui-assets/arrow-white.png" /></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="example-collection-cell ">
+                    <div class="example-collection-item ">
+                        <div class="membership-right">
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="container title-container margin-bottom">
+                <h1 class="title-sm">Stageverse 101</h1>
+                <h1 class="title-lg">Expand your world on stageverse </h1>
+            </div>
+        </div>
+        <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <owl-carousel-o [options]="customOptions">
+            <ng-template class="example-collection-grid" carouselSlide>
+                <div class="example-collection-cell">
+                    <div class="video-container1 ">
+                        <video class="video-size" autoplay loop muted>
+                            <source src="/assets/images/ui-assets/video-3.mp4" type="video/mp4" />
+                        </video>
+                        <div class="overlay1" >
+                            <div class="stageverse-content1">
+                                <h4 class="stage-heading">Customizable Avatars</h4>
+                                <p class="stageverse-text stage-paragraph">Flex your style with full-body, expressive
+                                    avatars.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template class="example-collection-grid" carouselSlide>
+                <div class="example-collection-cell">
+                    <div class="video-container1 ">
+                        <video class="video-size" autoplay loop muted>
+                            <source src="/assets/images/ui-assets/video-2.mp4" type="video/mp4" />
+                        </video>
+                        <div class="overlay1" >
+                            <div class="stageverse-content1 ">
+                                <h4 class="stage-heading">Friends & Parties</h4>
+                                <p class="stageverse-text stage-paragraph">Meet up and explore together. Can we add one more
+                                    line here?</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template class="example-collection-grid" carouselSlide>
+                <div class="example-collection-cell">
+                    <div class="video-container1 ">
+                        <video class="video-size" autoplay loop muted>
+                            <source src="/assets/images/ui-assets/video-1.mp4" type="video/mp4" />
+                        </video>
+                        <div class="overlay1" >
+                            <div class="stageverse-content1 ">
+                                <h4 class="stage-heading">Spatial Voice Chat</h4>
+                                <p class="stageverse-text stage-paragraph">Talk and connect with others in
+                                    beautifully-designed 3D spaces</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template class="example-collection-grid" carouselSlide>
+                <div class="example-collection-cell">
+                    <div class="video-container1 ">
+                        <video class="video-size" autoplay loop muted>
+                            <source src="/assets/images/ui-assets/video-4.mp4" type="video/mp4" />
+                        </video>
+                        <div class="overlay1" >
+                            <div class="stageverse-content1 ">
+                                <h4 class="stage-heading">Virtual Goods</h4>
+                                <p class="stageverse-text stage-paragraph">Play and express yourself with interactive toys
+                                    and collectible items</p>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </ng-template>
+
+        </owl-carousel-o>
+        <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <div>
+            <div class="container title-container">
+                <h1 class="title-sm">COMMUNITY</h1>
+                <h1 class="title-lg">JOIN THE JOURNEY</h1>
+            </div>
+        </div>
+        <div class="culture-1">
+            <div class="culture-left">
+                <div class="culture-title-container">
+                    <h1 class="culture-title" style="color: white;">MOVE CULTURE FORWARD TOGETHER</h1>
+                </div>
+                <div class="culture-text-container">
+                    <p class="culture-subtitle">Apply to be part of the most exclusive members club of the metaverse and
+                        gain access to events.</p>
+                </div>
+                <div class="culture-buttons">
+                    <a class="left-image-text-btn culture-btn create-with-us" href="javascript:void(0);">Create with
+                        us<img class="create-img" src="/assets/images/ui-assets/black-arrow.png" /></a>
+                    <a class="left-image-text-btn culture-btn join-our-discord" href="javascript:void(0);">Join our
+                        Discord<img src="/assets/images/ui-assets/black-arrow.png" /></a>
+                </div>
+
+            </div>
+            <div class="culture-right">
+                <img class="mobile image-width" src="/assets/images/ui-assets/culture-women.png" />
+            </div>
+        </div>
+        <div>
+            <div class="container title-container">
+                <h1 class="title-sm" id="downloads">DOWNLOAD</h1>
+                <h1 class="title-lg">GET THE STAGEVERSE APP AND JUMP IN</h1>
+            </div>
+        </div>
+        <div>
+            <div class="download-container">
+                <a href="#"> <img src="/assets/images/ui-assets/ios-btn.png" class="download-img-btn" /></a>
+                <a href="#"><img src="/assets/images/ui-assets/android-btn.png" class="download-img-btn" /></a>
+                <a href="#"><img src="/assets/images/ui-assets/quest-btn.png" class="download-img-btn" /></a>
+                <h2 class="donwnload-sub-text">comming soon</h2>
+            </div>
+        </div>
+        <div>
+            <div class="example-collection-grid download-container-hide">
+                <div class="example-collection-cell">
+                    <div class="example-collection-item download-1">
+                        <div class="download">
+                            <h2 class="download-title">IOS</h2>
+                            <img class="download-img" src="/assets/images/ui-assets/apple.png" />
+                            <a class="left-image-text-btn download-btn" href="javascript:void(0);">Download<img
+                                    src="/assets/images/ui-assets/arrow-white.png" /></a>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="example-collection-cell ">
+                    <div class="example-collection-item download-2">
+                        <div class="download">
+                            <h2 class="download-title">android</h2>
+                            <img class="download-img" src="/assets/images/ui-assets/android.png" />
+                            <a class="left-image-text-btn download-btn" href="javascript:void(0);">Download<img
+                                    src="/assets/images/ui-assets/arrow-white.png" /></a>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="example-collection-cell">
+                    <div class="example-collection-item download-3">
+                        <div class="download">
+                            <h2 class="download-title">Quest</h2>
+                            <img class="quest" src="/assets/images/ui-assets/opera.png" />
+                            <a class="left-image-text-btn download-btn" href="javascript:void(0);">Download<img
+                                    src="/assets/images/ui-assets/arrow-white.png" /></a>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="example-collection-cell">
+                    <div class="example-collection-item download-4">
+                        <div class="download coming-soon">
+                            <img class="download-img" src="/assets/images/ui-assets/coming-soon.png" />
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- =======================footer============================================================================================== -->
+       <app-footer-two></app-footer-two>
+    </div>
+
+    <div class="content footer footer-mt" >
+        <app-footer></app-footer>
+            <div class="footer-copyright copy-right-bottom mobile">© 2021 Stage, Inc.</div>
+    </div>
+
+</div>

@@ -1,0 +1,51 @@
+@import "../overlay.component.scss";
+
+.Overlay.Message > .background {
+    background-size: cover;
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
+@media (min-width: 800px) {
+    .Overlay.Message > .body > .logo {
+        width: 10rem;
+        position: absolute;
+        top: 0;
+        left: 5rem;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.Message > .body > .logo {
+        width: 5rem;
+        position: absolute;
+        top: 0;
+        left: 1rem;
+    }
+}
+.Overlay.Message > .body > .logo > img {
+    width: 100%;
+}
+@media (min-width: 800px) {
+    .Overlay.Message > .body > .content {
+        width: 33rem;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.Message > .body > .content {
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+    }
+}
+.Overlay.Message .highlight {
+    font-weight: 400;
+    color: #ff8600;
+    border-bottom: 1px dashed #000;
+}
+.Overlay.Message .textbox {
+    text-align: left;
+    margin-bottom: 4rem;
+}
+.Overlay.Message .textbox.success > .icon-container > .icon,
+.Overlay.Message .textbox.success > .input-container > input {
+    color: #3c8100;
+    font-weight: 400;
+}

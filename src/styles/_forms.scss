@@ -1,0 +1,549 @@
+form input.submit {
+    display: block;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.Input.Hidden {
+    display: none !important;
+}
+.Input {
+    height: 4rem;
+    width: 100%;
+    margin: 0 auto 0.7rem auto;
+    position: relative;
+    clear: both;
+}
+.Input.compact {
+    margin-bottom: 0;
+}
+.Input > .background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 3px;
+    z-index: 1;
+}
+.Input > .icon-container,
+.Input > .label-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.Input > input {
+    position: relative;
+    border-radius: 3px;
+    transition: opacity 0.2s ease-in-out, padding 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+.Input > .icon-container > .icon,
+.Input > .label-container,
+.Input > .label-container > .label {
+    transition: all 0.2s ease-in-out;
+}
+.Input.valid.has-label > .label-container {
+    top: 0.4rem;
+    transform: translateY(0);
+}
+.Input.valid.has-label > .label-container > .label {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+.Input.valid.has-label.hide-label > .label-container {
+    opacity: 0;
+}
+.Input.valid.has-label > input {
+    padding-top: 1rem;
+}
+.Input.valid.has-label.hide-label > input {
+    padding-top: 0;
+}
+.Input > .icon-container.left {
+    left: 1.8rem;
+}
+.Input > .icon-container.right {
+    right: 1.2rem;
+}
+.Input > .icon-container.right > .icon {
+    font-size: 0.8rem;
+}
+.Input > .icon-container,
+.Input > .label-container {
+    z-index: 20;
+}
+.Input > .label-container {
+    left: 1.3rem;
+    right: 1.3rem;
+}
+.Input > input {
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+}
+.Input > .icon-container > .icon,
+.Input > .label-container > .label,
+.Input > input {
+    font-size: 1.2rem;
+}
+.Input.has-left-icon > .label-container {
+    left: 4.2rem;
+}
+.Input.has-left-icon > input {
+    padding-left: 4.2rem;
+}
+.Input.has-right-icon > .label-container {
+    right: 2.5rem;
+}
+.Input.has-right-icon > input {
+    padding-right: 2.5rem;
+}
+.Input.disabled > input,
+.Input.disabled > .label-container,
+.Input.disabled > .icon-container {
+    opacity: 0.7;
+}
+.Input.disabled,
+.Input.disabled input,
+.Input.disabled a,
+.Input.disabled > [action="reset"] {
+    cursor: not-allowed;
+}
+.Input > [action="reset"] {
+    opacity: 0;
+    z-index: -1;
+    cursor: pointer;
+}
+.Input.valid > [action="reset"] {
+    opacity: 1;
+    z-index: 30;
+}
+@media (max-width: 799px) {
+    .Input > .icon-container.left {
+        left: 1rem;
+    }
+    .Input > .label-container {
+        left: 1rem;
+    }
+    .Input > input {
+        padding-left: 1rem;
+    }
+    .Input > .icon-container.right {
+        right: 1rem;
+    }
+    .Input > .label-container {
+        right: 1rem;
+    }
+    .Input > input {
+        padding-right: 1rem;
+    }
+    .Input.has-left-icon > .label-container {
+        left: 3rem;
+    }
+    .Input.has-left-icon > input {
+        padding-left: 3rem;
+    }
+    .Input.has-right-icon > .label-container {
+        right: 3rem;
+    }
+    .Input.has-right-icon > input {
+        padding-right: 3rem;
+    }
+}
+.Input[theme="DARK"] > .background {
+    background-color: #404040;
+}
+.Input[theme="DARK"] > .label-container > .label,
+.Input[theme="DARK"] > .icon-container > .icon,
+.Input[theme="DARK"] > input {
+    color: #888;
+}
+.Input[theme="DARK"]:hover > .icon-container > .icon,
+.Input[theme="DARK"].focus > .icon-container > .icon,
+.Input[theme="DARK"].disabled > .icon-container > .icon,
+.Input[theme="DARK"]:hover > input,
+.Input[theme="DARK"].focus > input,
+.Input[theme="DARK"].disabled > input {
+    color: #fff;
+}
+.Input[theme="DARK"].valid > .icon-container > .icon,
+.Input[theme="DARK"].valid > input {
+    color: #fff;
+}
+.Input[theme="DARK"].disabled {
+    opacity: 0.5;
+}
+.Input[theme="LIGHT"] > .background {
+    background-color: #fff;
+}
+.Input[theme="LIGHT"] > .label-container > .label,
+.Input[theme="LIGHT"] > .icon-container > .icon,
+.Input[theme="LIGHT"] > input {
+    color: #888;
+}
+.Input[theme="LIGHT"]:hover > .label-container > .label,
+.Input[theme="LIGHT"].focus > .label-container > .label,
+.Input[theme="LIGHT"]:hover > .icon-container > .icon,
+.Input[theme="LIGHT"].focus > .icon-container > .icon,
+.Input[theme="LIGHT"]:hover > input,
+.Input[theme="LIGHT"].focus > input {
+    color: #000;
+}
+.Input[theme="LIGHT"].valid > .label-container > .label,
+.Input[theme="LIGHT"].valid > .icon-container > .icon,
+.Input[theme="LIGHT"].valid > input {
+    color: #000;
+}
+.Input[theme="LIGHT"].disabled > .background {
+    background-color: #dadada;
+}
+.Input[theme="LIGHT"].error > .label-container > .label,
+.Input[theme="LIGHT"].error > .icon-container > .icon,
+.Input[theme="LIGHT"].error > input {
+    color: red;
+}
+.Input[theme="TRANSPARENT"] > .label-container > .label,
+.Input[theme="TRANSPARENT"] > .icon-container > .icon,
+.Input[theme="TRANSPARENT"] > input {
+    color: #888;
+}
+.Input[theme="TRANSPARENT"]:hover > .label-container > .label,
+.Input[theme="TRANSPARENT"].focus > .label-container > .label,
+.Input[theme="TRANSPARENT"].disabled > .label-container > .label,
+.Input[theme="TRANSPARENT"]:hover > .icon-container > .icon,
+.Input[theme="TRANSPARENT"].focus > .icon-container > .icon,
+.Input[theme="TRANSPARENT"].disabled > .icon-container > .icon,
+.Input[theme="TRANSPARENT"]:hover > input,
+.Input[theme="TRANSPARENT"].focus > input,
+.Input[theme="TRANSPARENT"].disabled > input {
+    color: #000;
+}
+.Input[theme="TRANSPARENT"].valid > input {
+    color: #000;
+}
+.Input[theme="TRANSPARENT"].error > .label-container > .label,
+.Input[theme="TRANSPARENT"].error > .icon-container > .icon,
+.Input[theme="TRANSPARENT"].error > input {
+    color: red;
+}
+.Input[theme="TRANSPARENT-LIGHT"] > .label-container > .label,
+.Input[theme="TRANSPARENT-LIGHT"] > .icon-container > .icon,
+.Input[theme="TRANSPARENT-LIGHT"] > input {
+    color: #e3e3e3;
+}
+.Input[theme="TRANSPARENT-LIGHT"]:hover > .label-container > .label,
+.Input[theme="TRANSPARENT-LIGHT"].focus > .label-container > .label,
+.Input[theme="TRANSPARENT-LIGHT"].disabled > .label-container > .label,
+.Input[theme="TRANSPARENT-LIGHT"]:hover > .icon-container > .icon,
+.Input[theme="TRANSPARENT-LIGHT"].focus > .icon-container > .icon,
+.Input[theme="TRANSPARENT-LIGHT"].disabled > .icon-container > .icon,
+.Input[theme="TRANSPARENT-LIGHT"]:hover > input,
+.Input[theme="TRANSPARENT-LIGHT"].focus > input,
+.Input[theme="TRANSPARENT-LIGHT"].disabled > input {
+    color: #fff;
+}
+.Input[theme="TRANSPARENT-LIGHT"].valid > input {
+    color: #fff;
+}
+.Input[theme="TRANSPARENT-LIGHT"].error > .label-container > .label,
+.Input[theme="TRANSPARENT-LIGHT"].error > .icon-container > .icon,
+.Input[theme="TRANSPARENT-LIGHT"].error > input {
+    color: red;
+}
+
+/* this should be moved to input-textbox component */
+.Input.Textbox {
+    overflow: hidden;
+    background-color: transparent;
+    cursor: text;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+}
+@media (max-width: 799px) {
+    .Input.Textbox > .icon {
+        left: 0.5rem;
+    }
+}
+.Input.Textbox .label {
+    white-space: nowrap;
+}
+.Input.Textbox > input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.Input.Textbox > .border-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    pointer-events: none;
+    z-index: 20;
+    transition: border-color 0.2s ease-in-out;
+}
+.Input.Textbox.large {
+    font-size: 1.5rem;
+}
+.Input.Textbox.error > .border-container {
+    border: 2px solid red !important;
+}
+.Input.Textbox[theme="DARK"]:hover > .border-container,
+.Input.Textbox[theme="DARK"].focus > .border-container {
+    border: 2px solid #585858;
+}
+.Input.Textbox[theme="LIGHT"]:hover > .border-container,
+.Input.Textbox[theme="LIGHT"].focus > .border-container {
+    border: 2px solid #dadada;
+}
+/* input dropbox - should be moved to its own component input-dropbox */
+.Input.Dropdown {
+    height: 4rem;
+    overflow: hidden;
+    cursor: text;
+}
+.Input.Dropdown ::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 0.6rem;
+    padding: 0;
+    border-radius: 0;
+    background-color: #b4b4b4;
+}
+.Input.Dropdown ::-webkit-scrollbar-thumb {
+    border-radius: 0;
+    background-color: #595959;
+}
+.Input.Dropdown.disabled {
+    cursor: not-allowed;
+}
+.Input.Dropdown > ul {
+    display: flex;
+    flex-direction: column;
+    max-height: 15rem;
+    margin: 0 1px 0 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    overflow: auto;
+    list-style-type: none;
+    color: #595959;
+    cursor: pointer;
+    z-index: 100;
+}
+.Input.Dropdown > ul > li {
+    flex-shrink: 0;
+    height: 3rem;
+    display: block;
+    position: relative;
+}
+.Input.Dropdown > ul > li p {
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 0 1rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.Input.Dropdown > ul > li .info {
+    position: absolute;
+    top: 50%;
+    right: 1.2rem;
+    transform: translateY(-50%);
+}
+.Input.Dropdown.inverted > ul {
+    top: auto;
+    bottom: 100%;
+    flex-direction: column-reverse;
+}
+.Input.Dropdown:hover,
+.Input.Dropdown.focus {
+    overflow: visible;
+    z-index: 200;
+}
+.Input.Dropdown[theme="DARK"] > ul {
+    background-color: #222;
+}
+.Input.Dropdown[theme="DARK"] > ul > li:hover,
+.Input.Dropdown[theme="DARK"] > ul > li.suggested {
+    background-color: #222f39;
+}
+.Input.Dropdown[theme="DARK"] > ul > li.selected {
+    color: #fff;
+}
+.Input.Dropdown[theme="DARK"] > ul > li.divider {
+    border-top: 1px solid #595959;
+}
+.Input.Dropdown.focus {
+    z-index: 10000;
+}
+.Input.Dropdown[theme="LIGHT"] > ul {
+    background-color: #e3e3e3;
+}
+.Input.Dropdown[theme="LIGHT"] > ul > li:hover,
+.Input.Dropdown[theme="LIGHT"] > ul > li.suggested {
+    background-color: #ddd;
+}
+.Input.Dropdown[theme="LIGHT"] > ul > li.selected {
+    color: #000;
+}
+.Input.Dropdown[theme="LIGHT"] > ul > li.divider {
+    border-top: 1px solid #000;
+}
+.Input.Dropdown[theme="LIGHT"].error .icon {
+    color: red;
+}
+/* checkbox - moved to input-checkbox */
+.Input.Checkbox {
+    display: flex;
+    height: auto;
+    transition: background-color 0.2s ease-in-out;
+}
+@media (min-width: 800px) {
+    .Input.Checkbox {
+        padding: 0.7rem 0 0.7rem 1.8rem;
+    }
+}
+@media (max-width: 799px) {
+    .Input.Checkbox {
+        padding: 0.7rem 0 0.7rem 0.7rem;
+    }
+}
+.Input.Checkbox > .box {
+    flex-grow: 0;
+    display: flex;
+    width: 1.4rem;
+    height: 1.4rem;
+    margin-right: 0.7rem;
+    padding: 2px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.Input.Checkbox > .box > div {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    transition: background-color 0.2s ease-in-out;
+    border-radius: 1px;
+}
+.Input.Checkbox.disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+.Input.Checkbox.disabled > .box {
+    cursor: not-allowed;
+}
+.Input.Checkbox > .label {
+    flex-grow: 1;
+}
+.Input.Checkbox.align-right {
+    justify-content: flex-end;
+}
+@media (min-width: 800px) {
+    .Input.Checkbox.align-right {
+        padding: 0.7rem 1.8rem 0.7rem 0;
+    }
+}
+@media (max-width: 799px) {
+    .Input.Checkbox.align-right {
+        padding: 0.7rem 0.7rem 0.7rem 0;
+    }
+}
+.Input.Checkbox.align-right > .label {
+    flex-grow: 0;
+}
+.Input.Checkbox[theme="DARK"] {
+    color: #fff;
+}
+.Input.Checkbox[theme="DARK"] > .box {
+    border: 2px solid #fff;
+}
+.Input.Checkbox[theme="DARK"].true > .box > div {
+    background-color: #fff;
+}
+.Input.Checkbox[theme="LIGHT"] {
+    color: #000;
+}
+.Input.Checkbox[theme="LIGHT"] > .box {
+    border: 2px solid #000;
+}
+.Input.Checkbox[theme="LIGHT"].true > .box > div {
+    background-color: #000;
+}
+/* credit card box - moved to input-creditcardbox */
+.Input.CreditCardBox > [name="creditCardForm"] {
+    display: flex;
+}
+.Input.CreditCardBox > [name="creditCardForm"] > [name="expDate"],
+.Input.CreditCardBox > [name="creditCardForm"] > [name="number"] {
+    margin-right: 0.7rem;
+}
+.Input.CreditCardBox > [name="creditCardForm"] > [name="expDate"] {
+    width: 12rem;
+}
+.Input.CreditCardBox > [name="creditCardForm"] > [name="cvv"] {
+    width: 10rem;
+}
+/* date-picker */
+.Input.DatePicker {
+    margin-bottom: 0.8rem;
+    overflow: visible;
+}
+.Input.DatePicker > ul {
+    display: flex;
+    height: 4rem;
+}
+.Input.DatePicker > ul > li {
+    flex: 3;
+    height: 4rem;
+}
+.Input.DatePicker > ul > li.label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px 0 0 3px;
+    flex: 2;
+    cursor: default;
+}
+@media (min-width: 800px) {
+    .Input.DatePicker > ul > li.label {
+        font-weight: 400;
+        font-size: 1.071rem;
+        letter-spacing: 0.018rem;
+        line-height: 1.714rem;
+    }
+}
+@media (max-width: 799px) {
+    .Input.DatePicker > ul > li.label {
+        font-weight: 400;
+        font-size: 1.071rem;
+        letter-spacing: 0.018rem;
+        line-height: 1.714rem;
+    }
+}
+.Input.DatePicker > ul > li .Input,
+.Input.DatePicker > ul > li .Input .background,
+.Input.DatePicker > ul > li .Input .border-container {
+    border-radius: 0;
+}
+.Input.DatePicker > ul > li + li {
+    margin-left: 1px;
+}
+.Input.DatePicker > ul > li:last-child .Input,
+.Input.DatePicker > ul > li:last-child .Input .background,
+.Input.DatePicker > ul > li:last-child .Input .border-container {
+    border-radius: 0 3px 3px 0;
+}
+.Input.DatePicker[theme="DARK"] > ul > .label {
+    background-color: #404040;
+    color: #888;
+}

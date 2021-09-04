@@ -1,0 +1,77 @@
+@media (min-width: 800px) {
+    .Overlay.RegisterUser > .body > .content {
+        padding-left: 10.7rem;
+        padding-right: 10.7rem;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.RegisterUser > .body > .content {
+        padding-left: 1.14rem;
+        padding-right: 1.14rem;
+    }
+}
+@media (min-width: 800px) {
+    .Overlay.RegisterUser > .body > .content > h2 {
+        margin-bottom: 4.6rem;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.RegisterUser > .body > .content > h2 {
+        margin-bottom: 3rem;
+    }
+}
+.Overlay.RegisterUser > .body > .content h3 {
+    width: 100%;
+    margin-top: 2.85rem;
+    margin-bottom: 1.4rem;
+}
+.Overlay.RegisterUser > .body > .content .column,
+.Overlay.RegisterUser > .body > .content [name="form"] {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+@media (max-width: 799px) {
+    .Overlay.RegisterUser > .body > .content [name="form"] {
+        flex-direction: column;
+    }
+}
+@media (min-width: 800px) {
+    .Overlay.RegisterUser > .body > .content [name="form"] .column {
+        width: 50%;
+        margin-bottom: 1rem;
+        padding-right: 3.6rem;
+    }
+    .Overlay.RegisterUser > .body > .content [name="form"] .column + .column {
+        padding-left: 3.6rem;
+        padding-right: 0;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.RegisterUser > .body > .content [name="form"] .column {
+        width: 100%;
+    }
+}
+.Overlay.RegisterUser > .body > .content [name="form"] [name="phoneNumber"],
+.Overlay.RegisterUser > .body > .content [name="form"] [name="postalCode"] {
+    width: 49%;
+    margin-left: 0;
+    margin-right: 0;
+}
+@media (min-width: 800px) {
+    .Overlay.RegisterUser > .body > .content [name="form"] [name="password"],
+    .Overlay.RegisterUser > .body > .content [name="form"] [name="passwordConfirm"] {
+        width: 49%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+.Overlay.RegisterUser > .body > .content [name="form"] [name="emailOptin"] {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.Overlay.RegisterUser > .body > .content [name="form"] [action="submit"] {
+    width: 100%;
+    margin-top: 1.14rem;
+}

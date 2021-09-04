@@ -1,0 +1,340 @@
+@import "./styles";
+
+.hero-image{
+    background-image: url(/assets/images/ui-assets/company-hero.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    background-size: 100% 100%;
+
+}
+.hero-text{
+    font-family: 'Druk Wide Bold';
+    font-weight: bold;
+    font-size: 9vh;
+    line-height: 110%;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    letter-spacing: 0.02em;
+    font-feature-settings: 'ss04' on, 'ss02' on, 'ss01' on;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.6);
+}
+.container-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.flex-2{
+    flex: 2;
+    padding: 1vh 1vh 1vh 6vh;
+}
+.flex-1{
+    flex: 1;
+}
+.paragraph{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3.7vh;
+    line-height: 130%;
+    letter-spacing: -0.01em;
+    font-feature-settings: 'ss02' on;
+    color: #FFFFFF;
+    
+}
+.paragraph-width{
+    width: 34.4vw;
+}
+.sm-head{
+    font-family: 'Druk Wide Bold';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.1vh;
+    line-height: 2.7vh;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.p-t-20{
+    padding-bottom: 2.5vh;
+    padding-top: 2vh;
+}
+.m-t-10{
+    margin-top: 0.7vh;
+}
+.p-y-30{
+    padding: 12vh 6vh;
+}
+.h-2{
+    font-family: 'Druk Wide Bold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 4.5vh;
+    line-height: 5.92vh;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-feature-settings: 'ss02' on;
+    color: #FFFFFF;
+}
+.container-links{
+    padding: 5vh;
+    margin-left: 6vh;
+    background: rgba(255, 255, 255, 0.1);
+}
+.p-y-10{
+    padding: 1vh 0vh;
+}
+
+.left-image-text-btn{
+    background: #FFFFFF;
+    border-radius: 45px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2vw;
+    line-height: 110%;
+    color: #0A091A;
+    padding: 10px 31px;
+
+}
+
+.left-image-text-btn img{
+    position: relative;
+    top: 1px;
+    left: 17px;
+    height: 3vh;
+}
+
+.left-image-text-btn:hover{
+    background: linear-gradient(0deg, rgba(123, 97, 255, 0.2), rgba(123, 97, 255, 0.2)), #FFFFFF;
+    color: #0A091A;
+}
+
+.p-3{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5vh;
+    line-height: 130%;
+    letter-spacing: -0.01em;
+    font-feature-settings: 'ss02' on;
+    color: #FFFFFF;
+}
+.title-container{
+    width: 94%;
+    margin-left:auto;
+    margin-right: auto;
+    padding: 30px 0px;
+    margin-top: 10vh;
+}
+.title-sm{
+    height: 15px;
+    margin-top: 40px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1vw;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.title-lg{
+    position: static;
+    height: 52px;
+    left: 0px;
+    top: 40px;
+    font-style: normal;
+    font-size: 2.2vw;
+    font-family: 'Druk Wide Bold';
+    line-height: 130%;
+    text-transform: uppercase;
+}
+.download-container{
+    display: none;
+}
+.join-our-discord{
+    margin-left: 20px;
+}
+// ============footer======================
+
+
+// ========End footer =========
+.p{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+ .h3{
+     font-weight: bold;
+    font-size: 1.8vw;
+    line-height: 5vh;
+    letter-spacing: -0.01em;
+    font-feature-settings: "ss02" on;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+
+.download{
+    position: relative;
+    top: 6vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+.download-1{
+    background:linear-gradient(270deg, #5CFFB8 0%, #F4FF5C 100%);
+    height: 60vh;
+}
+.download-2{
+    background: linear-gradient(270deg, #665AFF 0%, #5CFFB8 100%);
+}
+.download-3{
+    background: linear-gradient(270deg, #FF5CF4 0%, #665AFF 100%);
+}
+.download-4{
+    background: linear-gradient(270deg, #FF675C 0%, #FF5CF4 100%);
+}
+.download-title{
+    margin-bottom: 10vh;
+    font-family: 'Druk Wide Bold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2vw;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #000000;
+}
+.download-btn{
+    margin-top: 15vh;
+    background-color: black !important;
+    color: white !important;
+}
+.download-img{
+    height: 16vh;
+
+}
+.quest{
+    height: 13vh;
+    margin-top: 3vh;
+
+}
+.coming-soon{
+    position: relative;
+    top: 37%;
+}
+.company-social-media-top-container{
+    position: absolute;
+    left: 3.11%;
+    width: 88%;
+    top: 16%;
+    gap: 5vh;
+    margin-left: 20px;
+}
+// ==================================================mobile view css=================================================>>>>>>>>>>>>>>
+// On screens that are 600px or less, set the css property
+@media screen and (max-width: 600px) {
+
+.sm-hide{
+     display: none !important;
+}
+
+.disktop-hide{
+    display: block !important;
+}
+.hero-image{
+    height: 30vh;
+    background-size: cover;
+}
+.hero-text{
+    font-size: 5vh;
+}
+.h-2{
+    font-size: 3vh;
+    line-height: 4.6vh;
+}
+.p-y-30{
+    padding: 8vh 2vh;
+}
+.title-sm{
+    font-size: 14px;
+    margin-top: 0px;
+    line-height: 18px;
+}
+.title-lg{
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.container-flex{
+    flex-direction: column;
+}
+.paragraph{
+    font-size: 20px;
+    line-height: 110%;
+}
+.paragraph-width{
+    width: 300px;
+}
+.flex-2{
+    padding: 1vh 1vh 1vh 4vh;
+}
+.p-t-20{
+    padding: 2vh 0vh 2.5vh 4vh;
+}
+.sm-head{
+    font-size: 18px;
+    line-height: 130%;
+}
+.container-links{
+    margin-left: 0px;
+    margin-top: 3vh;
+    padding: 5vh 2.5vh;
+}
+.download-container{
+    display: block !important;
+    background: linear-gradient(180deg, #F4FF5C 0%, #5CFFB8 35.61%, #665BFF 64.25%, #FF5CF4 100%);
+    height: 330px;
+}
+.download-img-btn{
+    display: block;
+    position: relative;
+    left: 30px;
+    top: 40px;
+    margin: 17px 0px;
+}
+.donwnload-sub-text{
+    font-family: 'Druk Wide Bold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    font-feature-settings: 'ss04' on, 'ss02' on, 'ss01' on;
+    color: #0A091A;
+    margin-top: 60px;
+    width: 350px;
+    margin-left: 30px;
+}
+.left-image-text-btn{
+    padding: 12px 30px 15px 25px;
+    font-size: 20px;
+    word-spacing: 0px;
+}
+// ===========mobile viw footer=============
+
+// ============End mobile footer
+.h3{
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    font-feature-settings: 'ss02' on;
+}
+.title-container{
+    margin-top: 4.5vh;
+    width: 86%;
+    padding: 15px 0px;
+}
+}
+// =========================================End media 600==================================================

@@ -1,0 +1,10 @@
+<div name="description" class="Module Collapsible expandable" theme="DARK" [ngClass]="{'collapsed': isCollapsed, 'expanded': !isCollapsed}">
+    <div class="content">
+        <ng-content></ng-content>
+    </div>
+    <a [routerLink]="" (click)="toggle()" action="toggle" class="button small left-align" theme="WHITE-OUTLINE">
+        <p class="expand">Read More</p> <span class="icon expand icon-plus" aria-hidden="true"></span>
+        <p class="collapse">Read Less</p> <span class="icon collapse icon-minus" aria-hidden="true"></span>
+    </a>
+    <div class="gradient"></div>
+</div>

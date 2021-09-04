@@ -1,0 +1,562 @@
+.rollover-button {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+.rollover-button > a {
+    opacity: 0.25;
+}
+.rollover-button h4 {
+    padding: 0.2rem;
+    margin: 0.2rem;
+}
+.rollover-button h4 span {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.rollover-button > .popover {
+    min-width: 5rem;
+    padding-top: 0.5rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    height: 0;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+.rollover-button > .popover > .background {
+    position: absolute;
+    top: 0.5rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+}
+.rollover-button > .popover .icon-diamond {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    z-index: -20;
+}
+.rollover-button:hover {
+    overflow: visible;
+}
+.rollover-button:hover > a {
+    padding-bottom: 1rem;
+    opacity: 1;
+}
+.rollover-button:hover > .popover {
+    height: auto;
+    opacity: 1;
+}
+.button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 4rem;
+    padding: 0 1.9rem;
+    position: relative;
+    cursor: pointer;
+    border-radius: 2rem;
+    transition: background-color 0.2s ease-in-out, opacity 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+.button > p,
+.button > .icon {
+    display: block;
+    margin: 0;
+}
+.button > p {
+    font-weight: 800;
+    font-size: 1.3rem;
+    letter-spacing: 0;
+    line-height: 1.6rem;
+    flex-grow: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.button > p:last-child {
+    text-align: right;
+}
+.button > p:last-child:first-child {
+    text-align: center;
+}
+.button > p + p {
+    flex-grow: 0;
+}
+.button > .icon {
+    flex-grow: 0;
+    font-weight: 700;
+}
+.button > .icon + p {
+    text-align: left;
+    // margin-left: 1.4rem;
+}
+.button.disabled {
+    pointer-events: none;
+}
+.button.disabled > * {
+    opacity: 0.5;
+}
+.button.centered {
+    padding: 0;
+}
+.button.centered > p {
+    text-align: center;
+}
+.button.normal-small {
+    height: 3rem;
+}
+.button.normal-small > p {
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.018rem;
+    line-height: 1.214rem;
+}
+.button.small {
+    height: 3rem;
+}
+.button.small > p {
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.018rem;
+    line-height: 1.214rem;
+}
+.button.space-between {
+    justify-content: space-between;
+}
+.button.space-between > p {
+    flex-grow: 0;
+}
+.button[theme="BLUE"] {
+    background-color: #1fa3ff;
+    color: #fff;
+}
+.button[theme="BLUE"]:hover {
+    background-color: #007fd8;
+}
+.button[theme="BLUE"]:active {
+    background-color: #1fa3ff;
+}
+.button[theme="BLUE"].disabled {
+    background-color: #8fd1ff !important;
+}
+.button[theme="GREEN"] {
+    background-color: #58ba01;
+    color: #fff;
+}
+.button[theme="GREEN"]:hover {
+    background-color: #3c8100;
+}
+.button[theme="GREEN"]:active {
+    background-color: #58ba01;
+}
+.button[theme="GREEN"].disabled {
+    background-color: #58ba01 !important;
+}
+.button[theme="PURPLE"] {
+    background-color: #9346FF;
+    color: #fff;
+}
+.button[theme="PURPLE"]:hover {
+    background-color: #6441A5;
+}
+.button[theme="PURPLE"]:active {
+    background-color: #9346FF;
+}
+.button[theme="PURPLE"].disabled {
+    background-color: #9346FF !important;
+}
+
+
+.button[theme="RED"] {
+    background-color: #ff0032;
+    color: #fff;
+}
+.button[theme="RED"]:hover {
+    background-color: #d00;
+}
+.button[theme="RED"]:active {
+    background-color: #ff0032;
+}
+.button[theme="RED"].disabled {
+    background-color: #ff0032 !important;
+}
+.button[theme="WHITE"] {
+    background-color: #fff;
+    color: #000;
+}
+.button[theme="WHITE"]:hover {
+    background-color: #000;
+    color: #fff;
+}
+.button[theme="WHITE"]:active {
+    background-color: #fff;
+    color: #000;
+}
+.button[theme="WHITE"].disabled {
+    background-color: #cdcdcd !important;
+}
+.button[theme="BLACK"] {
+    background-color: #000;
+    color: #fff;
+}
+.button[theme="BLACK"]:hover {
+    background-color: #fff;
+    color: #000;
+}
+.button[theme="BLACK"]:active {
+    background-color: #000;
+    color: #fff;
+}
+.button[theme="BLACK"].disabled {
+    background-color: #cdcdcd !important;
+}
+.button[theme="GRAY"] {
+    background-color: #cdcdcd;
+    color: #000;
+}
+.button[theme="GRAY"]:hover {
+    background-color: #a2a2a2;
+}
+.button[theme="GRAY"]:active {
+    background-color: #cdcdcd;
+}
+.button[theme="GRAY"].disabled {
+    background-color: #a2a2a2 !important;
+}
+.button[theme="GRAY-LIGHT"] {
+    background-color: #919191;
+    color: #fff;
+}
+.button[theme="GRAY-LIGHT"],
+.button[theme="GRAY-LIGHT"] p {
+    font-weight: 600;
+}
+.button[theme="GRAY-LIGHT"]:hover {
+    background-color: #838383;
+}
+.button[theme="GRAY-LIGHT"]:active {
+    background-color: #9c9c9c;
+}
+.button[theme="GRAY-LIGHT"].disabled {
+    background-color: #9c9c9c !important;
+}
+.button[theme="ORANGE"] {
+    background-color: #ff8600;
+    color: #fff;
+}
+.button[theme="ORANGE"]:hover {
+    background-color: #e66d00;
+}
+.button[theme="ORANGE"]:active {
+    background-color: #ff8600;
+}
+.button[theme="ORANGE"].disabled {
+    background-color: #ff8600 !important;
+}
+.button[theme="TRANSPARENT"] {
+    background-color: transparent;
+    color: #a2a2a2;
+}
+.button[theme="TRANSPARENT"]:hover {
+    color: #000;
+}
+.button[theme="TRANSPARENT"]:active {
+    color: #000;
+}
+.button[theme="PINK"] {
+    color: #fff;
+    background-image: linear-gradient(135deg, #fc1470 0%, #cc18a6 50%, #8f06d1 100%);
+    // background-image: linear-gradient(135deg, #ff0032 0%, #ff00cc 50%, #6441A5 100%);
+    
+    z-index: 0;
+}
+.button[theme="PINK"]:hover:before {
+    opacity: 1;
+}
+.button[theme="PINK"]:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    background-image: linear-gradient(135deg, #e4035c 0%, #ad148d 50%, #7a05b2 100%);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.2s ease-in-out;
+    border-radius: 2rem;
+}
+.button[theme="LUMINOUS"] {
+    border: 2px solid transparent;
+    color: #fff;
+    color: #00f4a5;
+    background: rgba(0,204,237,.3);
+    backdrop-filter: saturate(180%) blur(30px);
+    border-color: #00f4a5;
+    z-index: 0;
+}
+.button[theme="LUMINOUS"]:hover:before {
+    opacity: 1;
+}
+.button[theme="LUMINOUS"]:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    background: rgba(0,204,237,.6);
+    // background: #00f4a5;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.2s ease-in-out;
+    border-radius: 2rem;
+}
+
+.button[theme="CREATORS"] {
+    // border: 2px solid transparent;
+    color: #fff;
+    background-image: linear-gradient(135deg, #00f4a5 0%, #00f4a5 100%);
+    // color: #00f4a5;
+    // border-color: #00f4a5;
+    z-index: 0;
+}
+.button[theme="CREATORS"]:hover:before {
+    opacity: 1;
+}
+.button[theme="CREATORS"]:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    background-image: linear-gradient(135deg, #00f4a5 0%, #00f4a5 100%);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.2s ease-in-out;
+    border-radius: 2rem;
+}
+
+.button[theme="FACEBOOK"] {
+    background-color: #39579a;
+    color: #fff;
+}
+.button[theme="FACEBOOK"]:hover {
+    background-color: #23336c;
+}
+.button[theme="FACEBOOK"]:active {
+    background-color: #39579a;
+}
+.button[theme="FACEBOOK"].disabled {
+    background-color: #39579a !important;
+}
+.button[theme="TWITTER"] {
+    background-color: #0097f0;
+    color: #fff;
+}
+.button[theme="TWITTER"]:hover {
+    background-color: #007fd8;
+}
+.button[theme="TWITTER"]:active {
+    background-color: #0097f0;
+}
+.button[theme="TWITTER"].disabled {
+    background-color: #0097f0 !important;
+}
+.button[theme="PINTEREST"] {
+    background-color: #c3080e;
+    color: #fff;
+}
+.button[theme="PINTEREST"]:hover {
+    background-color: #a7080d;
+}
+.button[theme="PINTEREST"]:active {
+    background-color: #c3080e;
+}
+.button[theme="PINTEREST"].disabled {
+    background-color: #c3080e !important;
+}
+.button[theme="GOOGLEPLUS"] {
+    background-color: #d4341f;
+    color: #fff;
+}
+.button[theme="GOOGLEPLUS"]:hover {
+    background-color: #b92f1d;
+}
+.button[theme="GOOGLEPLUS"]:active {
+    background-color: #d4341f;
+}
+.button[theme="GOOGLEPLUS"].disabled {
+    background-color: #d4341f !important;
+}
+.button[theme="INSTAGRAM"] {
+    background-color: #125688;
+    color: #fff;
+}
+.button[theme="INSTAGRAM"]:hover {
+    background-color: #0f4974;
+}
+.button[theme="INSTAGRAM"]:active {
+    background-color: #125688;
+}
+.button[theme="INSTAGRAM"].disabled {
+    background-color: #125688 !important;
+}
+.button[theme="WHITE-OUTLINE"],
+.button[theme="BLACK-OUTLINE"] {
+    border: 2px solid transparent;
+}
+.button[theme="WHITE-OUTLINE"].disabled,
+.button[theme="BLACK-OUTLINE"].disabled {
+    opacity: 0.4;
+}
+.button[theme="WHITE-OUTLINE"] {
+    border-color: #fff;
+    color: #fff;
+}
+.button[theme="WHITE-OUTLINE"]:hover,
+.button[theme="WHITE-OUTLINE"]:active {
+    background-color: #fff;
+    color: #000;
+}
+.button[theme="BLACK-OUTLINE"] {
+    border-color: #000;
+    color: #000;
+}
+.button[theme="BLACK-OUTLINE"]:hover,
+.button[theme="BLACK-OUTLINE"]:active {
+    background-color: #000;
+    color: #fff;
+}
+.button[theme="WHITE-OPAQUE"] {
+    background-color: rgba(255,255,255,0.1);
+    color: #ff0032;
+}
+.button[theme="WHITE-OPAQUE"]:hover,
+.button[theme="WHITE-OPAQUE"]:active {
+    background-color: rgba(255,255,255,0.3);
+}
+@media (min-width: 800px) {
+    .button.small {
+        box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.15);
+    }
+}
+@media (max-width: 799px) {
+    .button.small {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+}
+.button.small[theme="WHITE-OUTLINE"],
+.button.small[theme="BLACK-OUTLINE"] {
+    box-shadow: none;
+}
+.button.compact {
+    height: auto;
+}
+.button.compact > p {
+    padding: 0;
+}
+.button.center {
+    text-align: center;
+}
+.button.center-icon-left {
+    text-align: center;
+}
+.button.center-icon-left .icon {
+    margin-right: 1rem;
+}
+.button.center-icon-right {
+    text-align: center;
+}
+.button.center-icon-right .icon {
+    margin-left: 1rem;
+}
+.button.left-align {
+    text-align: left;
+}
+.button.left-align .icon {
+    float: right;
+}
+.button.right-align {
+    text-align: right;
+}
+.button.right-align .icon {
+    float: left;
+}
+.button.left-icon-left .icon,
+.button.right-icon-right .icon,
+.button.left-icon-left p,
+.button.right-icon-right p {
+    width: auto;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.button.left-icon-left .icon,
+.button.right-icon-right .icon {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.button.left-icon-left {
+    text-align: left;
+}
+.button.left-icon-left .icon {
+    left: 1.5rem;
+}
+.button.left-icon-left p {
+    left: 4rem;
+    right: 1.5rem;
+}
+.button.right-icon-right {
+    text-align: right;
+}
+.button.right-icon-right p {
+    right: 4rem;
+    left: 1.5rem;
+}
+.button.right-icon-right .icon {
+    right: 1.5rem;
+}
+.button.overlay {
+    position: relative;
+    overflow: hidden;
+}
+.button.overlay .default,
+.button.overlay .hover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.2s ease-in-out;
+}
+.button.overlay .hover {
+    opacity: 0;
+    transform: translate(-50%, -150%);
+}
+.button.overlay:hover .default {
+    opacity: 0;
+}
+.button.overlay:hover .hover {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+.button.square {
+    position: relative;
+}
+.button.square > div {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}

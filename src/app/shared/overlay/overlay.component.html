@@ -1,0 +1,5 @@
+<div #overlay id="overlay" class="vp-min-height" [@openClose]="isVisible ? 'open' : 'closed'"
+    (@openClose.start)="captureStartEvent($event)" (@openClose.done)="captureDoneEvent($event)">
+    <div #overlayBackground id="overlay-background"></div>
+    <!-- OverlayView children will be appended here dynamically via Renderer2 -->
+</div>

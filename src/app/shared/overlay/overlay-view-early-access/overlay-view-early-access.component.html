@@ -1,0 +1,51 @@
+<div class="Overlay EarlyAccess center-justify overlay-hidden Module View vp-min-height" theme="DARK" mode="default"
+    [ngClass]="{'hidden': isViewHidden, 'InPage': isInPage}">
+    <!-- <div class="head">
+        <div class="background"></div>
+        <div class="content"></div>
+    </div> -->
+    <div class="body">
+        <div id="early-access-modal" class="content form instructions">
+            <div *ngIf="!isInPage" class="modal-close-button">
+                <a [routerLink]="" (click)="close()" action="close"> <span class="icon icon-close"
+                        aria-hidden="true"></span> </a>
+            </div>
+            <h1>Get Early Access</h1>
+            <!-- <p>Be one the first to enter the Stageverse.
+            </p> -->
+            <hr>
+            <div *ngIf="isSmsEnabled">
+                <div class="register-option">
+                    <h2>Text "Stageverse" to:</h2>
+                    <a [href]="getSmsLink()">
+                        <div class="sms-number">
+                            <div class="s-icon s-icon-sms" style="margin-right: 1rem; margin-bottom: -.5rem;"></div>
+                            <!-- <img src="assets/images/early-access-icon.png" style="margin-right: 0.8rem;"> -->
+                            <div [textContent]="inboundSmsNumberFormatted"></div>
+                        </div>
+                    </a>
+                </div>
+                <hr class="hide-mobile">
+                <div class="register-option hide-mobile">
+                    <h2>Or, scan the QR code below:</h2>
+                    <!-- wrap inside div to ensure height before image has loaded -->
+                    <div
+                        style="width: 100%; padding-top: 100%; background-color: rgba(255,255,255,0.1); position: relative;">
+                        <img style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%;"
+                            src="assets/images/qrcode_stageverse_{{location.country_code}}.png"
+                            onerror="this.style.display='none'; this.parentElement.style.display='none';">
+                    </div>
+                </div>
+            </div>
+            <div class="addtolist" *ngIf="!isSmsEnabled">
+                <input *ngIf="showEmailForm" type="email" [(ngModel)]="emailAddress" name="emailAddress"
+                    class="my-input" id="email" placeholder="Email">
+                <button *ngIf="showEmailForm" (click)="addToList()" class="send-button">Join</button>
+            </div>
+            <div>
+                <p class="statusmessage" name="statusMessage" [textContent]="statusMessage"></p>
+            </div>
+        </div>
+    </div>
+    <div class="foot"></div>
+</div>

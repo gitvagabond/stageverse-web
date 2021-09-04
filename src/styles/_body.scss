@@ -1,0 +1,29 @@
+@import "variables";
+
+body {
+    color: #fff;
+    background-color: $color-background-dark;
+}
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    overscroll-behavior-y: contain;
+}
+body.loading * {
+    transition-duration: 0 !important;
+}
+body.unselectable * {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+body > iframe {
+    position: absolute;
+    height: 0;
+    display: block;
+    visibility: hidden;
+}

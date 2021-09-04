@@ -1,0 +1,276 @@
+@import "../overlay.component.scss";
+
+@media (max-width: 799px) {
+    .Overlay.Checkout {
+        background-color: #2c2c2c;
+    }
+}
+@media (min-width: 800px) {
+    .Overlay.Checkout > .head > .content > [name="countdown"] {
+        color: #000;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.Checkout > .head > .content > [name="countdown"] {
+        color: #fff;
+    }
+}
+@media (min-width: 800px) {
+    .Overlay.Checkout > .body {
+        padding: 0;
+    }
+}
+.Overlay.Checkout > .body > .content {
+    display: flex;
+    flex-wrap: nowrap;
+}
+@media (min-width: 800px) {
+    .Overlay.Checkout > .body > .content {
+        align-items: stretch;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.Checkout > .body > .content {
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+}
+.Overlay.Checkout > .body > .content > .left,
+.Overlay.Checkout > .body > .content > .right {
+    display: flex;
+    justify-content: center;
+}
+@media (min-width: 800px) {
+    .Overlay.Checkout > .body > .content > .left,
+    .Overlay.Checkout > .body > .content > .right {
+        padding-top: 8rem;
+        padding-bottom: 3rem;
+    }
+}
+.Overlay.Checkout > .body > .content > .left {
+    background-color: #2c2c2c;
+    color: #fff;
+    z-index: 10;
+}
+@media (min-width: 800px) {
+    .Overlay.Checkout > .body > .content > .left {
+        width: 50%;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.Checkout > .body > .content > .left {
+        width: 100%;
+    }
+}
+.Overlay.Checkout > .body > .content > .left > .banner {
+    font-size: 0.65rem;
+    min-height: 15rem;
+    position: relative;
+    z-index: 20;
+}
+.Overlay.Checkout > .body > .content > .left > .banner img {
+    display: block;
+    width: 100%;
+    min-height: 10rem;
+    max-height: 30rem;
+}
+.Overlay.Checkout > .body > .content > .left > .banner .foreground {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: transparent;
+    font-weight: 400;
+}
+.Overlay.Checkout > .body > .content > .left > .banner .foreground > .column-left {
+    width: 65%;
+    padding-left: 1rem;
+    position: absolute;
+    bottom: 0.3rem;
+    left: 0;
+}
+.Overlay.Checkout > .body > .content > .left > .banner .foreground > .column-right {
+    width: 35%;
+    padding-right: 1rem;
+    position: absolute;
+    right: 0;
+    bottom: 0.3rem;
+    text-align: right;
+}
+.Overlay.Checkout > .body > .content > .left > .banner .foreground .age-restriction,
+.Overlay.Checkout > .body > .content > .left > .banner .foreground .date,
+.Overlay.Checkout > .body > .content > .left > .banner .foreground .name,
+.Overlay.Checkout > .body > .content > .left > .banner .foreground .venue {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.Overlay.Checkout > .body > .content > .left > .banner .foreground .name {
+    font-size: 2.4rem;
+}
+.Overlay.Checkout > .body > .content > .left > .banner .foreground .date,
+.Overlay.Checkout > .body > .content > .left > .banner .foreground .venue {
+    font-size: 1.8rem;
+}
+.Overlay.Checkout > .body > .content > .left > .banner .foreground .date > span {
+    display: block;
+    line-height: 1.2rem;
+}
+.Overlay.Checkout > .body > .content > .left > .banner .foreground .age-restriction {
+    font-size: 1.8rem;
+}
+.Overlay.Checkout > .body > .content > .left > .banner .foreground .age-restriction .icon {
+    margin-right: 0.5rem;
+}
+@media (min-width: 800px) {
+    .Overlay.Checkout > .body > .content > .left > [name="summary"] {
+        width: 27.3rem;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.Checkout > .body > .content > .left > [name="summary"] {
+        width: 100%;
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+    }
+}
+.Overlay.Checkout > .body > .content > .right {
+    width: 50%;
+    background-color: #f5f5f5;
+    color: #000;
+    overflow: hidden;
+}
+.Overlay.Checkout > .body > .content > .right > [name="steps-desktop"] {
+    width: 27.3rem;
+}
+.Overlay.Checkout > .body > [action="mobile-pause"] {
+    position: absolute;
+    top: -10rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s linear;
+    background-color: #000;
+    z-index: 15;
+}
+.Overlay.Checkout > .foot > .mobile-actions,
+.Overlay.Checkout > .foot > [name="steps-mobile"] {
+    background-color: #f5f5f5;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: 0 -6px 10px 0 rgba(0, 0, 0, 0.2);
+    transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+.Overlay.Checkout > .foot > .mobile-actions {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0.7rem;
+    max-height: 10rem;
+    overflow: hidden;
+    z-index: 20;
+}
+.Overlay.Checkout > .foot > .mobile-actions > [action="mobile-facebook-log-in"],
+.Overlay.Checkout > .foot > .mobile-actions > [action="mobile-proceed"] {
+    width: 100%;
+}
+.Overlay.Checkout > .foot > .mobile-actions > [action="mobile-log-in"],
+.Overlay.Checkout > .foot > .mobile-actions > [action="mobile-sign-up"] {
+    width: 1rem;
+    margin-top: 0.7rem;
+    flex-grow: 1;
+}
+.Overlay.Checkout > .foot > .mobile-actions > [action="mobile-sign-up"] {
+    margin-right: 0.7rem;
+}
+.Overlay.Checkout > .foot > .mobile-actions > [action="mobile-proceed"] {
+    display: none;
+}
+.Overlay.Checkout > .foot > [name="steps-mobile"] {
+    position: absolute;
+    bottom: 0;
+    max-height: 0;
+    opacity: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    z-index: 10;
+}
+.Overlay.Checkout.logged-in > .foot > .mobile-actions > [action="mobile-proceed"] {
+    display: flex;
+}
+.Overlay.Checkout.logged-in > .foot > .mobile-actions > [action="mobile-facebook-log-in"],
+.Overlay.Checkout.logged-in > .foot > .mobile-actions > [action="mobile-log-in"],
+.Overlay.Checkout.logged-in > .foot > .mobile-actions > [action="mobile-sign-up"] {
+    display: none;
+}
+.Overlay.Checkout.active {
+    justify-content: space-between;
+}
+@media (max-width: 799px) {
+    .Overlay.Checkout.active > .body {
+        height: 0;
+        overflow: hidden;
+    }
+}
+.Overlay.Checkout.active > .body > [action="mobile-pause"] {
+    opacity: 0.8;
+    pointer-events: all;
+}
+.Overlay.Checkout.active > .body > .content > .left {
+    pointer-events: none;
+}
+.Overlay.Checkout.active > .foot > .mobile-actions {
+    position: absolute;
+    bottom: 0;
+    max-height: 0;
+    opacity: 0;
+    z-index: 10;
+}
+.Overlay.Checkout.active > .foot > [name="steps-mobile"] {
+    max-height: 90vh;
+    opacity: 1;
+    z-index: 20;
+}
+.Overlay.Checkout > .body > .content > .left,
+.Overlay.Checkout > .body > .content > .right,
+.Overlay.Checkout > .foot,
+.Overlay.Checkout > .head {
+    transition: all 0.35s ease-in-out;
+}
+@media (min-width: 800px) {
+    .Overlay.Checkout.hidden > .head {
+        transform: translateX(50%);
+    }
+}
+@media (min-width: 800px) {
+    .Overlay.Checkout.hidden > .body > .content > .left {
+        transform: translateX(-100%);
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.Checkout.hidden > .body > .content > .left {
+        transform: translateY(-6rem);
+    }
+}
+@media (min-width: 800px) {
+    .Overlay.Checkout.hidden > .body > .content > .right {
+        transform: translateX(100%);
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.Checkout.hidden > .foot {
+        transform: translateY(100%);
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.Checkout[theme="LIGHT"] > .head.scrolled > .background {
+        background-color: rgba(17, 17, 17, 0.8);
+    }
+}

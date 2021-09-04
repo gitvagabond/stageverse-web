@@ -1,0 +1,47 @@
+@import "mixins";
+
+.cardStage {
+    display: flex;
+    // flex-wrap: nowrap;
+
+    .cardStage__image {
+        margin-right: 1rem;
+    }
+    .cardStage__content {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        text-align: left;
+        margin-right: 1rem;
+        align-items: center;
+
+        .cardStage__name {
+            font-size: 1.8rem;
+            line-height: 2.3rem;
+            margin-bottom: 0.2rem;
+            @include breakpoint(medium) {
+                font-size: 1.3rem;
+                line-height: 1.4rem;
+            }
+        }
+        .cardStage__followers {
+            font-weight: 300;
+            font-size: 1.5rem;
+            line-height: 1.9rem;
+            color: #96969C;
+            @include breakpoint(medium) {
+                font-size: 1.2rem;
+                font-size: 1.3rem;
+            }
+        }
+    }
+    .cardStage__info {
+        flex-grow: 1;
+        text-align: left;
+        flex-basis: 10rem;;
+        margin-right: 1rem;
+    }
+    .cardStage__actions {
+        flex-shrink: 0;
+    }
+}

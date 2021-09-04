@@ -1,0 +1,79 @@
+#notifications {
+    z-index:40;
+    height:0;
+    position:fixed;
+    position:sticky;
+    position:-webkit-sticky;
+    top:0;
+    right:0;
+    left:0;
+    overflow:visible;
+}
+
+#notify{
+    position:-webkit-sticky;
+    position:sticky;
+    height:0;
+    margin:0;
+    top:0;
+    right:0;
+    left:0;
+    z-index:10000
+}
+#notify li{
+    display:flex;
+    padding:.4rem 0 .4rem 1.1rem;
+    position:relative;
+    line-height:2rem
+}
+#notify li>.message{
+    flex-grow:1;
+    font-size:1.1rem;
+    text-align:center;
+    font-weight:700
+}
+#notify li>.message a{
+    text-decoration:underline;
+    opacity:.8;
+    transition:opacity .2s ease-in-out
+}
+#notify li>.message a:hover{
+    opacity:1
+}
+#notify li>.icon-closesmall{
+    flex-grow:0;
+    font-size:1.5rem;
+    align-self:center;
+    margin-right:1rem;
+    line-height:1;
+    cursor:pointer;
+    font-weight:700
+}
+#notify li.message{
+    background-color:#000;
+    color:#cdcdcd
+}
+#notify li.message p a{
+    color:#cdcdcd
+}
+#notify li.success{
+    background-color:#393;
+    color:#fff
+}
+#notify li.success p a{
+    color:#fff
+}
+#notify li.error{
+    background-color:#f15151;
+    color:#fff
+}
+#notify li.error p a{
+    color:#fff
+}
+#notify li.warning{
+    background-color:#ff8600;
+    color:#fff
+}
+#notify li.warning p a{
+    color:#fff
+}

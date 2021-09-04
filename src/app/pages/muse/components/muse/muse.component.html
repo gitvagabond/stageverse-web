@@ -1,0 +1,587 @@
+
+<div>
+    <div class="nav-container">
+        <ul class="nav">
+            <li class="nav-item">
+                <a routerLink="/" class="nav-link">
+    
+                    <img src="assets/images/ui-assets/Lockup.png" class="logo-stageverse" alt="Logo" />
+                </a>
+            </li>
+            <li class="nav-item sm-hide" style="display: flex;gap: 1px; float:right">
+                <a [routerLink]=""   class="nav-link">
+                    <img src="/assets/images/ui-assets/apple-button.png" style="height: 60px;">
+                </a>
+                <a [routerLink]=""   class="nav-link">
+                    <img src="/assets/images/ui-assets/android-button.png" style="height: 60px;">
+                </a>
+                <a [routerLink]=""   class="nav-link">
+                    <img src="/assets/images/ui-assets/ring.png" style="height: 60px;">
+                </a>
+            </li>
+            
+            <li class="nav-item disktop-hide" style="float: right !important; margin-top: -15px;" (click)="menu=!menu">
+                <a *ngIf="menu==false" href="javascript:void(0);" class="nav-link">
+                    <img src="/assets/images/ui-assets/menu-icon.png" style="height: 50px;" />
+                </a>
+                <a *ngIf="menu==true" href="javascript:void(0);" class="nav-link">
+                    <img src="/assets/images/ui-assets/menu-icon-expand.png" style="height: 50px;" />
+                </a>
+            </li>
+        </ul>
+    
+        <ul *ngIf="menu==true" class="nav-mobile">
+    
+            <div class="logo-container">
+                <h1 class="footer-big-text">
+                    <li><a routerLink="/careers" class="links-a">CAREERS</a></li>
+                    <li><a routerLink="/creators" class="links-a">CREATORS</a></li>
+                    <li><a routerLink="/press" class="links-a">PRESS</a></li>
+                    <li><a routerLink="/company" class="links-a">COMPANY</a></li>
+                    <li><a routerLink="/blog" class="links-a">BLOG</a></li>
+                    <li><a routerLink="/support" class="links-a">SUPPORT</a></li>
+                </h1>
+            </div>
+    
+            <div class="content footer madam">
+                <app-footer></app-footer>
+            </div>
+    
+            <li class="nav-item-mobile">
+    
+    
+    
+                <a [routerLink]="" class="nav-link">
+                    <img src="/assets/images/ui-assets/apple-button.png" style="height: 40px;">
+                </a>
+                <a [routerLink]=""   class="nav-link">
+                    <img src="/assets/images/ui-assets/android-button.png" style="height: 40px;">
+                </a>
+                <a [routerLink]=""   class="nav-link">
+                    <img src="/assets/images/ui-assets/ring.png" style="height: 40px;">
+                </a>
+            </li>
+    
+            <div class="social-media-footer-container muse-social-media-top-container">
+                <a href="https://www.instagram.com/stageverse" target="blank" class="social-media-footer links-a"><img
+                        src="assets/images/ui-assets/instagram.png" alt="instagram icon"></a>
+                <a href=" https://discord.com/invite/uhMjf7sF6Z" target="blank" class="social-media-footer links-a"><img
+                        src="assets/images/ui-assets/discord.png" alt="social icon"></a>
+                <a href="https://www.linkedin.com/company/stageverse" target="blank"
+                    class="social-media-footer links-a"><img src="assets/images/ui-assets/linkedIn.png"
+                        alt="linkedIn icon"></a>
+                <a href="https://twitter.com/thestageverse" target="blank" class="social-media-footer links-a"><img
+                        src="assets/images/ui-assets/twitter.png" alt="twitter icon"></a>
+                <a href="#" class="social-media-footer links-a"><img src="assets/images/ui-assets/Frame1846.svg"
+                        alt="twitter icon"></a>
+            </div>
+    
+            <div class="footer-copyright copy-right-pos">© 2021 Stage, Inc.</div>
+    
+        </ul>
+    
+    
+    
+    </div>
+        <div class="body">
+            <div class="muse-hero">
+
+            </div>
+            <!-- =========================== -->
+            <div class="title-container">
+                <h1 class="muse-title">MUSE: ENTER THE SIMULATION</h1>
+
+            </div>
+            <div class="container-flex">
+                <div class="flex-2">
+                    <p class="paragraph paragraph-width">Stageverse has joined forces with Muse to bring you  a groundbreaking social concert experience, available for the first time in VR and on your mobile device. Jump into your avatar self and meet up with friends and fans from around the world in a fully-explorable 3D stadium concert experience. </p>
+                    <div class="m-t-20">
+                        <a class="white-btn" href="javascript:void(0);">Get The Stageverse App <img class="btn-arrow" src="assets/images/ui-assets/black-arrow.png" /></a>
+                    </div>
+                </div>
+                <div class="flex-1">
+                    <div class="p-t-20">
+                        <h4 class="sm-head">Creator</h4>
+                        <p class="paragraph m-t-10">Muse</p>
+                    </div>
+                    <div class="p-t-20">
+                        <h4 class="sm-head">Location</h4>
+                        <p class="paragraph m-t-10">Stageverse Stadium</p>
+                    </div>
+                    <div class="p-t-20">
+                        <h4 class="sm-head">Starting date</h4>
+                        <p class="paragraph m-t-10">Friday, Sep 26th· 6pm pst</p>
+                    </div>
+                    
+                </div>
+                <div class="flex-1">
+                    <div class="p-t-20">
+                        <h4 class="sm-head">TICKETS</h4>
+                        <p class="paragraph m-t-10">Free for a limited time</p>
+                    </div>
+                    <div class="p-t-20">
+                        <h4 class="sm-head">schedule</h4>
+                        <p class="paragraph m-t-10">Mon, Wed, Fri<br />
+                            6am · 12pm · 5pm · 10pm
+                            </p>
+                    </div>
+
+                </div>
+            </div>
+            <!-- ==================================== -->
+            <div class="muse-video">
+                
+            </div>
+            <!-- ==================================== -->
+            <div>
+                <div class="title-container">
+                    <h1 class="title-sm">gallery</h1>
+                    <h1 class="title-lg">CHECK IT OUT</h1>
+                </div>
+            </div>
+            <owl-carousel-o [options]="customOptions" class="gallery">
+                <ng-template carouselSlide>
+                    <div class="gallery-image-1" >
+                        <div class="text-box-gradient">
+                            <div class="gallery-text-box">
+                                <div>
+                                    <img class="img-left" src="/assets/images/ui-assets/balmain-logo.png"> 
+                                </div>
+                                <div>
+                                    <img class="img-right" src="/assets/images/ui-assets/shirt.png"> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template >
+                <ng-template carouselSlide>
+                    <div class="gallery-image-2" >
+                        <div class="text-box-gradient">
+                            <div class="gallery-text-box">
+                                <div>
+                                    <img class="img-left" src="/assets/images/ui-assets/balmain-logo.png"> 
+                                </div>
+                                <div>
+                                    <img class="img-right" src="/assets/images/ui-assets/shirt.png"> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template >
+                <ng-template carouselSlide>
+                    <div class="gallery-image-3" >
+                        <div class="text-box-gradient">
+                            <div class="gallery-text-box">
+                                <div>
+                                    <img class="img-left" src="/assets/images/ui-assets/muse-logo.png"> 
+                                </div>
+                                <div>
+                                    <img class="img-right" src="/assets/images/ui-assets/shirt.png"> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template >
+                <ng-template carouselSlide>
+                    <div class="gallery-image-4" >
+                        <div class="text-box-gradient">
+                            <div class="gallery-text-box">
+                                <div>
+                                    <img class="img-left" src="/assets/images/ui-assets/muse-logo.png"> 
+                                </div>
+                                <div>
+                                    <img class="img-right" src="/assets/images/ui-assets/shirt.png"> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template >
+                <ng-template carouselSlide>
+                    <div class="gallery-image-5" >
+                        <div class="text-box-gradient">
+                            <div class="gallery-text-box">
+                                <div>
+                                    <img class="img-left" src="/assets/images/ui-assets/muse-logo.png"> 
+                                </div>
+                                <div>
+                                    <img class="img-right" src="/assets/images/ui-assets/shirt.png"> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template >
+                <ng-template carouselSlide>
+                    <div class="gallery-image-6" >
+                        <div class="text-box-gradient">
+                            <div class="gallery-text-box">
+                                <div>
+                                    <img class="img-left" src="/assets/images/ui-assets/muse-logo.png"> 
+                                </div>
+                                <div>
+                                    <img class="img-right" src="/assets/images/ui-assets/shirt.png"> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template >
+                <ng-template carouselSlide>
+                    <div class="gallery-image-7" >
+                        <div class="text-box-gradient">
+                            <div class="gallery-text-box">
+                                <div>
+                                    <img class="img-left" src="/assets/images/ui-assets/muse-logo.png"> 
+                                </div>
+                                <div>
+                                    <img class="img-right" src="/assets/images/ui-assets/shirt.png"> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template >
+                <ng-template carouselSlide>
+                    <div class="gallery-image-8" >
+                        <div class="text-box-gradient">
+                            <div class="gallery-text-box">
+                                <div>
+                                    <img class="img-left" src="/assets/images/ui-assets/muse-logo.png"> 
+                                </div>
+                                <div>
+                                    <img class="img-right" src="/assets/images/ui-assets/shirt.png"> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template >
+                <ng-template carouselSlide>
+                    <div class="gallery-image-9" >
+                        <div class="text-box-gradient">
+                            <div class="gallery-text-box">
+                                <div>
+                                    <img class="img-left" src="/assets/images/ui-assets/muse-logo.png"> 
+                                </div>
+                                <div>
+                                    <img class="img-right" src="/assets/images/ui-assets/shirt.png"> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template >
+                <ng-template carouselSlide>
+                    <div class="gallery-image-10" >
+                        <div class="text-box-gradient">
+                            <div class="gallery-text-box">
+                                <div>
+                                    <img class="img-left" src="/assets/images/ui-assets/muse-logo.png"> 
+                                </div>
+                                <div>
+                                    <img class="img-right" src="/assets/images/ui-assets/shirt.png"> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template >
+                <ng-template carouselSlide>
+                    <div class="gallery-image-11" >
+                        <div class="text-box-gradient">
+                            <div class="gallery-text-box">
+                                <div>
+                                    <img class="img-left" src="/assets/images/ui-assets/muse-logo.png"> 
+                                </div>
+                                <div>
+                                    <img class="img-right" src="/assets/images/ui-assets/shirt.png"> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template >
+                <ng-template carouselSlide>
+                    <div class="gallery-image-12" >
+                        <div class="text-box-gradient">
+                            <div class="gallery-text-box">
+                                <div>
+                                    <img class="img-left" src="/assets/images/ui-assets/muse-logo.png"> 
+                                </div>
+                                <div>
+                                    <img class="img-right" src="/assets/images/ui-assets/shirt.png"> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template >
+                <ng-template carouselSlide>
+                    <div class="gallery-image-13" >
+                        <div class="text-box-gradient">
+                            <div class="gallery-text-box">
+                                <div>
+                                    <img class="img-left" src="/assets/images/ui-assets/muse-logo.png"> 
+                                </div>
+                                <div>
+                                    <img class="img-right" src="/assets/images/ui-assets/shirt.png"> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template >
+                <ng-template carouselSlide>
+                    <div class="gallery-image-14" >
+                        <div class="text-box-gradient">
+                            <div class="gallery-text-box">
+                                <div>
+                                    <img class="img-left" src="/assets/images/ui-assets/muse-logo.png"> 
+                                </div>
+                                <div>
+                                    <img class="img-right" src="/assets/images/ui-assets/shirt.png"> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template >
+        </owl-carousel-o>
+            <!-- ================Here is the old slider in the commented code============================ -->
+            <!-- <owl-carousel-o [options]="customOptions" class="gallery">
+                <ng-template carouselSlide>
+                    <div class="gallery-image" >
+                        <div class="text-box-gradient">
+                            <div class="gallery-text-box">
+                                <h3 class="h-3">MUSE x balmain</h3>
+                                <p class="p-3">Flex your style with full-body, expressive avatars.</p>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template >
+                <ng-template carouselSlide>
+                    <div class="gallery-image" >
+                        <div class="text-box-gradient">
+                            <div class="gallery-text-box">
+                                <h3 class="h-3">MUSE x balmain</h3>
+                                <p class="p-3">Flex your style with full-body, expressive avatars.</p>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template >
+                <ng-template carouselSlide>
+                    <div class="gallery-image" >
+                        <div class="text-box-gradient">
+                            <div class="gallery-text-box">
+                                <h3 class="h-3">MUSE x balmain</h3>
+                                <p class="p-3">Flex your style with full-body, expressive avatars.</p>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template >
+                <ng-template carouselSlide>
+                    <div class="gallery-image" >
+                        <div class="text-box-gradient">
+                            <div class="gallery-text-box">
+                                <h3 class="h-3">MUSE x balmain</h3>
+                                <p class="p-3">Flex your style with full-body, expressive avatars.</p>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template >
+        </owl-carousel-o> -->
+            <!-- =============================================================== -->
+           
+            <div>
+                <div class="title-container">
+                    <h1 class="title-sm">faq</h1>
+                    <h1 class="title-lg">LEarn more</h1>
+                </div>
+            </div> 
+            <div class="container-flex" style="margin-top: 2vh;">
+                <div class="flex-1 faq-box-padding">
+                    <mat-accordion>
+                        <mat-expansion-panel [expanded]="true">
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                            <h2 class="faq-heading">What is Muse: Enter The Simulation?</h2>
+                            </mat-panel-title>
+                            <!-- <mat-panel-description>
+                            Type your name and age
+                            </mat-panel-description> -->
+                        </mat-expansion-panel-header>
+                    
+                       <p class="faq-text">This is a mixed reality experience of the Simulation Theory world tour, captured at the sold out Madrid’s Wanda Metropolitano Stadium. You can meet up with friends and fellow fans at the Muse virtual venue in the Stageverse as avatars, and experience the show from over 17 different viewpoints around the stadium. </p>
+                        </mat-expansion-panel>
+                        <mat-expansion-panel>
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                            <h2 class="faq-heading">Do I need to pay to attend?</h2>
+                            </mat-panel-title>
+                            <!-- <mat-panel-description>
+                            Type your name and age
+                            </mat-panel-description> -->
+                        </mat-expansion-panel-header>
+                    
+                       <p class="faq-text">This is a mixed reality experience of the Simulation Theory world tour, captured at the sold out Madrid’s Wanda Metropolitano Stadium. You can meet up with friends and fellow fans at the Muse virtual venue in the Stageverse as avatars, and experience the show from over 17 different viewpoints around the stadium. </p>
+                        </mat-expansion-panel>
+                        <mat-expansion-panel>
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                            <h2 class="faq-heading">Is this the full Simulation Theory show?</h2>
+                            </mat-panel-title>
+                            <!-- <mat-panel-description>
+                            Type your name and age
+                            </mat-panel-description> -->
+                        </mat-expansion-panel-header>
+                    
+                       <p class="faq-text">This is a mixed reality experience of the Simulation Theory world tour, captured at the sold out Madrid’s Wanda Metropolitano Stadium. You can meet up with friends and fellow fans at the Muse virtual venue in the Stageverse as avatars, and experience the show from over 17 different viewpoints around the stadium. </p>
+                        </mat-expansion-panel>
+                        <mat-expansion-panel>
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                            <h2 class="faq-heading">Is it the same show each time?</h2>
+                            </mat-panel-title>
+                            <!-- <mat-panel-description>
+                            Type your name and age
+                            </mat-panel-description> -->
+                        </mat-expansion-panel-header>
+                    
+                       <p class="faq-text">This is a mixed reality experience of the Simulation Theory world tour, captured at the sold out Madrid’s Wanda Metropolitano Stadium. You can meet up with friends and fellow fans at the Muse virtual venue in the Stageverse as avatars, and experience the show from over 17 different viewpoints around the stadium. </p>
+                        
+                    </mat-expansion-panel>
+                    <div class="m-t-20">
+                        <a class="white-btn" href="javascript:void(0);">See all FAQS <img class="btn-arrow" src="assets/images/ui-assets/black-arrow.png" /></a>
+                    </div>
+                        <!-- <mat-expansion-panel (opened)="panelOpenState = true"
+                                            (closed)="panelOpenState = false">
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                            Self aware panel
+                            </mat-panel-title>
+                            <mat-panel-description>
+                            Currently I am {{panelOpenState ? 'open' : 'closed'}}
+                            </mat-panel-description>
+                        </mat-expansion-panel-header>
+                        <p>I'm visible because I am open</p>
+                        </mat-expansion-panel> -->
+                    </mat-accordion>
+                </div>
+                <div class="flex-1 faq-box-padding sym">
+                    <mat-accordion>
+                        <mat-expansion-panel>
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                            <h2 class="faq-heading">Can I attend the show with firends?</h2>
+                            </mat-panel-title>
+                            <!-- <mat-panel-description>
+                            Type your name and age
+                            </mat-panel-description> -->
+                        </mat-expansion-panel-header>
+                    
+                       <p class="faq-text">This is a mixed reality experience of the Simulation Theory world tour, captured at the sold out Madrid’s Wanda Metropolitano Stadium. You can meet up with friends and fellow fans at the Muse virtual venue in the Stageverse as avatars, and experience the show from over 17 different viewpoints around the stadium. </p>
+                        </mat-expansion-panel>
+                        <mat-expansion-panel>
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                            <h2 class="faq-heading">If I live outside the US can I still attend?</h2>
+                            </mat-panel-title>
+                            <!-- <mat-panel-description>
+                            Type your name and age
+                            </mat-panel-description> -->
+                        </mat-expansion-panel-header>
+                    
+                       <p class="faq-text">This is a mixed reality experience of the Simulation Theory world tour, captured at the sold out Madrid’s Wanda Metropolitano Stadium. You can meet up with friends and fellow fans at the Muse virtual venue in the Stageverse as avatars, and experience the show from over 17 different viewpoints around the stadium. </p>
+                        </mat-expansion-panel>
+                        <mat-expansion-panel>
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                            <h2 class="faq-heading">How do i get a Muse or balmain avatar?</h2>
+                            </mat-panel-title>
+                            <!-- <mat-panel-description>
+                            Type your name and age
+                            </mat-panel-description> -->
+                        </mat-expansion-panel-header>
+                    
+                       <p class="faq-text">This is a mixed reality experience of the Simulation Theory world tour, captured at the sold out Madrid’s Wanda Metropolitano Stadium. You can meet up with friends and fellow fans at the Muse virtual venue in the Stageverse as avatars, and experience the show from over 17 different viewpoints around the stadium. </p>
+                        </mat-expansion-panel>
+                        <!-- <mat-expansion-panel (opened)="panelOpenState = true"
+                                            (closed)="panelOpenState = false">
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                            Self aware panel
+                            </mat-panel-title>
+                            <mat-panel-description>
+                            Currently I am {{panelOpenState ? 'open' : 'closed'}}
+                            </mat-panel-description>
+                        </mat-expansion-panel-header>
+                        <p>I'm visible because I am open</p>
+                        </mat-expansion-panel> -->
+                    </mat-accordion>
+                </div>
+               
+            </div>
+            <!-- =========================================================== -->
+            <div>
+                <div class="title-container">
+                    <h1 class="title-sm">DOWNLOAD</h1>
+                    <h1 class="title-lg">GET THE STAGEVERSE APP AND JUMP IN</h1>
+                </div>
+            </div>
+            <div>
+                <div class="download-container">
+                    <a href="#" > <img src="/assets/images/ui-assets/ios-btn.png" class="download-img-btn" /></a>
+                    <a href="#" ><img src="/assets/images/ui-assets/android-btn.png" class="download-img-btn" /></a>
+                    <a href="#" ><img src="/assets/images/ui-assets/quest-btn.png" class="download-img-btn" /></a>
+                    <h2 class="donwnload-sub-text">comming soon to mac and pc</h2>
+                </div>
+            </div>
+            <div>
+                <div class="example-collection-grid sm-hide">
+                    <div class="example-collection-cell">
+                        <div class="example-collection-item download-1">
+                            <div class="download">
+                                <h2 class="download-title">IOS</h2>
+                                <img class="download-img" src="/assets/images/ui-assets/apple.png" />
+                                <a class="left-image-text-btn download-btn" href="javascript:void(0);">Download<img src="/assets/images/ui-assets/arrow-white.png"/></a>
+    
+                            </div>
+    
+                        </div>
+                    </div>
+                    <div class="example-collection-cell ">
+                        <div class="example-collection-item download-2" >
+                            <div class="download">
+                                <h2 class="download-title">android</h2>
+                                <img class="download-img" src="/assets/images/ui-assets/android.png" />
+                                <a class="left-image-text-btn download-btn" href="javascript:void(0);">Download<img src="/assets/images/ui-assets/arrow-white.png"/></a>
+    
+                            </div>
+    
+                        </div>
+                    </div>
+                    <div class="example-collection-cell">
+                        <div class="example-collection-item download-3">
+                            <div class="download">
+                                <h2 class="download-title">Quest</h2>
+                                <img class="quest" src="/assets/images/ui-assets/opera.png" />
+                                <a class="left-image-text-btn download-btn" href="javascript:void(0);">Download<img src="/assets/images/ui-assets/arrow-white.png"/></a>
+    
+                            </div>
+    
+                        </div>
+                    </div>
+                    <div class="example-collection-cell">
+                        <div class="example-collection-item download-4">
+                            <div class="download coming-soon">
+                                <img class="download-img" src="/assets/images/ui-assets/coming-soon.png" />
+    
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- =======================footer============================================================================================== -->
+            < <app-footer-two></app-footer-two>
+        </div>
+    
+        <div class="content footer footer-mt" >
+            <app-footer></app-footer>
+                <div class="footer-copyright copy-right-bottom mobile">© 2021 Stage, Inc.</div>
+       
+    
+        </div>
+    
+    </div>

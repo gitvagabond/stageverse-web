@@ -1,0 +1,7 @@
+export enum eApiErrorCode {
+    UNKNOWN = 0,
+    NOT_REGISTERED = 1,
+    CAPTCHA_CHALLENGE_FAILED = 2,
+    REFRESH_TOKEN_FAILED = 3,
+    CONNECTION_ERROR = 4
+}

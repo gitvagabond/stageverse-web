@@ -1,0 +1,34 @@
+@import "../overlay.component.scss";
+// :host {
+//   background-color: #fff;
+//   width: 20rem;
+//   height: 20rem;
+//   border-radius: 50%;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   z-index: 1;
+//   text-align: center;
+// }
+
+.Overlay.LogIn > .body > .content.form > .message {
+    margin-bottom: 1rem;
+    color: red;
+    text-align: center;
+}
+.Overlay.LogIn > .body > .content.form [action="forgot-password"],
+.Overlay.LogIn > .body > .content.form [action="login"] {
+    display: block;
+    text-align: right;
+}
+.Overlay.LogIn > .body > .content.form [action="signup"] {
+    margin-top: 0.7rem;
+}
+.Overlay.LogIn > .body > .content.form h3 {
+    margin-top: 1.4rem;
+    margin-bottom: 1.4rem;
+}
+.Overlay.LogIn > .body > .content.form [action="login"],
+.Overlay.LogIn > .body > .content.form [action="submit"] {
+    margin-bottom: 0.7rem;
+}

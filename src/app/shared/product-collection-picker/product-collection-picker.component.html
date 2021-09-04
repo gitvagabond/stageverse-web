@@ -1,0 +1,31 @@
+<div class="Module CollectionPicker {{orientation}}" theme="DARK" style="">
+    <div name="scroll-content" class="Widget ScrollContent" theme="DARK">
+        <ul class="collections">
+            <!-- transform: translateX(370px); touch-action: pan-y; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); transition-duration: 500ms; -->
+            <li *ngFor="let collection of collections"><a action="load-item" data-index="1" state="OPEN" [routerLink]=""
+                    (click)="showModal()">
+                    <div class="summary">
+                        <div class="background"
+                            style="background-image:url('{{collection.image}}'); background-color: rgba(32,32,34,0);">
+                        </div>
+                        <div class="info">
+                            <p class="title">{{collection.title}}</p>
+                            <p class="summary">{{collection.byline}}
+                            </p>
+                        </div>
+                        <div class="minimum-price">
+                            <div class="background"></div> <span class="label">$&nbsp;50</span>
+                        </div>
+                    </div>
+                    <!-- <div class="quantity" style="">
+                        <span><span class="icon icon-shopping-cart" aria-hidden="true"></span> <span
+                                class="quantity-label">1 item</span> added to cart</span>
+                    </div> -->
+                    <div class="footnote" style="display: none;"> <span class="footnote-content"></span>
+                    </div>
+                </a></li>
+        </ul>
+    </div>
+    <a href="#" action="scroll-left"><span class="icon icon-arrow-left" aria-hidden="true"></span></a>
+    <a href="#" action="scroll-right"><span class="icon icon-arrow-right" aria-hidden="true"></span></a>
+</div>

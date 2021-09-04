@@ -1,0 +1,215 @@
+@import "../overlay.component.scss";
+
+/* note: this will for some reason trigger the 100vw overlap with the footer buttons going behind the screenbar width */
+// .Overlay .background {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+// }
+
+.Overlay.TicketInfo > .body > .content.details .icon,
+.Overlay.TicketInfo > .body > .content.heading .icon {
+    display: inline-block;
+    margin-right: 1rem;
+}
+@media (min-width: 800px) {
+    .Overlay.TicketInfo > .body > .content.heading .name {
+        font-weight: 800;
+        font-size: 2rem;
+        letter-spacing: 0;
+        line-height: 2.286rem;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.TicketInfo > .body > .content.heading .name {
+        font-weight: 800;
+        font-size: 1.714rem;
+        letter-spacing: -0.018rem;
+        line-height: 1.857rem;
+    }
+}
+@media (min-width: 800px) {
+    .Overlay.TicketInfo > .body > .content.heading .price {
+        font-weight: 500;
+        font-size: 1.286rem;
+        letter-spacing: 0.021rem;
+        line-height: 1.429rem;
+        margin-top: 0.7rem;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.TicketInfo > .body > .content.heading .price {
+        font-weight: 800;
+        font-size: 1.429rem;
+        letter-spacing: 0;
+        line-height: 1.714rem;
+        margin-top: 0.5rem;
+    }
+}
+@media (min-width: 800px) {
+    .Overlay.TicketInfo > .body > .content.heading .date {
+        font-weight: 500;
+        font-size: 1.286rem;
+        letter-spacing: 0.021rem;
+        line-height: 1.429rem;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.TicketInfo > .body > .content.heading .date {
+        font-weight: 500;
+        font-size: 1.071rem;
+        letter-spacing: 0.018rem;
+        line-height: 1.429rem;
+    }
+}
+@media (min-width: 800px) {
+    .Overlay.TicketInfo > .body > .content.heading .date {
+        margin-top: 1.4rem;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.TicketInfo > .body > .content.heading .date {
+        margin-top: 0.7rem;
+    }
+}
+.Overlay.TicketInfo > .body > .content.details .backdrop,
+.Overlay.TicketInfo > .body > .content.info .backdrop {
+    padding: 1.4rem;
+    overflow: hidden;
+    border-radius: 3px;
+    background-color: rgba(51, 51, 51, 0.5);
+}
+@media (min-width: 800px) {
+    .Overlay.TicketInfo > .body > .content.details {
+        margin-top: 1.7rem;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.TicketInfo > .body > .content.details {
+        margin-top: 1.4rem;
+    }
+}
+.Overlay.TicketInfo > .body > .content.details .backdrop > h3 {
+    margin: 0;
+}
+.Overlay.TicketInfo > .body > .content.details .backdrop > h3 + h3 {
+    margin-top: 0.85rem;
+}
+.Overlay.TicketInfo > .body > .content.details .backdrop > h3 > a {
+    vertical-align: middle;
+}
+.Overlay.TicketInfo > .body > .content.details .icon-star {
+    font-weight: 700;
+    color: transparent;
+    background: linear-gradient(to bottom right, #fc1470, #8f06d1);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.Overlay.TicketInfo > .body > .content.info {
+    margin-top: 2.8rem;
+}
+@media (min-width: 800px) {
+    .Overlay.TicketInfo > .body > .content.gallery {
+        margin-top: 3.2rem;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.TicketInfo > .body > .content.gallery {
+        margin-top: 2.2rem;
+    }
+}
+.Overlay.TicketInfo .button[action="close"] {
+    box-shadow: 0 -6px 10px 0 rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 800px) {
+    .Overlay.TicketInfo .button[action="close"] {
+        position: absolute;
+        right: 7.4rem;
+        bottom: 6.85rem;
+        height: 3rem;
+        width: 16.85rem;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.TicketInfo .button[action="close"] {
+        height: 3.2rem;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+@media (min-width: 800px) {
+    .Overlay.TicketInfo .button[action="close"] > p {
+        font-weight: 700;
+        font-size: 1rem;
+        letter-spacing: 0.018rem;
+        line-height: 1.214rem;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.TicketInfo .button[action="close"] > p {
+        font-weight: 700;
+        font-size: 1rem;
+        letter-spacing: 0.018rem;
+        line-height: 1.214rem;
+    }
+}
+.Overlay.TicketInfo [name="checkout-button"],
+.Overlay.TicketInfo [name="follow-button"] {
+    height: 4.3rem;
+}
+@media (min-width: 800px) {
+    .Overlay.TicketInfo [name="checkout-button"],
+    .Overlay.TicketInfo [name="follow-button"] {
+        position: absolute;
+        right: 1.4rem;
+        bottom: 1.4rem;
+        width: 22.8rem;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.TicketInfo [name="checkout-button"] > .button {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.TicketInfo > .foot {
+        height: auto;
+    }
+}
+.Overlay.TicketInfo > .foot > .gradient {
+    height: 10rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(center bottom, rgba(53, 53, 53, 0.5), rgba(53, 53, 53, 0));
+    pointer-events: none;
+    z-index: 0;
+}
+@media (max-width: 799px) {
+    .Overlay.TicketInfo > .foot > .gradient {
+        display: none;
+    }
+}
+.Overlay.TicketInfo [name="checkout-button"] {
+    z-index: 30;
+}
+@media (max-width: 799px) {
+    .Overlay.TicketInfo [name="checkout-button"] > .button {
+        border-radius: 0;
+    }
+}
+.Overlay.TicketInfo [name="follow-button"] {
+    z-index: 20;
+}
+.Overlay.TicketInfo[theme="DARK"] > .body > .content.details .backdrop,
+.Overlay.TicketInfo[theme="DARK"] > .body > .content.info .backdrop {
+    background-color: rgba(51, 51, 51, 0.5);
+}
+.Overlay.TicketInfo[theme="LIGHT"] > .body > .content.details .backdrop,
+.Overlay.TicketInfo[theme="LIGHT"] > .body > .content.info .backdrop {
+    background-color: rgba(51, 51, 51, 0.1);
+}

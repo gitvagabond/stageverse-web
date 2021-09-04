@@ -1,0 +1,18 @@
+a {
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out, opacity 0.2s ease-in-out, color 0.2s ease-in-out;
+    // color: #ff0032;
+    color: #fc1470;
+}
+a:hover {
+    // color: #b80025;
+    color: #fc1471aa;
+}
+
+a.neutral-link {
+    color: #ffffff;
+}
+
+a:hover.neutral-link {
+    color: #cccccc;
+}

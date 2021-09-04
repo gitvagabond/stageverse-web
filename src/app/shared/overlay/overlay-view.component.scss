@@ -1,0 +1,8 @@
+.overlayView {
+    opacity: 0;
+    transition: opacity 350ms ease-in-out;
+
+    &.fade-in {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,28 @@
+<nav *ngIf="isVisible" [ngClass]="{'nav--dark-scheme': isDarkScheme, 'nav--fixed': isFixed, 'nav--transparent': isTransparent}">
+  <div class="nav">
+    <div class="sticky-component is-fixed white-bg" style="height: 80px;">
+      <div class="sticky-stacky" style="top: 0px;" appStickyNav [offSet]="0" [addClass]="'navBar--sticky'" [ngClass]="{'nav--fixed': isFixed}">
+        <div #bg class="nav__bg"></div>
+        <div class="nav__links">
+          <div class="wrap wrap--full-width text-center">
+            <a class="nav__logo float-none" [routerLink]="['/']">
+              <!-- <div class="icon icon-stage-horizontal-logo"></div> -->
+              <img class="nav__logo__img" src="assets/images/Full-logo-horizontal-white-trimmed.png"/>
+              <!-- <span class="icon icon-stage-mark-logo"></span> -->
+              <!-- <span class="nav__logo__text">Stage</span> -->
+              <!-- <div class="icon icon-stage-stacked-logo"></div> -->
+              <!-- <img class="nav__logo" src="assets/stage-logo-horizontal-white.png" /> -->
+            </a>
+            <a class="right">
+              <div class="cta-btn">
+                <div class="cta-btn__inner">Get early access</div>
+              </div>
+            </a>
+            <a [routerLink]="['/']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">HOME</a>
+            <a [routerLink]="['/login']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">LOGIN</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

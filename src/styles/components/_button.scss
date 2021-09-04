@@ -1,0 +1,90 @@
+.btn {
+	border: none;
+	background-color: $color-primary;
+	border-radius: 20px;
+	color: white;
+	color: #333;
+	cursor: pointer;
+	display: inline-block;
+	font-family: $font-family-button;
+	font-size: 15px; // $font-size-button;
+	font-family: 'gilroyextrabold';
+	// font-weight: $font-weight-button;
+	padding: 8px 20px; //0.4em 1em;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	border: 2px solid $color-primary;
+
+	transition: background-color $transition-short;
+
+	&:hover {
+		background-color: $color-primary-dark;
+		// color: white;
+	}
+
+	@include breakpoint(medium) {
+		padding: 0.5em 1em;
+	}
+
+	&.btn--md {
+		font-size: 18px;
+		padding: 12px 40px;
+		border-radius: 40px;
+	}
+
+	&.btn--lg {
+		font-size: 22px;
+		padding: 14px 60px;
+		border-radius: 40px;
+	}
+
+	&.btn--secondary {
+		background: transparent;
+		color: $color-primary;
+	}
+}
+
+.button {
+	$button-width: 10rem;
+
+	background-color: $color-primary;
+	border: none;
+	border-radius: $border-radius;
+	color: white;
+	cursor: pointer;
+	display: inline-block;
+	font-family: $font-family-button;
+	font-size: $font-size-button;
+	font-weight: $font-weight-button;
+	margin: 0.5em 0.1em 0 0;
+	min-width: $button-width;
+	padding: 0.7em 2em;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+
+	transition: background-color $transition-short;
+
+	&.button--large {
+		font-size: $font-size-button * 1.3
+	}
+
+	&:hover {
+		background-color: $color-primary-dark;
+		color: white;
+	}
+
+	@include breakpoint(medium) {
+		padding: 0.5em 1em;
+	}
+
+	&.button--secondary {
+		background-color: rgba(black, 0.4);
+		box-shadow: inset 0 0 0 1px white;
+
+		&:hover {
+			background-color: rgba(black, 0.8);
+		}
+	}
+}

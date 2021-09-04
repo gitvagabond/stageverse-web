@@ -1,0 +1,64 @@
+<div class="Overlay TicketInfo overlay-hidden Module View vp-min-height" theme="DARK">
+    <div class="backdrop" theme="DARK" style="opacity: .8;"></div>
+    <div class="background" style="background-image: url('assets/images/void.jpg');">
+    </div>
+    <div class="head">
+        <div class="background"></div>
+        <div class="content">
+            <div name="avatar"></div> <a [routerLink]="" (click)="close()" action="close"> <span class="icon icon-close"
+                    aria-hidden="true"></span> </a>
+        </div>
+    </div>
+    <div class="body">
+        <div class="content column heading">
+            <div>
+                <div class="name">VIP Ticket Pack</div>
+                <div class="price">$&nbsp;50.00</div>
+            </div>
+        </div>
+        <div class="content column details">
+            <div>
+                <div class="backdrop">
+                    <h3 class="price"><span class="icon icon-time" aria-hidden="true"></span>Sale ends in 2 days</h3>
+                </div>
+            </div>
+        </div>
+        <div class="content column gallery">
+            <div>
+                <h2>Gallery</h2>
+                <app-gallery></app-gallery>
+            </div>
+        </div>
+        <div class="content column info">
+            <div>
+                <h2 class="transition-content">Details</h2>
+                <div class="transition-content">
+                    <div><strong>Recorded Video Message:</strong> There will a dedicated field before purchasing that
+                        will
+                        allow you to enter the instructions for your Video Recorded Message. 250 character limit. Please
+                        allow 2-3 weeks from the conclusion of Virtual PopCon for delivery of message.</div>
+                    <div>
+                        <div>&nbsp;</div>
+                        <div>&nbsp;</div>
+                        <div>TERMS</div>
+                        <div>All tickets are final sale and cannot be exchanged or refunded. In the case of an event
+                            cancellation without a rescheduled date, a full refund will be automatically issued to each
+                            patron on the credit card used to purchase. By purchasing a ticket to this event, you agree
+                            to
+                            this purchase policy. Before purchasing your tickets, we urge you to confirm the title, time
+                            and
+                            location of the event.</div>
+                    </div>
+                    <p>event.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="foot"> <a href="#" action="close" class="button" theme="GRAY-LIGHT" style="display: none;">
+            <p>Continue Shopping</p>
+        </a>
+        <app-button-follow name="follow-button"></app-button-follow>
+        <app-button-checkout name="checkout-button"></app-button-checkout>
+        <div class="gradient"></div>
+    </div>
+</div>

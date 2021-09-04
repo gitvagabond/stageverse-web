@@ -1,0 +1,943 @@
+@import "./styles";
+.gradient{
+    position: relative;
+    top: 57vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.265625) 79.17%, rgba(0, 0, 0, 0) 100%);
+    transform: rotate(0deg);
+    height: 23%;
+}
+.gradient-2{
+    position: relative;
+
+    top: 53.9vh;
+    background: linear-gradient(
+0deg
+, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.265625) 79.17%, rgba(0, 0, 0, 0) 100%);
+    transform: rotate(
+0deg
+);
+    height: 23%;
+}
+.culture-1{
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(0deg, #665AFF, #665AFF);
+}
+.culture-left{
+    flex: 3;
+}
+.culture-title-container{
+    margin-left: 56px;
+    margin-top: 90px;
+}
+.culture-text-container{
+    width: 95%;
+    margin-top: 20px;
+    margin-left: 56px;
+}
+.culture-buttons{
+    width: 80%;
+    margin-left: 56px;
+    margin-top: 45px;
+}
+.culture-right{
+    flex: 2;
+    background-image: url(/assets/images/ui-assets/culture-women.png);
+    height: 68vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.download-container{
+    display: none;
+}
+.join-our-discord{
+    margin-left: 20px;
+}
+.mt-2{
+    margin-top:11.5vh;
+}
+.title-sm{
+    height: 15px;
+    margin-top: 40px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1vw;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.title-lg{
+    position: static;
+    height: 52px;
+    left: 0px;
+    top: 40px;
+    font-style: normal;
+    font-size: 2.2vw;
+    font-family: 'Druk Wide Bold';
+    line-height: 130%;
+    text-transform: uppercase;
+}
+.title-container{
+    width: 94%;
+    margin-left:auto;
+    margin-right: auto;
+    padding: 30px 0px;
+    margin-top: 10vh;
+}
+.left-image{
+    background-image:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%),
+    url('/assets/images/ui-assets/CenterStage.png');
+    background-position: bottom;
+    background-size:100% 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    height: 136vh;
+}
+.cornor-image{
+    background: url(/assets/images/ui-assets/cornor-background.png) no-repeat;
+    background-position: bottom left;
+}
+.cluture-image-women{
+    background-image: url('/assets/images/ui-assets/culture-women.png');
+    background-position: bottom;
+    background-size: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    height: 58vh;
+}
+.left-image-text{
+    margin-top: 7%;
+    width: 40%;
+    margin-left: 6%;
+
+}
+.left-image-text-title{
+    font-family: 'Druk Wide Bold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3.2vw;
+    line-height: 110%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    font-feature-settings: 'ss04' on, 'ss02' on, 'ss01' on;
+    color: #FFFFFF;
+}
+.left-image-text-box{
+    width: 70%;
+    margin-left: 6%;
+    margin-top: 5%;
+}
+.left-image-text-subtitle{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2vw;
+    line-height: 110%;
+    letter-spacing: -0.01em;
+    font-feature-settings: 'ss02' on;
+    color: #FFFFFF;
+
+}
+.left-image-text-btn{
+    background: #FFFFFF;
+    border-radius: 45px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2vw;
+    line-height: 110%;
+    color: #0A091A;
+    padding: 10px 31px;
+}
+.left-image-text-btn:hover{
+    background: linear-gradient(0deg, rgba(123, 97, 255, 0.2), rgba(123, 97, 255, 0.2)), #FFFFFF;
+    color: #0A091A;
+}
+.right-header-content{
+    position: relative;
+    top: 88%;
+    left: 10%;
+    //  text-align: center;
+    // margin-left: auto;
+    // margin-right: auto;
+}
+.left-image-text-btn img{
+    position: relative;
+    top: 1px;
+    left: 17px;
+    height:3vh;
+}
+.right-image-text-btn{
+    background: #0A091A;
+    border-radius: 45px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2vw;
+    line-height: 110%;
+    color: #FFFFFF;
+    padding: 15px 25px;
+    padding-right: 68px;
+}
+.right-image-text-btn:hover{
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.08)), #0A091A;
+    color: #ffffff;
+}
+.right-image-text-btn img{
+    position: relative;
+    top: 1px;
+    left: 34px;
+    height:3vh;
+}
+.right-one{
+    background-image: url('/assets/images/ui-assets/CenterStage_62 1.png');    
+    background-size: cover; 
+    background-repeat: no-repeat;    
+    background-position: bottom;
+    height: 25vh;
+}
+.right-two{
+    background-image: url('/assets/images/ui-assets/IMG_2554 2.png');    
+    background-size: cover; 
+    background-repeat: no-repeat;    
+    background-position: center;
+    height: 50vh;
+}
+.right-three{
+    background-image: url('/assets/images/ui-assets/women.png');    
+    background-size: cover; 
+    background-repeat: no-repeat;    
+    background-position: top;
+    height: 50vh;
+}
+.right-four{
+    background-image: url('/assets/images/ui-assets/CenterStage_94_RTFKT_1 1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.simulation-2{
+    background-image: url('/assets/images/ui-assets/shantel.png');
+    background-size: cover; 
+    background-repeat: no-repeat;    
+    background-position: center;
+    height: 74vh;
+}
+.simulation-3{
+    background-image: url('/assets/images/ui-assets/rambow.png');
+    background-size: cover; 
+    background-repeat: no-repeat;    
+    background-position: center;
+    height: 74vh;
+}
+.paragraph{
+    margin-top: 0px;
+    margin-bottom: 3px;
+    font-weight: bold;
+    font-size: 1.1vw;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.what-happen{
+
+    background-image:
+    url('/assets/images/ui-assets/simulation.png');
+
+    background-size:100% 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    height: 74vh;
+       background-position: center;
+
+}
+.simulation-content{
+    position: relative;
+    top: 57vh;
+    margin-left: 6%;
+}
+.p{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+ .h3{
+     font-weight: bold;
+    font-size: 1.8vw;
+    line-height: 5vh;
+    letter-spacing: -0.01em;
+    font-feature-settings: "ss02" on;
+    color: #FFFFFF;
+}
+.h4{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.1vw;
+    line-height: 8vh;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.simulation-content-2{
+   
+    top: 57vh;
+    text-align: left;
+    margin-left: 6%;
+  }
+  .simulation-content-3{
+      position: relative;
+      top: 60%;
+     text-align: left;
+     margin-left: 5%;
+  }
+  .simulation-content-venues{
+   
+      padding-top: 66px;
+     margin-left: 6%;
+  }
+  
+  .muse{
+      background-image: url('/assets/images/ui-assets/center-stage.png');
+      background-position: center;
+  
+      background-size:100% 100%;
+      object-fit: cover;
+      background-repeat: no-repeat;
+         height: 70vh;
+  }
+  .muse-2{
+      background-image: url('/assets/images/ui-assets/future-dome.png');
+      background-position: center;
+      background-size:100% 100%;
+      object-fit: cover;
+      background-repeat: no-repeat;
+         height: 70vh;
+  }
+  .muse-content{
+      position: relative;
+      top: 56vh;
+      margin-left: 6%;
+  }
+  
+  .culture{
+      background: linear-gradient(0deg, #665AFF, #665AFF),url('/assets/images/ui-assets/cornor-background.png'); height: 60vh;
+  }
+  .culture-text{
+      position: relative;
+      top: 21%;
+      text-align: left;
+      margin-left: 5%;
+      width: 60vw;
+  }
+  .culture-subtitle{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.82vw;
+  line-height: 126%;
+  letter-spacing: -0.01em;
+  font-feature-settings: 'ss02' on;
+  color: #FFFFFF;
+  }
+  .culture-title{
+      font-family: 'Druk Wide Bold';
+      font-style: normal;
+      font-weight: bold;
+      font-size: 3vw;
+      line-height: 110%;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      font-feature-settings: 'ss04' on, 'ss02' on, 'ss01' on;
+      color: #FFFFFF;
+  }
+  .collection-left{
+      background-image: url('/assets/images/ui-assets/muse.png');
+      background-size:100% 100%;
+      object-fit: cover;
+      background-repeat: no-repeat;
+      height: 66vh;
+      background-position: center;
+  }
+  .collection-right{
+      background-image: url('/assets/images/ui-assets/balmain.png');
+      background-size:100% 100%;
+      object-fit: cover;
+      background-repeat: no-repeat;
+      height: 66vh;
+      background-position: center;
+  }
+  .membership{
+      background: linear-gradient(84.67deg, #FF675C -32.42%, #ff5cf5 151.18%);
+      height: 70vh;
+  }
+  .membership-left{
+  
+  }
+  .membership-right{
+      background: linear-gradient(
+  82.91deg, #0b091a00 -213.78%, rgba(0, 0, 0, 0) 195.01%), url(/assets/images/ui-assets/culture.png);
+      background-size: cover;
+      mix-blend-mode: color-dodge;
+      transform: rotate(
+  0.52deg
+  );
+      background-repeat: no-repeat;
+      /* margin-top: 18%; */
+      min-height: 69vh;
+      background-position-x: center;
+  }
+  .membership-text{
+      position: relative;
+      top: 20%;
+      text-align: left;
+      margin-left: 6%;
+  }
+  
+.video-size{
+    width: 99%;
+    height: 75vh;
+    object-fit: cover;
+}
+.overlay1 {
+    position: absolute;
+    bottom: 1.5%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.265625) 70.17%, rgba(0, 0, 0, 0) 100%);
+    transform: rotate(0deg);
+    width: 100%;
+}
+.stageverse-content1{
+    padding-bottom: 35px;
+    padding-left: 25px;
+    width: 40.68vh;
+
+}
+.video-container1{ 
+    
+}
+
+  .stageverse-1{
+      background-image: url('/assets/images/ui-assets/video-1.gif');
+      background-size: 100% 100%; 
+      background-repeat: no-repeat; 
+      height: 75vh;    
+      background-position: bottom;
+  }
+  .stageverse-2{
+      background-image: url('/assets/images/ui-assets/racket.png');
+      background-size: 100% 100%; 
+      background-repeat: no-repeat; 
+      height: 75vh;    
+      background-position: center;
+  }
+  .stageverse-3{
+      background-image:url('/assets/images/ui-assets/glass.png');
+      background-size: 100% 100%; 
+      background-repeat: no-repeat; 
+      height: 75vh;    
+      background-position: center;
+  }
+  .stageverse-4{
+      background-image: url('/assets/images/ui-assets/goods.png');
+      background-size: 100% 100%; 
+      background-repeat: no-repeat; 
+      height: 75vh;    
+      background-position: center;
+  }
+  .btn-position{
+      position: relative;
+      top: 5vh;
+  }
+  .S{
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.25vw;
+      line-height: 3.1vh;
+      color: #FFFFFF;
+  }
+  .download{
+      position: relative;
+      top: 6vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: black;
+  }
+  .download-1{
+      background:linear-gradient(270deg, #5CFFB8 0%, #F4FF5C 100%);
+      height: 60vh;
+  }
+  .download-2{
+      background: linear-gradient(270deg, #665AFF 0%, #5CFFB8 100%);
+  }
+  .download-3{
+      background: linear-gradient(270deg, #FF5CF4 0%, #665AFF 100%);
+  }
+  .download-4{
+      background: linear-gradient(270deg, #FF675C 0%, #FF5CF4 100%);
+  }
+  .download-title{
+      margin-bottom: 10vh;
+      font-family: 'Druk Wide Bold';
+      font-style: normal;
+      font-weight: bold;
+      font-size: 2vw;
+      line-height: 130%;
+      text-transform: uppercase;
+      color: #000000;
+  }
+  .download-btn{
+      margin-top: 15vh;
+      background-color: black !important;
+      color: white !important;
+  }
+  .download-img{
+      height: 16vh;
+  
+  }
+  .quest{
+      height: 13vh;
+      margin-top: 3vh;
+  
+  }
+  .coming-soon{
+      position: relative;
+      top: 37%;
+  }
+  .membership-title{
+    font-family: 'DRUK WIDE BOLD';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.4vw;
+    line-height: 110%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    font-feature-settings: "ss04" on, "ss02" on, "ss01" on;
+    color: #0A091A;
+}
+.membership-subtitle{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.45vw;
+    line-height: 126%;
+    letter-spacing: -0.01em;
+    font-feature-settings: 'ss02' on;
+    color: #0A091A;
+    width: 80%;;
+
+}
+.stage-heading{
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+    padding-left: 20px;
+}
+
+.stage-paragraph{
+    font-weight: normal;
+    font-size: 24px;
+    letter-spacing: -0.01em;
+    line-height: 2.4rem;
+    width: 94%;
+    margin-left: 20px;
+}
+// ==================================================mobile view css=================================================>>>>>>>>>>>>>>
+// On screens that are 600px or less, set the css property
+@media screen and (max-width: 600px) {
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block !important;
+    }
+    .disktop-hide{
+        display: block !important;
+    }
+.mob{
+    height: 67px !important;
+}
+.hide-collection-cell{
+    display: none !important;
+}
+.left-image{
+    margin: 0px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    height: 545px;
+    background-size: 100% 100%;
+    background-position: bottom right;
+}
+.left-image-text{
+    margin-top: 5vh;
+    width: 40%;
+    margin-left: 5%;
+
+}
+
+.left-image-text-title{
+    font-size: 35px;
+    line-height: 130%;
+}
+.left-image-text-subtitle{
+    font-size: 18px;
+    margin: 0px 0px;
+    width: 304px;
+}
+
+.simulation-content{
+    top: -11vh !important;
+}
+
+.gradient{
+    height: 5%;
+}
+
+.gradient-2{
+    top: 46.2vh;
+    height: 23%;
+}
+
+.simulation-content-venues{
+    padding-top: 60px;
+}
+
+.left-image-text-btn{
+    padding: 12px 30px 15px 25px;
+    font-size: 20px;
+    word-spacing: 0px;
+}
+.title-sm{
+    font-size: 14px;
+    margin-top: 0px;
+    line-height: 18px;
+}
+.title-lg{
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.membership{
+    background: linear-gradient(7deg, #FF675C 10.58%, #ff5cf5 75.18%);
+    height: 100vh ;
+    flex-direction: column;
+}
+.membership-title{
+    font-size: 35px ;
+    width: 250px; 
+    line-height: 130%;
+}
+.membership-text{
+    top: 6%;
+    margin-left: 8%;
+}
+.membership-subtitle{
+    font-size: 20px;
+    line-height: 110%;
+}
+.right-image-text-btn{
+    background: #0A091A;
+    border-radius: 45px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 110%;
+    color: #FFFFFF;
+    padding: 15px 25px;
+    padding-right: 68px;
+}
+.membership-right{
+    margin-top: 54px;
+    background-size: 82% 88% ;
+    min-height: 40vh;
+    transform: rotate(359.52deg);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.stageverse-1{
+    height: 66vh;
+}
+.stageverse-2{
+    height: 66vh;
+}
+.stageverse-3{
+    height: 66vh;
+}
+.stageverse-4{
+    height: 66vh;
+}
+.culture{
+    height:750px;
+}
+.cornor-image{
+    background-image: none;
+    
+}
+.culture-sm{
+    flex-direction: column !important;
+}
+.culture-text{
+    top: 20px;
+    margin-left: 10%;
+}
+.culture-title{
+    font-size: 35px;
+    line-height: 130%;
+}
+.culture-subtitle{
+    font-size: 20px;
+    line-height: 110%;
+    width: 333px;
+}
+.culture-btn{
+    display: block;
+    margin: 15px 0px;
+}
+.cluture-image-women{
+    background-size: 47vh;
+    height: 36vh;
+}
+.create-with-us{
+    width: 250px;
+}
+.create-with-us:hover{
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.08)), #0A091A;
+}
+.create-img{
+    margin-left: 20px;
+}
+.join-our-discord{
+    margin-left: 0px !important;
+    width: 250px;
+}
+.collection-left{
+    margin-top: 35px;
+    height: 60vh;
+    background-size: cover;
+}
+.overlay1{
+    bottom: 2%;
+}
+.stageverse-content1{
+    padding-bottom: 25px;
+    padding-left: 10px;
+    width: 40.68vh;
+}
+.stageverse-text{
+    width: 265px;
+    font-size: 20px;
+    line-height: 110%;
+}
+.stage-heading{
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+}
+.download-container-hide{
+    display: none !important;
+}
+.download-container{
+    display: block !important;
+    background: linear-gradient(180deg, #F4FF5C 0%, #5CFFB8 35.61%, #665BFF 64.25%, #FF5CF4 100%);
+    height: 330px;
+}
+.download-img-btn{
+    display: block;
+    position: relative;
+    left: 30px;
+    top: 40px;
+    margin: 17px 0px;
+}
+.donwnload-sub-text{
+    font-family: 'Druk Wide Bold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    font-feature-settings: 'ss04' on, 'ss02' on, 'ss01' on;
+    color: #0A091A;
+    margin-top: 60px;
+    width: 350px;
+    margin-left: 30px;
+}
+.h3{
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    font-feature-settings: 'ss02' on;
+}
+.what-happen{
+    height: 60vh;
+}
+.paragraph{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.simulation-content{
+    top: 40vh;
+}
+.simulation-content-2{
+    top: 40vh;
+    margin-top: 50vh;
+}
+.simulation-2{
+    height: 60vh;
+}
+.simulation-3{
+    height: 60vh;
+}
+.muse{
+    height: 60vh;
+    background-size: cover;
+    background-position: bottom;
+}
+.muse-2{
+    background-size: cover;
+    background-position: bottom;
+    height: 60vh;
+}
+.simulation-content-venues{
+    top: 52vh;
+}
+.muse-content{
+    top: 45vh;
+}
+.collection-right{
+    margin-top: 35px;
+    height: 60vh;
+    background-size: cover;
+}
+
+
+.title-container{
+    margin-top: 4.5vh;
+    width: 86%;
+    padding: 10px 0px;
+}
+.btn-position{
+    top: 5vh;
+}
+.culture-1{
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.culture-title-container{
+    margin-left: 35px;
+    margin-top: 20px;
+    width: 60%;
+}
+.culture-text-container{
+    margin-left: 35px;
+}
+.culture-buttons{
+    margin-left: 35px;
+}
+.culture-right{
+    background-image: none;
+}
+// -------------------Footer CSS---------------------------------------
+
+
+// ========end of footer mobile css============
+
+
+.image-width{
+    width: 95%;
+}
+}
+// =========================================End media 600==================================================
+// =========================================Start media 414 and less than 414px============================
+@media screen and (max-width: 414px) {
+    .membership{
+        margin-top: 20px;
+    }
+    .culture{
+     height: 98vh;
+     }
+     .cluture-image-women{
+         background-size: 42vh;
+         height: 34vh;
+         background-position: bottom;
+ 
+     }
+ }
+ // ============================================End of 414===================================================
+// =========================================Start media 411 and less than 411px============================
+@media screen and (max-width: 411px) {
+   .membership{
+       height: 98vh;
+   }
+   .culture{
+    height: 92vh;
+    }
+    .cluture-image-women{
+        background-size: 42vh;
+        height: 36vh;
+
+    }
+}
+// ============================================End of 411===================================================
+
+// =========================================Start media 375 and less than 375px=============================
+@media screen and (max-width: 375px) {
+   .membership{
+       height: 110vh;
+   }
+   .culture{
+    height: 104vh;
+    }
+    .cluture-image-women{
+        background-size: 46vh;
+        height: 36.5vh;
+
+    }
+}
+// ============================================End of 375====================================================
+
+// =========================================Start media 360 and less than 360px==============================
+@media screen and (max-width: 360px) {
+    .culture{
+        height: 80vh;
+    }
+    .cluture-image-women{
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+        padding-top: 66.64%;
+
+    }
+    .culture-subtitle{
+        font-size: 18px;
+        width: 295px;
+    }
+    .title-container[_ngcontent-fks-c66] {
+        margin-top: 4.5vh;
+        width: 86%;
+        padding: 10px 0px;
+        margin-bottom: 10px !important;
+    }
+}
+
+
+// ============================================End of 360====================================================
+
+// =========================================Start media 320 and less than 320px==============================
+@media screen and (max-width: 320px) {
+    .membership{
+        height: 125vh;
+    }
+
+
+
+    .culture{
+        height: 115vh;
+    }
+}
+// ============================================End of 320=====================================================

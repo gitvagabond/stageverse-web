@@ -1,0 +1,30 @@
+<div class="Overlay Collection overlay-hidden Module View vp-min-height" theme="DARK" style="">
+    <div class="head">
+        <div class="background"></div>
+        <div class="content">
+            <div name="avatar"></div> <a [routerLink]="" (click)="close()" action="close"> <span class="icon icon-close"
+                    aria-hidden="true"></span> </a>
+        </div>
+    </div>
+    <div class="body">
+        <div class="content">
+            <div class="info">
+                <div class="title">Full Show Tickets</div>
+                <div class="description">
+                    <ul>
+                        <li style="font-weight: 400;"><strong>* Access any event date</strong></li>
+                    </ul>
+                </div>
+            </div>
+            <app-product-picker></app-product-picker>
+        </div>
+    </div>
+    <div class="foot"> 
+        <a href="#" action="close" class="button" theme="GRAY-LIGHT" style="display: none;">
+            <p>Continue Shopping</p>
+        </a>
+        <app-button-follow name="follow-button"></app-button-follow>
+        <app-button-checkout name="checkout-button"></app-button-checkout>
+        <div class="gradient"></div>
+    </div>
+</div>

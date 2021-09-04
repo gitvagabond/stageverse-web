@@ -1,0 +1,11 @@
+<div #background class="background parallax vp-height" style="top: 0px;">
+  <div *ngIf="isBackgroundImageVisible" #backgroundImage class="background background__image"
+    style="background-image: url(assets/images/Stage_Stairs_BG.png);">
+  </div>
+  <video *ngIf="isBackgroundVideoVisible" #backgroundVideo id="backgroundVideo" class="background__video hide-mobile"
+    preload="auto" muted autoplay playsinline loop crossorigin="anonymous" oncanplay="this.play()"
+    onloadedmetadata="this.muted = true">
+    <source src="assets/videos/SV_Hero_X265.mp4" type="video/mp4; codecs=hevc">
+    <source src="assets/videos/SV_Hero_X264.mp4" type="video/mp4">
+  </video>
+</div>

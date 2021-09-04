@@ -1,0 +1,46 @@
+.Input.Textbox {
+    overflow: hidden;
+    background-color: transparent;
+    cursor: text;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+}
+@media (max-width: 799px) {
+    .Input.Textbox > .icon {
+        left: 0.5rem;
+    }
+}
+.Input.Textbox .label {
+    white-space: nowrap;
+}
+.Input.Textbox > input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.Input.Textbox > .border-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    pointer-events: none;
+    z-index: 20;
+    transition: border-color 0.2s ease-in-out;
+}
+.Input.Textbox.large {
+    font-size: 1.5rem;
+}
+.Input.Textbox.error > .border-container {
+    border: 2px solid red !important;
+}
+.Input.Textbox[theme="DARK"]:hover > .border-container,
+.Input.Textbox[theme="DARK"].focus > .border-container {
+    border: 2px solid #585858;
+}
+.Input.Textbox[theme="LIGHT"]:hover > .border-container,
+.Input.Textbox[theme="LIGHT"].focus > .border-container {
+    border: 2px solid #dadada;
+}

@@ -1,0 +1,292 @@
+@import 'variables';
+
+.Module.CollectionPicker ul {
+    margin-bottom: 0;
+}
+.Module.CollectionPicker [name="scroll-content"] {
+    width: 100%;
+    max-width: 100vw;
+    height: 100%;
+}
+.Module.CollectionPicker .collections > li {
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+    box-shadow: 0 1rem 1.1rem 0 rgba(0, 0, 0, 0.3);
+}
+.Module.CollectionPicker [action="load-item"] {
+    display: block;
+    color: #fff;
+}
+.Module.CollectionPicker [action="load-item"] > .summary {
+    position: relative;
+}
+@media (min-width: 800px) {
+    .Module.CollectionPicker [action="load-item"] > .summary {
+        height: 11rem;
+    }
+}
+@media (max-width: 799px) {
+    .Module.CollectionPicker [action="load-item"] > .summary {
+        padding-top: 53.73%;
+    }
+}
+.Module.CollectionPicker [action="load-item"] > .summary > .background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    z-index: 0;
+}
+.Module.CollectionPicker [action="load-item"] > .summary > .minimum-price {
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    border-bottom-left-radius: 3px;
+    z-index: 1;
+    padding: 0.45rem 0.75rem;
+}
+.Module.CollectionPicker [action="load-item"] > .summary > .minimum-price > .background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #ff0032;
+    z-index: 0;
+}
+.Module.CollectionPicker [action="load-item"] > .summary > .minimum-price > .label {
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.018rem;
+    line-height: 1.214rem;
+    position: relative;
+    white-space: nowrap;
+    z-index: 10;
+}
+.Module.CollectionPicker [action="load-item"] > .summary > .info {
+    position: absolute;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+    z-index: 10;
+}
+@media (min-width: 800px) {
+    .Module.CollectionPicker [action="load-item"] > .summary > .info {
+        padding: 0 0.5rem 0.7rem 1rem;
+    }
+}
+@media (max-width: 799px) {
+    .Module.CollectionPicker [action="load-item"] > .summary > .info {
+        padding: 0 1.2rem 0.6rem;
+    }
+}
+.Module.CollectionPicker [action="load-item"] > .summary > .info > .summary,
+.Module.CollectionPicker [action="load-item"] > .summary > .info > .title {
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+@media (min-width: 800px) {
+    .Module.CollectionPicker [action="load-item"] > .summary > .info > .title {
+        font-weight: 700;
+        font-size: 1.286rem;
+        letter-spacing: 0;
+        line-height: 1.571rem;
+    }
+    .Module.CollectionPicker [action="load-item"] > .summary > .info > .summary {
+        font-weight: 500;
+        font-size: 1rem;
+        letter-spacing: 0;
+        line-height: 1.286rem;
+    }
+}
+@media (max-width: 799px) {
+    .Module.CollectionPicker [action="load-item"] > .summary > .info > .title {
+        font-weight: 800;
+        font-size: 1.429rem;
+        letter-spacing: 0;
+        line-height: 1.714rem;
+    }
+    .Module.CollectionPicker [action="load-item"] > .summary > .info > .summary {
+        font-weight: 500;
+        font-size: 1.071rem;
+        letter-spacing: 0.018rem;
+        line-height: 1.429rem;
+    }
+}
+.Module.CollectionPicker [action="load-item"] > .footnote,
+.Module.CollectionPicker [action="load-item"] > .quantity {
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 0;
+    line-height: 1.286rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    color: #000;
+}
+.Module.CollectionPicker [action="load-item"] > .footnote > span,
+.Module.CollectionPicker [action="load-item"] > .quantity > span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+@media (min-width: 800px) {
+    .Module.CollectionPicker [action="load-item"] > .footnote > span,
+    .Module.CollectionPicker [action="load-item"] > .quantity > span {
+        margin-left: 1.2rem;
+        margin-right: 1rem;
+    }
+}
+@media (max-width: 799px) {
+    .Module.CollectionPicker [action="load-item"] > .footnote > span,
+    .Module.CollectionPicker [action="load-item"] > .quantity > span {
+        margin-left: 1.4rem;
+        margin-right: 1rem;
+    }
+}
+.Module.CollectionPicker [action="load-item"] > .footnote > span .icon,
+.Module.CollectionPicker [action="load-item"] > .quantity > span .icon {
+    margin-right: 0.5rem;
+    vertical-align: baseline;
+}
+.Module.CollectionPicker [action="load-item"][state="CLOSED"].no-redirects > .summary,
+.Module.CollectionPicker [action="load-item"][state="SOLD_OUT"].no-redirects > .summary {
+    opacity: 0.6;
+}
+.Module.CollectionPicker [action="load-item"][state="CLOSED"].no-redirects > .summary:hover,
+.Module.CollectionPicker [action="load-item"][state="SOLD_OUT"].no-redirects > .summary:hover {
+    opacity: 1;
+}
+.Module.CollectionPicker [action="load-item"][state="SOLD_OUT"] > .footnote {
+    color: red;
+}
+.Module.CollectionPicker > .gradient-left,
+.Module.CollectionPicker > .gradient-right {
+    width: 3rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+.Module.CollectionPicker > .gradient-left {
+    left: 0;
+    background: linear-gradient(90deg, rgba(53, 53, 53, 0.5), rgba(53, 53, 53, 0));
+}
+.Module.CollectionPicker > .gradient-right {
+    right: 0;
+    background: linear-gradient(90deg, rgba(53, 53, 53, 0), rgba(53, 53, 53, 0.5));
+}
+.Module.CollectionPicker > [action="scroll-left"],
+.Module.CollectionPicker > [action="scroll-right"] {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+}
+.Module.CollectionPicker > [action="scroll-left"] > .icon,
+.Module.CollectionPicker > [action="scroll-right"] > .icon {
+    font-size: 2rem;
+    color: #fff;
+    opacity: 0.6;
+}
+.Module.CollectionPicker > [action="scroll-left"] > .icon:hover,
+.Module.CollectionPicker > [action="scroll-right"] > .icon:hover {
+    opacity: 1;
+}
+.Module.CollectionPicker > [action="scroll-left"] {
+    left: 1rem;
+}
+.Module.CollectionPicker > [action="scroll-right"] {
+    right: 1rem;
+}
+.Module.CollectionPicker > .gradient-left,
+.Module.CollectionPicker > .gradient-right,
+.Module.CollectionPicker > [action="scroll-left"],
+.Module.CollectionPicker > [action="scroll-right"] {
+    transform: opacity 0.2s ease-in-out;
+}
+.Module.CollectionPicker.hide-chrome > .gradient-left,
+.Module.CollectionPicker.hide-chrome > .gradient-right,
+.Module.CollectionPicker.hide-chrome > [action="scroll-left"],
+.Module.CollectionPicker.hide-chrome > [action="scroll-right"] {
+    opacity: 0 !important;
+    pointer-events: none;
+}
+.Module.CollectionPicker.horizontal .collections {
+    white-space: nowrap;
+    transition: padding 0.2s ease-in-out, transform 0.5s ease-in-out !important;
+}
+@media (min-width: 800px) {
+    .Module.CollectionPicker.horizontal .collections {
+        // padding: 0 10.35rem;
+        max-width: $width-page + ($padding-edge * 2);
+        margin: 0 auto;
+    }
+}
+@media (min-width: 800px) {
+    .Module.CollectionPicker.horizontal .collections.hover {
+        padding-left: 8.75rem;
+    }
+}
+.Module.CollectionPicker.horizontal .collections.hover > li {
+    opacity: 0.6;
+}
+.Module.CollectionPicker.horizontal .collections > li {
+    display: inline-block;
+    margin: 0 0.35rem;
+    vertical-align: top;
+    transition: margin 0.2s ease-in-out, opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+@media (min-width: 800px) {
+    .Module.CollectionPicker.horizontal .collections > li {
+        width: 20.5rem;
+    }
+}
+@media (max-width: 799px) {
+    .Module.CollectionPicker.horizontal .collections > li {
+        width: 21rem;
+        margin-bottom: 2rem;
+    }
+}
+.Module.CollectionPicker.horizontal .collections > li:first-child {
+    margin-left: 0;
+}
+.Module.CollectionPicker.horizontal .collections > li:last-child {
+    margin-right: 0;
+}
+.Module.CollectionPicker.horizontal .collections > li:hover {
+    margin-right: 1.6rem;
+    margin-left: 1.6rem;
+    opacity: 1;
+    transform: scale(1.15);
+}
+.Module.CollectionPicker.horizontal .collections > li:hover > .summary {
+    opacity: 1;
+}
+.Module.CollectionPicker.vertical .collections > li + li {
+    margin-top: 2rem;
+}
+.Module.CollectionPicker.vertical > .gradient-left,
+.Module.CollectionPicker.vertical > .gradient-right,
+.Module.CollectionPicker.vertical > [action="scroll-left"],
+.Module.CollectionPicker.vertical > [action="scroll-right"] {
+    display: none;
+}
+.Module.CollectionPicker[theme="DARK"] [action="load-item"] > .summary > .info {
+    color: #fff;
+    background: linear-gradient(180deg, transparent 0, rgba(0, 0, 0, 0.9));
+}
+.Module.CollectionPicker[theme="LIGHT"] [action="load-item"] > .summary > .info {
+    color: #000;
+    background: linear-gradient(180deg, hsla(0, 0%, 100%, 0) 0, hsla(0, 0%, 100%, 0.9));
+}

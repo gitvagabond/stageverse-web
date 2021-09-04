@@ -1,0 +1,348 @@
+.Module.CheckoutSummary {
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 800px) {
+    .Module.CheckoutSummary {
+        background-image: none !important;
+    }
+}
+.Module.CheckoutSummary > .event-details {
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width: 799px) {
+    .Module.CheckoutSummary > .event-details {
+        padding: 0 0.7rem;
+    }
+}
+@media (min-width: 800px) {
+    .Module.CheckoutSummary > .event-details > .name {
+        font-weight: 800;
+        font-size: 2rem;
+        letter-spacing: 0;
+        line-height: 2.286rem;
+    }
+}
+@media (max-width: 799px) {
+    .Module.CheckoutSummary > .event-details > .name {
+        font-weight: 800;
+        font-size: 1.714rem;
+        letter-spacing: -0.018rem;
+        line-height: 1.857rem;
+        order: 2;
+        margin-top: 1rem;
+    }
+}
+@media (min-width: 800px) {
+    .Module.CheckoutSummary > .event-details > .venue {
+        font-weight: 500;
+        font-size: 1.286rem;
+        letter-spacing: 0.021rem;
+        line-height: 1.429rem;
+    }
+}
+@media (max-width: 799px) {
+    .Module.CheckoutSummary > .event-details > .venue {
+        font-weight: 500;
+        font-size: 1.071rem;
+        letter-spacing: 0.018rem;
+        line-height: 1.429rem;
+    }
+}
+@media (min-width: 800px) {
+    .Module.CheckoutSummary > .event-details > .venue {
+        margin-top: 0.7rem;
+    }
+}
+@media (max-width: 799px) {
+    .Module.CheckoutSummary > .event-details > .venue {
+        order: 3;
+    }
+}
+@media (min-width: 800px) {
+    .Module.CheckoutSummary > .event-details > .date {
+        font-weight: 500;
+        font-size: 1.286rem;
+        letter-spacing: 0.021rem;
+        line-height: 1.429rem;
+    }
+}
+@media (max-width: 799px) {
+    .Module.CheckoutSummary > .event-details > .date {
+        font-weight: 500;
+        font-size: 1.071rem;
+        letter-spacing: 0.018rem;
+        line-height: 1.429rem;
+    }
+}
+@media (min-width: 800px) {
+    .Module.CheckoutSummary > .event-details > .date {
+        margin-top: 0.2rem;
+        opacity: 0.5;
+    }
+}
+@media (max-width: 799px) {
+    .Module.CheckoutSummary > .event-details > .date {
+        order: 1;
+    }
+}
+.Module.CheckoutSummary .items {
+    margin-top: 1.4rem;
+    margin-bottom: 0.7rem;
+    position: relative;
+    z-index: 10;
+}
+.Module.CheckoutSummary .items > li {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    padding: 0.8rem 1.4rem 0.6rem;
+    position: relative;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: #fff;
+    color: #000;
+    transition: transform 0.2s ease-in-out;
+}
+.Module.CheckoutSummary .items > li + li {
+    margin-top: 0.7rem;
+}
+.Module.CheckoutSummary .items > li > .details {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 800px) {
+    .Module.CheckoutSummary .items > li > .details > .name {
+        font-weight: 500;
+        font-size: 1rem;
+        letter-spacing: 0;
+        line-height: 1.286rem;
+    }
+}
+@media (max-width: 799px) {
+    .Module.CheckoutSummary .items > li > .details > .name {
+        font-weight: 500;
+        font-size: 0.929rem;
+        letter-spacing: 0;
+        line-height: 1.429rem;
+    }
+}
+@media (min-width: 800px) {
+    .Module.CheckoutSummary .items > li > .details > .price {
+        font-weight: 500;
+        font-size: 1rem;
+        letter-spacing: 0;
+        line-height: 1.286rem;
+    }
+}
+@media (max-width: 799px) {
+    .Module.CheckoutSummary .items > li > .details > .price {
+        font-weight: 500;
+        font-size: 1.071rem;
+        letter-spacing: 0.018rem;
+        line-height: 1.429rem;
+    }
+}
+.Module.CheckoutSummary .items > li > .quantity,
+.Module.CheckoutSummary .items > li > .queue-label {
+    flex-shrink: 0;
+    margin-left: 0.85rem;
+}
+.Module.CheckoutSummary .items > li > .queue-label {
+    padding: 0.3rem 0.8rem;
+    overflow: hidden;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #b7b7b7;
+}
+@media (min-width: 800px) {
+    .Module.CheckoutSummary .items > li > .queue-label {
+        font-weight: 500;
+        font-size: 1rem;
+        letter-spacing: 0;
+        line-height: 1.286rem;
+    }
+}
+@media (max-width: 799px) {
+    .Module.CheckoutSummary .items > li > .queue-label {
+        font-weight: 500;
+        font-size: 0.929rem;
+        letter-spacing: 0;
+        line-height: 1.429rem;
+    }
+}
+@media (min-width: 800px) {
+    .Module.CheckoutSummary .items > li > .quantity {
+        font-weight: 500;
+        font-size: 1.286rem;
+        letter-spacing: 0.021rem;
+        line-height: 1.429rem;
+    }
+}
+@media (max-width: 799px) {
+    .Module.CheckoutSummary .items > li > .quantity {
+        font-weight: 700;
+        font-size: 1.286rem;
+        letter-spacing: 0;
+        line-height: 1.571rem;
+    }
+}
+.Module.CheckoutSummary .items > li[action] {
+    cursor: pointer;
+}
+.Module.CheckoutSummary .items > li[action]:hover {
+    background-color: #000;
+    color: #fff;
+}
+.Module.CheckoutSummary .items > li.collapsed {
+    transform: scaleY(0);
+    transform-origin: top;
+    height: 0;
+    margin: 0;
+    padding: 0;
+}
+.Module.CheckoutSummary [name="promoBox"] {
+    position: relative;
+    transform: translateY(-1px);
+    z-index: 5;
+}
+.Module.CheckoutSummary .bill-container {
+    margin-top: 0.8rem;
+}
+.Module.CheckoutSummary .total-summary {
+    margin-bottom: 1.5rem;
+}
+.Module.CheckoutSummary .surcharge-container,
+.Module.CheckoutSummary .total-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.Module.CheckoutSummary .surcharge-container {
+    margin-top: 1.5rem;
+    overflow: hidden;
+    transition: all 0.2s linear;
+}
+.Module.CheckoutSummary .surcharge-container + .surcharge-container {
+    margin-top: 0.8rem;
+}
+@media (min-width: 800px) {
+    .Module.CheckoutSummary .surcharge-container > .label,
+    .Module.CheckoutSummary .surcharge-container > .value {
+        font-weight: 500;
+        font-size: 1.286rem;
+        letter-spacing: 0.021rem;
+        line-height: 1.429rem;
+    }
+}
+@media (max-width: 799px) {
+    .Module.CheckoutSummary .surcharge-container > .label,
+    .Module.CheckoutSummary .surcharge-container > .value {
+        font-weight: 500;
+        font-size: 1.071rem;
+        letter-spacing: 0.018rem;
+        line-height: 1.429rem;
+    }
+}
+.Module.CheckoutSummary .surcharge-container > .label {
+    width: 70%;
+}
+.Module.CheckoutSummary .surcharge-container > .value {
+    width: 30%;
+    text-align: right;
+}
+.Module.CheckoutSummary .surcharge-container > a,
+.Module.CheckoutSummary .surcharge-container > p {
+    margin-top: 0.2rem;
+}
+@media (min-width: 800px) {
+    .Module.CheckoutSummary .surcharge-container > a,
+    .Module.CheckoutSummary .surcharge-container > p {
+        font-weight: 500;
+        font-size: 1rem;
+        letter-spacing: 0;
+        line-height: 1.286rem;
+    }
+}
+@media (max-width: 799px) {
+    .Module.CheckoutSummary .surcharge-container > a,
+    .Module.CheckoutSummary .surcharge-container > p {
+        font-weight: 500;
+        font-size: 0.929rem;
+        letter-spacing: 0;
+        line-height: 1.429rem;
+    }
+}
+.Module.CheckoutSummary .surcharge-container > p {
+    width: 100%;
+}
+.Module.CheckoutSummary .surcharge-container [action="toggle-fees"] {
+    color: #f5f5f5;
+}
+.Module.CheckoutSummary .surcharge-container [action="toggle-fees"] .icon-plus-button {
+    display: none;
+}
+.Module.CheckoutSummary .surcharge-container [action="toggle-fees"]:hover {
+    color: #ddd;
+}
+.Module.CheckoutSummary .surcharge-container .reverse-collapse {
+    display: none;
+}
+.Module.CheckoutSummary .collapse {
+    padding-left: 2rem;
+}
+.Module.CheckoutSummary.collapse-fees [action="toggle-fees"] .icon-minus-button {
+    display: none;
+}
+.Module.CheckoutSummary.collapse-fees [action="toggle-fees"] .icon-plus-button {
+    display: inline;
+}
+.Module.CheckoutSummary.collapse-fees .collapse {
+    padding: 0;
+    height: 0;
+}
+.Module.CheckoutSummary.collapse-fees .reverse-collapse {
+    display: block;
+}
+.Module.CheckoutSummary .total-container {
+    display: flex;
+    margin-top: 2rem;
+}
+@media (min-width: 800px) {
+    .Module.CheckoutSummary .total-container > .label,
+    .Module.CheckoutSummary .total-container > .value {
+        font-weight: 800;
+        font-size: 2rem;
+        letter-spacing: 0;
+        line-height: 2.286rem;
+    }
+}
+@media (max-width: 799px) {
+    .Module.CheckoutSummary .total-container > .label,
+    .Module.CheckoutSummary .total-container > .value {
+        font-weight: 800;
+        font-size: 1.429rem;
+        letter-spacing: 0;
+        line-height: 1.714rem;
+    }
+}
+.Module.CheckoutSummary .total-container.small > .value,
+.Module.CheckoutSummary .total-container.smaller > .value,
+.Module.CheckoutSummary .total-container > .value {
+    font-size: 2rem;
+}
+.Module.CheckoutSummary [action="use-payment-plan"] {
+    margin-top: 1rem;
+}
+.Module.CheckoutSummary[theme="DARK"] [action="use-payment-plan"] {
+    color: #fff;
+}
+.Module.CheckoutSummary[theme="LIGHT"] .items {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.15);
+}
+.Module.CheckoutSummary[theme="LIGHT"] [action="use-payment-plan"] {
+    color: #000;
+}

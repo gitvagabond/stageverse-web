@@ -1,0 +1,160 @@
+@import "variables";
+@import "mixins";
+
+:host {
+    z-index: 10;
+    position: relative;
+    display: block;
+}
+
+.site-footer {
+    background: rgba(0, 0, 0, 0.5);
+    height: 16.5vh;
+    // border-top: 1px solid rgba(117,50,29,.13);
+    padding: 2.2rem 0;
+    text-align: center;
+
+    .footer-title {
+        // background-image: url(/assets/images/Full-logo-horizontal-white-trimmed.png);
+        // background-image: url("~/assets/images/Stageverse_Wordmark_White.png");
+        background-image: url("~/assets/images/SV_LOGO_WEB2.png");
+        background-position: left center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        // opacity: 0.6;
+        // color: #333;
+        font-size: 2.2rem;
+        height: 3rem;
+        width: 14rem;
+        float: left;
+        margin: 0;
+
+        @include breakpoint(medium) {
+            background-position: center;
+            float: none;
+            margin: 0 auto 0.5em;
+        }
+
+        @media (min-width: 800px) {
+            height: 3rem;
+            width: 14rem;
+        }
+        @media (max-width: 799px) {
+            height: 2rem;
+            width: 10rem;
+        }
+
+        .stage {
+            display: none;
+            font-family: Product Sans, "Product Sans", Helvetica, Arial, sans-serif;
+            font-weight: 400;
+        }
+    }
+
+    .footer-copyright {
+        float: left;
+        margin-left: 2rem;
+        margin-top: 0.6rem;
+
+        font-size: 1.3rem;
+        letter-spacing: 0;
+        line-height: 1.686rem;
+        color: rgba(255, 255, 255, 0.45);
+
+        @media (max-width: 799px) {
+            font-size: 15px;
+            letter-spacing: 0;
+            line-height: 1.629rem;
+            float: none;
+            margin-top: 1rem;
+            margin-left: 0;
+        }
+
+        @media (max-width: 399px) {
+            margin-right: 227px;
+            margin-top: 20px;
+            padding-bottom: 40px;
+        }
+    }
+
+    .nav-links {
+        font-family: $font-family-body;
+        font-size: 0;
+        margin-top: 0.6rem;
+        float: right;
+        display: flex;
+        flex-direction: row;
+
+        @include breakpoint(medium) {
+            float: none;
+        }
+
+        @media (min-width: 800px) {
+            font-weight: 500;
+            font-size: 1.3rem;
+            letter-spacing: 0;
+            line-height: 1.686rem;
+        }
+        @media (max-width: 799px) {
+            font-weight: 500;
+            font-size: 20px;
+            letter-spacing: 0;
+            line-height: 1.629rem;
+            justify-content: center;
+            display: table;
+            text-align: left;
+            padding: 20px 0px;
+            
+        }
+
+        > li {
+            // @media (min-width: 800px) {
+            &:not(:last-child) {
+                margin-right: 1rem;
+                margin-bottom: 5px;
+            }
+            // }
+        }
+        a {
+            color:  rgba(255, 255, 255, 0.45);
+        }
+        a:hover{
+            color: #665BFF;
+        }
+    }
+}
+.footer-bottom{
+    width: 94vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.3vh;
+}
+
+@media (max-width: 399px) {
+    .hide-mobile-xs {
+        display: none !important;
+    }
+}
+@media (max-width: 399px) {
+    .show-mobile-xs {
+        display: flex !important;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .madam{
+        background: none;
+        margin-left: 25px;
+    }
+    .menu-sm-nav-item{
+        background: none;
+        opacity: 0.5;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+
+    .mardan{
+        margin-top: 227px;
+    }
+}

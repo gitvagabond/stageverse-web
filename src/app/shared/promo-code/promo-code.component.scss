@@ -1,0 +1,25 @@
+.Module.PromoBox > [name="form"] {
+    display: flex;
+    align-items: stretch;
+    overflow: hidden;
+    border-radius: 3px;
+}
+.Module.PromoBox > [name="form"] > [name="code"] {
+    flex-grow: 1;
+    width: auto;
+    margin: 0;
+}
+.Module.PromoBox > [name="form"] > [name="code"],
+.Module.PromoBox > [name="form"] > [name="code"] > .background {
+    border-radius: 0;
+}
+.Module.PromoBox > [name="form"] > [action="submit"] {
+    width: 0;
+    padding: 0;
+    height: auto;
+    border-radius: 0;
+    transition: width 0.2s ease-in-out;
+}
+.Module.PromoBox.populated > [name="form"] > [action="submit"] {
+    width: 4rem;
+}

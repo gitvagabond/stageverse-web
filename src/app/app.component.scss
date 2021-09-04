@@ -1,0 +1,46 @@
+#site {
+    /* note: this is currently driving the way that parralax and modal functionality works
+        but it breaks mobile web browser by the browsers top and bottom bars constantly showing */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    @media (min-width: 800px) {
+        &.scroll-fix {
+            overflow: hidden;
+        }
+        // & {
+            /* note: this is currently driving the way that parralax and modal functionality works
+                but it breaks mobile web browser by the browsers top and bottom bars constantly showing */
+            // position: absolute;
+            // top: 0;
+            // right: 0;
+            // bottom: 0;
+            // left: 0;
+        // }
+        perspective: 1px;
+        perspective-origin: 0 0;
+    }
+}
+
+#page {
+    position: relative;
+    z-index: 10;
+}
+
+#site.overlay-active #page {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+}
+// TODO: these need to be moved to their respective places
+// #site.overlay-active #page input{
+//     display:none;
+// }

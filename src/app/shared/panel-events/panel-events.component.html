@@ -1,0 +1,18 @@
+<div class="panel panelEvents">
+    <hr>
+    <div class="panel__title">
+        <h1>Schedule</h1>
+        <!-- <img src="assets/images/headerschedule.png" style="width:100%"/> -->
+    </div>
+    <div class="panel__content">
+        <ul>
+            <li *ngFor="let i of [0,1,2,3,4,5];" class="panelEvents__item">
+                <app-card-event></app-card-event>
+            </li>
+        </ul>
+        <a href="#" action="toggle" class="button small left-align" theme="WHITE-OUTLINE">
+            <p class="expand">See all</p> <span class="icon expand icon-plus" aria-hidden="true"></span>
+            <!-- <p class="collapse">Read Less</p> <span class="icon collapse icon-minus" aria-hidden="true"></span> -->
+        </a>
+    </div>
+</div>

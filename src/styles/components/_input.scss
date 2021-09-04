@@ -1,0 +1,27 @@
+// input[type=text], input[type=email], input[type=password] {
+// 	$padding-v: 2px;
+// 	$padding-h: 10px;
+
+// 	background: white;
+// 	border: 1px solid transparent;
+// 	border-radius: $border-radius;
+// 	font-family: inherit;
+// 	font-size: inherit;
+// 	height: 2.8em;
+// 	margin: 0 0 0.4em;
+// 	padding: $padding-v $padding-h;
+
+// 	&::-webkit-input-placeholder { /* Chrome, Safari */
+// 	   text-align: center;
+// 	}
+// 	&::-moz-placeholder {  /* Firefox 19+ */
+// 	   text-align: center;
+// 	}
+// 	&:-ms-input-placeholder { /* IE */
+// 	   text-align: center;
+// 	}
+
+// 	&.is-error {
+//  		border-color: red;
+// 	}
+// }

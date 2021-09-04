@@ -1,0 +1,21 @@
+.icon-marketing {
+	height: 1em;
+	width: 1em;
+
+	/* SVG Properties */
+	fill: $color-text-normal;
+
+	&.icon--medium {
+		height: 2em;
+		width: 2em;
+	}
+
+	&.icon--large {
+		height: 5em;
+		width: 5em;
+	}
+
+	&.icon--primary {
+		fill: $color-primary-dark
+	}
+}

@@ -1,0 +1,58 @@
+@import "mixins";
+
+.cardEvent {
+    display: flex;
+    // flex-wrap: nowrap;
+
+    .cardEvent__image {
+        margin-right: 1rem;
+    }
+    .cardEvent__content {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        text-align: left;
+        margin-right: 1rem;
+        align-content: space-between;
+        align-items: center;
+
+        .cardEvent__when {
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+            margin-bottom: 0.2rem;
+            color: #ff0032;
+            @include breakpoint(medium) {
+                font-size: 1.1rem;
+                line-height: 1.3rem;
+            }
+        }
+        .cardEvent__what {
+            font-size: 1.8rem;
+            line-height: 2.3rem;
+            margin-bottom: 0.2rem;
+            @include breakpoint(medium) {
+                font-size: 1.3rem;
+                line-height: 1.4rem;
+            }
+        }
+        .cardEvent__where {
+            font-weight: 300;
+            font-size: 1.5rem;
+            line-height: 1.9rem;
+            color: #96969C;
+            @include breakpoint(medium) {
+                font-size: 1.2rem;
+                font-size: 1.3rem;
+            }
+        }
+    }
+    .cardEvent__title {
+        flex-grow: 1;
+        text-align: left;
+        flex-basis: 10rem;;
+        margin-right: 1rem;
+    }
+    .cardEvent__actions {
+        flex-shrink: 0;
+    }
+}

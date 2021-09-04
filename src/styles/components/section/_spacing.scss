@@ -1,0 +1,27 @@
+&.section--unpadded {
+	padding: 0;
+}
+
+&.section--top-unpadded {
+	padding-top: 0;
+}
+
+&.section--double-padded {
+	padding: $padding-section*2 0;
+}
+
+&.section--triple-padded {
+	padding: $padding-section*3 0;
+}
+
+&.section--bottom-unpadded {
+	padding-bottom: 0;
+}
+
+&.section--pulled-up {
+	margin-top: -120px;
+
+	@include breakpoint(medium) {
+		margin-top: 0;
+	}
+}

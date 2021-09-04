@@ -1,0 +1,21 @@
+.section {
+	@include clearfix;
+
+	background-position: center center;
+	background-repeat: no-repeat;
+	padding: $padding-section 0;
+	position: relative;
+	z-index: 2;
+
+	@import "section/spacing";
+	@import "section/components";
+	@import "section/background";
+
+	&.section--centered {
+		text-align: center;
+	}
+
+	&.section--with-border-bottom {
+		border-bottom: 1px solid $color-border;
+	}
+}

@@ -1,0 +1,38 @@
+<footer class="site-footer madam">
+  <div class="footer-bottom">
+   
+    <ul class="nav-links">
+      <!-- <li *ngIf="!isReducedView">
+        <a [routerLink]="['/company']" >Company</a>
+      </li> -->
+        <li *ngIf="!isReducedView">
+          <a [routerLink]="['/']" >Contact</a>
+        </li>
+      <!-- <li *ngIf="!isReducedView">
+        <a href="https://medium.com/stageverse" target="_blank" data-g-event="link"
+          data-g-label="Blog">Blog</a>
+      </li> -->
+      <li *ngIf="!isReducedView" class="hide-mobile-xs">
+        <a [routerLink]="['/creators']" >Creators</a>
+      </li>
+      <!-- <li>
+        <a href="mailto:hello@stageverse.com" target="_blank" data-g-event="link"
+          data-g-label="Contact Stage">Contact</a>
+      </li> -->
+      <li class="hide-mobile-xs">
+        <a [routerLink]="['/press']" data-g-event="link" data-g-label="Press Room">Press</a>
+      </li>
+      <li class="">
+        <a [routerLink]="['/terms-of-service']" data-g-event="link" data-g-label="Terms">Terms of Service</a>
+      </li>
+      <li class="">
+        <a [routerLink]="['/privacy']" data-g-event="link" data-g-label="Privacy">Privacy Policy</a>
+      </li>
+    </ul>
+    
+    
+
+    <div class="footer-copyright  hide-mobile-xs">© 2021 Stage, Inc.</div>
+    
+  </div>
+</footer>

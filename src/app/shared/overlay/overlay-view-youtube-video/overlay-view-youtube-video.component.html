@@ -1,0 +1,22 @@
+<div class="Overlay YoutubeVideoOverlay overlay-hidden Module View vp-min-height" theme="DARK"
+    [ngClass]="{'hidden': isViewHidden}">
+    <div class="head">
+        <div class="background"></div>
+        <div class="content">
+            <div name="avatar"></div> <a [routerLink]="" (click)="close()" action="close"> <span class="icon icon-close"
+                    aria-hidden="true"></span> </a>
+        </div>
+    </div>
+    <div class="body">
+        <div class="content VIDEO">
+            <div name="video-player">
+                <iframe src="https://www.youtube.com/embed/wD6io0ml01M?&autoplay=1" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="foot">
+        <div class="content"></div>
+    </div>
+</div>

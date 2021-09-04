@@ -1,0 +1,27 @@
+<div class="Module CheckoutSummary">
+    <div class="event-details">
+        <div class="name">{{eventName}}</div>
+        <div class="venue">{{eventLocation}}</div>
+        <div class="date">{{eventDate}}</div>
+    </div>
+    <ul class="items">
+        <li *ngFor="let cartProduct of cartProducts">
+            <div class="details">
+                <div class="name">{{cartProduct.product.name}}</div>
+                <div class="price">{{(cartProduct.qty * cartProduct.product.price).toLocaleString('en-US', {style: 'currency', currency: 'USD'})}}</div>
+            </div>
+            <div class="quantity">{{cartProduct.qty}}</div>
+        </li>
+    </ul>
+    <app-promo-code name="promoBox" class="Module PromoBox" theme="DARK"></app-promo-code>
+    <div class="bill-container">
+        <div class="surcharge-container">
+            <div class="label">Fees &amp; Taxes:</div>
+            <div class="value">{{cartFeesAndTaxes.toLocaleString('en-US', {style: 'currency', currency: 'USD'})}}</div>
+        </div>
+        <div class="total-container">
+            <div class="label">Total:</div>
+            <div class="value">{{cartTotalPrice.toLocaleString('en-US', {style: 'currency', currency: 'USD'})}}</div>
+        </div>
+    </div>
+</div>

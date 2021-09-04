@@ -1,0 +1,136 @@
+@import "../overlay.component.scss";
+
+.Overlay.Collection > .body > .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+@media (min-width: 800px) {
+    .Overlay.Collection > .body > .content {
+        width: 33rem;
+    }
+    .Overlay.Collection > .body > .content > .info > .title {
+        font-weight: 800;
+        font-size: 2rem;
+        letter-spacing: 0;
+        line-height: 2.286rem;
+        margin-bottom: 0.7rem;
+    }
+    .Overlay.Collection > .body > .content > .info > .description,
+    .Overlay.Collection > .body > .content > .info p {
+        font-weight: 500;
+        font-size: 1.286rem;
+        letter-spacing: 0.021rem;
+        line-height: 1.429rem;
+        margin-bottom: 1.2rem;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.Collection > .body > .content,
+    .Overlay.Collection > .body > .content > .info {
+        margin-left: 0.7rem;
+        margin-right: 0.7rem;
+    }
+    .Overlay.Collection > .body > .content > .info > .title {
+        font-weight: 800;
+        font-size: 1.714rem;
+        letter-spacing: -0.018rem;
+        line-height: 1.857rem;
+        margin-bottom: 0.5rem;
+    }
+    .Overlay.Collection > .body > .content > .info > .description,
+    .Overlay.Collection > .body > .content > .info p {
+        font-weight: 500;
+        font-size: 1.071rem;
+        letter-spacing: 0.018rem;
+        line-height: 1.429rem;
+        margin-bottom: 1rem;
+    }
+}
+.Overlay.Collection > .body > .content .onsale-date .icon {
+    margin-right: 0.25rem;
+}
+.Overlay.Collection > .body > .content [name="ticket-picker"] .tickets {
+    max-height: none;
+    overflow: visible;
+}
+.Overlay.Collection .button[action="close"] {
+    box-shadow: 0 -6px 10px 0 rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 800px) {
+    .Overlay.Collection .button[action="close"] {
+        position: absolute;
+        right: 7.4rem;
+        bottom: 6.85rem;
+        height: 3rem;
+        width: 16.85rem;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.Collection .button[action="close"] {
+        height: 3.2rem;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+@media (min-width: 800px) {
+    .Overlay.Collection .button[action="close"] > p {
+        font-weight: 700;
+        font-size: 1rem;
+        letter-spacing: 0.018rem;
+        line-height: 1.214rem;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.Collection .button[action="close"] > p {
+        font-weight: 700;
+        font-size: 1rem;
+        letter-spacing: 0.018rem;
+        line-height: 1.214rem;
+    }
+}
+.Overlay.Collection [name="checkout-button"],
+.Overlay.Collection [name="follow-button"] {
+    height: 4.3rem;
+}
+@media (min-width: 800px) {
+    .Overlay.Collection [name="checkout-button"],
+    .Overlay.Collection [name="follow-button"] {
+        position: absolute;
+        right: 1.4rem;
+        bottom: 1.4rem;
+        width: 22.8rem;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.Collection [name="checkout-button"] > .button {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.Collection > .foot {
+        height: auto;
+    }
+}
+.Overlay.Collection > .foot > .gradient {
+    height: 10rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(center bottom, rgba(53, 53, 53, 0.5), rgba(53, 53, 53, 0));
+    pointer-events: none;
+    z-index: 0;
+}
+@media (max-width: 799px) {
+    .Overlay.Collection > .foot > .gradient {
+        display: none;
+    }
+}
+.Overlay.Collection [name="checkout-button"] {
+    z-index: 30;
+}
+.Overlay.Collection [name="follow-button"] {
+    z-index: 20;
+}

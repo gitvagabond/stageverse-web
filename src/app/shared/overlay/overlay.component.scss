@@ -1,0 +1,407 @@
+// :host {
+//     align-items: center;
+//     display: flex;
+//     flex-direction: column;
+//     height: 100vh;
+//     justify-content: center;
+//     left: 0;
+//     position: fixed;
+//     top: 0;
+//     width: 100vw;
+//     z-index: 9999;
+// }
+
+// .overlay {
+//     background-color: rgba(0, 0, 0, 0.6);
+//     height: 100vh;
+//     opacity: 0;
+//     position: absolute;
+//     transition: opacity 250ms linear;
+//     width: 100vw;
+
+//     &.fade-in {
+//         opacity: 1;
+//     }
+// }
+
+// .close-button {
+//     background-color: #fff;
+//     border-radius: 50%;
+//     height: 2.5rem;
+//     position: absolute;
+//     right: 1rem;
+//     top: 1rem;
+//     width: 2.5rem;
+// }
+
+#overlay {
+    position: relative;
+    z-index: 20;
+}
+#overlay-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: all 0.2s ease-in-out;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000000;
+    z-index: 0;
+    opacity: 0.9;
+    transition: 0.2s opacity ease-in-out, 0.2s background ease-in-out;
+}
+
+#overlay > .background {
+    background-color: #000;
+    opacity: 0.92;
+    z-index: 0;
+}
+#overlay > .Module > .exit,
+.background + .exit {
+    color: #fff;
+}
+
+@media (min-width: 800px) {
+    .Page > .foot {
+        height: 0;
+    }
+    .Overlay {
+        justify-content: space-between;
+
+        &.center-justify {
+            justify-content: center; /* for early access modal */
+        }
+    }
+}
+.Overlay > .background {
+    -webkit-filter: blur(15px);
+    filter: blur(15px);
+    z-index: 1;
+}
+@media (max-width: 799px) {
+    .Overlay > .background {
+        position: fixed;
+        height: 80vh;
+        bottom: auto;
+    }
+}
+.Overlay > .backdrop {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.8;
+    z-index: 2;
+}
+.Overlay > .head,
+.Overlay > .head-fixed {
+    position: fixed;
+    position: sticky;
+    position: -webkit-sticky;
+    right: 0;
+    left: 0;
+}
+.Overlay > .head > .content,
+.Overlay > .head-fixed > .content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.Overlay > .head {
+    margin-top: 1.5rem;
+}
+.Overlay > .body {
+    // margin-top: -1.5rem;
+    padding-top: 7rem;
+    padding-bottom: 5.5rem;
+}
+@media (min-width: 800px) {
+    .Overlay > .body {
+        flex-grow: 0;
+        align-self: center;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay > .body {
+        align-self: flex-start;
+    }
+}
+.Overlay > .foot > .content {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.Overlay > .head > .background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transition: background 0.4s ease-in-out;
+}
+@media (min-width: 800px) {
+    .Overlay > .head > .background {
+        height: 4rem;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay > .head > .background {
+        height: 3.5rem;
+    }
+}
+.Overlay > .head > .content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 0.5rem;
+}
+.Overlay > .head > .content > [action="close"] {
+    display: flex;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+}
+@media (min-width: 800px) {
+    .Overlay > .head > .content > [action="close"] {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 3rem;
+        margin-right: 3rem;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay > .head > .content > [action="close"] {
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 2.5rem;
+        margin-right: 1rem;
+    }
+}
+.Overlay > .head > .content > [action="close"] > .icon {
+    font-size: 1.2rem;
+    flex: none;
+    position: relative;
+    font-weight: 900;
+    color: #fff;
+    z-index: 10;
+}
+.Overlay > .head > .content > .logo {
+    font-size: 1.6rem;
+    display: block;
+    margin-right: auto;
+    text-align: left;
+}
+@media (min-width: 800px) {
+    .Overlay > .head > .content > .logo {
+        margin-left: 4.5rem;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay > .head > .content > .logo {
+        margin-left: 1rem;
+    }
+}
+@media (min-width: 800px) {
+    .Overlay > .head > .content [name="avatar"] {
+        margin-right: 3.5rem;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay > .head > .content [name="avatar"] {
+        margin-right: 1.5rem;
+    }
+}
+@media (min-width: 800px) {
+    .Overlay > .head > .content > [action="log-out"],
+    .Overlay > .head > .content > [action="log-in"] {
+        font-weight: 500;
+        font-size: 1.286rem;
+        letter-spacing: 0;
+        line-height: 1.429rem;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay > .head > .content > [action="log-out"],
+    .Overlay > .head > .content > [action="log-in"] {
+        font-weight: 500;
+        font-size: 1.143rem;
+        letter-spacing: 0;
+        line-height: 1.429rem;
+    }
+}
+@media (min-width: 800px) {
+    .Overlay > .head > .content > [action="log-out"],
+    .Overlay > .head > .content > [action="log-in"] {
+        margin: 0 3.2rem 0 0;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay > .head > .content > [action="log-out"],
+    .Overlay > .head > .content > [action="log-in"] {
+        margin: 0 1.4rem 0 0;
+    }
+}
+@media (min-width: 800px) {
+    .Overlay > .head > .content > [name="countdown"] {
+        margin-top: 0;
+        margin-right: 2rem;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay > .head > .content > [name="countdown"] {
+        margin-top: 0;
+        margin-right: 1.5rem;
+    }
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .Overlay > .head > .content {
+        display: block;
+    }
+    .Overlay > .head > .content > .logo {
+        float: left;
+    }
+    .Overlay > .head > .content > .avatar,
+    .Overlay > .head > .content > [action="close"],
+    .Overlay > .head > .content > [action="log-in"],
+    .Overlay > .head > .content > [action="log-out"],
+    .Overlay > .head > .content > [name="countdown"] {
+        float: right;
+    }
+}
+.Overlay[theme="DARK"] > .backdrop {
+    background-color: #2c2c2c;
+}
+.Overlay[theme="DARK"] > .head.scrolled > .background {
+    background-color: rgba(17, 17, 17, 0.8);
+}
+.Overlay[theme="DARK"] > .head > .content > .logo,
+.Overlay[theme="DARK"] > .head > [action="close"],
+.Overlay[theme="DARK"] > .head > .action {
+    color: #fff;
+}
+.Overlay[theme="DARK"] > .head [action="close"] {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.Overlay[theme="DARK"] > .head [action="close"]:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.Overlay[theme="LIGHT"] > .backdrop {
+    background-color: #f5f5f5;
+}
+.Overlay[theme="LIGHT"] > .head.scrolled > .background {
+    background-color: rgba(255, 255, 255, 0.95);
+}
+.Overlay[theme="LIGHT"] > .head > .content > .logo,
+.Overlay[theme="LIGHT"] > .head > [action="close"],
+.Overlay[theme="LIGHT"] > .head > .action {
+    color: #000;
+}
+.Overlay[theme="LIGHT"] > .head [action="close"] {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.Overlay[theme="LIGHT"] > .head [action="close"]:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.Overlay > .body > .content.form {
+    background-color: #f5f5f5;
+    color: #000;
+    border-radius: 2rem;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.04);
+}
+@media (min-width: 800px) {
+    .Overlay > .body > .content.form {
+        width: 33rem;
+        padding: 2.85rem;
+    }
+    .Overlay > .body > .content.form.wide {
+        min-width: 53.6rem;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay > .body > .content.form {
+        padding: 2.4rem 0.7rem;
+        margin-left: 0.7rem;
+        margin-right: 0.7rem;
+        border-radius: 0.8rem;
+    }
+}
+.Overlay > .body > .content.form .text {
+    color: #888;
+}
+.Overlay > .body > .content.form .button {
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.15);
+}
+.Overlay > .body > .content.form .button.small {
+    box-shadow: none;
+}
+@media (min-width: 800px) {
+    .Overlay > .body > .content.form hr {
+        margin: 2rem -2.85rem 1.3rem -2.85rem;
+    }
+}
+@media (max-width: 799px) {
+    .Overlay > .body > .content.form hr {
+        margin: 2rem -0.7rem 1.3rem -0.7rem;
+    }
+}
+.Overlay > .body > .content.form .actions {
+    margin: 2.5rem auto 0 auto;
+}
+@media (min-width: 800px) {
+    .Overlay > .body > .content.form .actions {
+        width: 27.3rem;
+    }
+}
+.Overlay > .body > .content.form .button[action]:nth-child(n + 2) {
+    margin-top: 0.7rem;
+}
+.Overlay > .body > .content.form .button[action="submit"] {
+    margin-top: 1.4rem;
+}
+.Overlay.overlay-hidden > .head > .content > .icon,
+.Overlay.overlay-hidden > .head > .content > a {
+    transition: transform 0.35s ease-in-out;
+}
+.Overlay.overlay-hidden > .body > .content {
+    transition: transform 0.35s ease-in-out, opacity 0.35s ease-in-out;
+}
+.Overlay.overlay-hidden > .foot {
+    transition: transform 0.35s ease-in-out;
+}
+.Overlay.overlay-hidden > .foot > * {
+    transition: transform 0.35s ease-in-out;
+}
+.Overlay.overlay-hidden.hidden > .head > .content > .icon,
+.Overlay.overlay-hidden.hidden > .head > .content > a {
+    transform: scale(0.5);
+}
+@media (min-width: 800px) {
+    .Overlay.overlay-hidden.hidden > .body > .content {
+        transform: translateY(-6rem);
+        opacity: 0;
+    }
+    .Overlay.overlay-hidden.hidden > .body > .content.form {
+        transform: translateY(6rem);
+    }
+}
+@media (max-width: 799px) {
+    .Overlay.overlay-hidden.hidden > .body > .content {
+        transform: translateY(6rem);
+    }
+}
+.Overlay.overlay-hidden.hidden > .foot {
+    transform: translateY(100%);
+}
+.Overlay.overlay-hidden.hidden > .foot > * {
+    transform: translateY(100%);
+}
